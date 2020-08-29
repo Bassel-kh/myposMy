@@ -55,5 +55,21 @@ Add/Define dashboard Route file and controller-namespace
                     });
                 });
 
+#2 ----------------------------
+configure laravel and admin lte:
+    1- Edit lang to arabic in config/app.php:
+        'locale' => 'ar',
+        'fallback_locale' => 'ar',
+
+    2- install laravel lang:
+        add ar directory from laravel lang to our app in directory ( resources/lang )
+
+    3- to Make auth table in database:
+        $ php artisan migrate
+
+    4- Add dashboard view in layouts:
+
+
+#
 
 
