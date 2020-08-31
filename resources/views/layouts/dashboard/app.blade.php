@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html dir="{{ LaravelLocalization::getCurrentLocaleDirection() }}">
+{{--<html dir="{{ LaravelLocalization::getCurrentLocaleDirection() }}">--}}
+<html  lang="">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -171,13 +173,13 @@
                             <li>
                                 {{--<!-- inner menu: contains the actual data -->--}}
                                 <ul class="menu">
-                                    @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-                                        <li>
-                                            <a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
-                                                {{ $properties['native'] }}
-                                            </a>
-                                        </li>
-                                    @endforeach
+{{--                                    @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)--}}
+{{--                                        <li>--}}
+{{--                                            <a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">--}}
+{{--                                                {{ $properties['native'] }}--}}
+{{--                                            </a>--}}
+{{--                                        </li>--}}
+{{--                                    @endforeach--}}
                                 </ul>
                             </li>
                         </ul>
@@ -188,7 +190,7 @@
 
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <img src="{{ asset('dashboard_files/img/user2-160x160.jpg') }}" class="user-image" alt="User Image">
-                            <span class="hidden-xs">{{ auth()->user()->first_name }} {{ auth()->user()->last_name }}</span>
+{{--                            <span class="hidden-xs">{{ auth()->user()->first_name }} {{ auth()->user()->last_name }}</span>--}}
                         </a>
                         <ul class="dropdown-menu">
 
@@ -197,7 +199,7 @@
                                 <img src="{{ asset('dashboard_files/img/user2-160x160.jpg') }}" class="img-circle" alt="User Image">
 
                                 <p>
-                                    {{ auth()->user()->first_name }} {{ auth()->user()->last_name }}
+{{--                                    {{ auth()->user()->first_name }} {{ auth()->user()->last_name }}--}}
                                     <small>Member since 2 days</small>
                                 </p>
                             </li>

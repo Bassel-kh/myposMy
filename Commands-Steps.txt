@@ -70,6 +70,9 @@ configure laravel and admin lte:
     4- Add dashboard view in layouts:
 
 
-#
+#3 ---------------------
+Add AdminLte 3.0.5 Files to project:
+    1- copy ( dist , build , plugin , docs) files to public folder
+    2- add layout admin (master page )
 
 
