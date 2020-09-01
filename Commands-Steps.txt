@@ -191,4 +191,59 @@ complement to #5 localization (#5#6 Adding languages in url)
     Return current locale's direction as string (ltr/rtl).
 
         dir="{{ LaravelLocalization::getCurrentLocaleDirection() }}"
+#7 -----------------------------------
+ #7.1- Roles and permissions
+    LaraTrust version 6 (https://laratrust.santigarcor.me/docs/6.x/)
 
+    1-  Installation
+        1- You can install the package using composer:
+            $ composer require santigarcor/laratrust
+
+        2- Publish all the configuration files:
+            $ php artisan vendor:publish --tag="laratrust"
+            output:
+                    Copied File [\vendor\santigarcor\laratrust\config\laratrust.php] To [\config\laratrust.php]
+                    Copied File [\vendor\santigarcor\laratrust\config\laratrust_seeder.php] To [\config\laratrust_seeder.php]
+                    Publishing complete.
+
+        [WARNING]
+            If this command did not publish any files, chances are, the Laratrust service provider hasn't been registered. Try clearing your configuration cache
+                $ php artisan config:clear
+
+        3-Run the setup command:
+          IMPORTANT
+            Before running the command go to your config/laratrust.php file and change the values according to your needs.
+                {
+                    |--------------------------------------------------------------------------
+                        | Laratrust Models
+                        |--------------------------------------------------------------------------
+                        |
+                        | These are the models used by Laratrust to define the roles, permissions and teams.
+                        | If you want the Laratrust models to be in a different namespace or
+                        | to have a different name, you can do it here.
+                        |
+                        */
+                        'models' => [
+
+                            'role' => \App\Models\Role_Permission\Role::class,
+
+                            'permission' => \App\Models\Role_Permission\Permission::class,
+
+                            /**
+                             * Will be used only if the teams functionality is enabled.
+                             */
+                            'team' => \App\Models\Role_Permission\Team::class,
+                        ],
+
+                }
+ #7.2- Commit before setup laratrust
+          php artisan laratrust:setup
+          This command will generate the migrations, create the Role and Permission models (if you are using the teams feature it will also create a Team model) and will add the trait to the configured user models.
+
+          Dump the autoloader:
+          composer dump-autoload
+          Run the migrations:
+          php artisan migrate
+          IMPORTANT
+
+          If you did the steps above you are done with the configuration, if not, please read and follow the whole configuration process

@@ -19,7 +19,8 @@
     <list default="true" id="43f369e8-6175-40c6-a52e-089c90166f3a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commands-Steps.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Commands-Steps.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +139,8 @@
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/mcamara/laravel-localization" />
+      <path value="$PROJECT_DIR$/vendor/kkszymanowski/traitor" />
+      <path value="$PROJECT_DIR$/vendor/santigarcor/laratrust" />
     </include_path>
   </component>
   <component name="ProjectId" id="1giMYg7Hicj0JljXHzX3voRCpZB" />
@@ -232,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598966450231</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="#6 Complement to #5 localization (#5#6 Adding languages in url)">
+      <created>1598977900075</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1598977900075</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +280,8 @@
     <MESSAGE value="#3 Add AdminLte 3.0.5 Files to project:&#10;    1- copy ( dist , build , plugin , docs) files to public folder&#10;    2- add layout admin (master page )" />
     <MESSAGE value="4# install Laravel Localization and Edit side and navbar" />
     <MESSAGE value="#5 Make Dashboard Controller ( MultiLang page )  ( Steps : 1 , 2 , 3 , 4 ,5, 6)" />
-    <option name="LAST_COMMIT_MESSAGE" value="#5 Make Dashboard Controller ( MultiLang page )  ( Steps : 1 , 2 , 3 , 4 ,5, 6)" />
+    <MESSAGE value="#6 Complement to #5 localization (#5#6 Adding languages in url)" />
+    <option name="LAST_COMMIT_MESSAGE" value="#6 Complement to #5 localization (#5#6 Adding languages in url)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="561" y="276" key="#Custom_Plugin_Repositories" timestamp="1598701111207">
