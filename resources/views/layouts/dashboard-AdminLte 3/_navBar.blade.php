@@ -27,6 +27,33 @@
 
     <!-- Right navbar links -->
     <ul class="navbar-nav mr-auto">
+        <!-- logout and lang Start -->
+        <li class="nav-item dropdown">
+            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                {{ Auth::user()->first_name }}
+            </a>
+
+            <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{{ route('logout') }}"
+                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                    {{ __('Logout') }}
+                </a>
+            @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+
+                    <a class="dropdown-item" rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                        {{ $properties['native'] }}
+                    </a>
+
+            @endforeach
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    @csrf
+                </form>
+            </div>
+        </li>
+        <!-- logout and lang End -->
+
         <!-- Messages Dropdown Menu -->
         <li class="nav-item dropdown ">
             <a class="nav-link" data-toggle="dropdown" href="#">

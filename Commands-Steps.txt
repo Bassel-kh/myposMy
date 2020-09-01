@@ -76,3 +76,95 @@ Add AdminLte 3.0.5 Files to project:
     2- add layout admin (master page )
 
 
+4# --------------------
+install Laravel Localization and Edit side and navbar
+    asy i18n localization for Laravel, an useful tool to combine with Laravel localization classes.
+
+    The package offers the following:
+
+    Detect language from browser
+    Smart redirects (Save locale in session/cookie)
+    Smart routing (Define your routes only once, no matter how many languages you use)
+    Translatable Routes
+    Supports caching & testing
+    Option to hide default locale in url
+    Many snippets and helpers (like language selector)
+
+    Installation
+    Install the package via composer:
+        $ composer require mcamara/laravel-localization
+
+    For Laravel 5.4 and below it necessary to register the service provider.
+
+    Config Files
+    In order to edit the default configuration you may execute:
+
+        $ php artisan vendor:publish --provider="Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider"
+
+    After that, config/laravellocalization.php will be created.
+
+    The configuration options are:
+
+        supportedLocales Languages of your app (Default: English & Spanish).
+        useAcceptLanguageHeader If true, then automatically detect language from browser.
+        hideDefaultLocaleInURL If true, then do not show default locale in url.
+        localesOrder Sort languages in custom order.
+        localesMapping Rename url locales.
+        utf8suffix Allow changing utf8suffix for CentOS etc.
+        urlsIgnored Ignore specific urls.
+    Register Middleware
+    You may register the package middleware in the app/Http/Kernel.php file:
+
+    <?php namespace App\Http;
+
+    use Illuminate\Foundation\Http\Kernel as HttpKernel;
+
+    class Kernel extends HttpKernel {
+        /**
+        * The application's route middleware.
+        *
+        * @var array
+        */
+        protected $routeMiddleware = [
+            /**** OTHER MIDDLEWARE ****/
+            'localize'                => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRoutes::class,
+            'localizationRedirect'    => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter::class,
+            'localeSessionRedirect'   => \Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect::class,
+            'localeCookieRedirect'    => \Mcamara\LaravelLocalization\Middleware\LocaleCookieRedirect::class,
+            'localeViewPath'          => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationViewPath::class
+        ];
+    }
+    Usage
+    Add the following to your routes file:
+
+    // routes/web.php
+
+    Route::group(['prefix' => LaravelLocalization::setLocale()], function()
+    {
+    	/** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
+    	Route::get('/', function()
+    	{
+    		return View::make('hello');
+    	});
+
+    	Route::get('test',function(){
+    		return View::make('test');
+    	});
+    });
+
+    /** OTHER PAGES THAT SHOULD NOT BE LOCALIZED **/
+
+    - Edit navbar to select lang
+        - Creating a language selector
+            If you're supporting multiple locales in your project you will probably want to provide the users with a way to change language. Below is a simple example of blade template code you can use to create your own language selector.
+
+            <ul>
+                @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                    <li>
+                        <a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                            {{ $properties['native'] }}
+                        </a>
+                    </li>
+                @endforeach
+            </ul>
+
