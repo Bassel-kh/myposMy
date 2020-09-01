@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Dashboard\DashboardController;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,5 +26,17 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
     Auth::routes();
 
     Route::get('/home', 'HomeController@index')->name('home');
+    ////////////////////////////////////////////////////////////////////////////
 
+}); // end of localization
+
+Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]],
+
+    function(){
+        Route::prefix('dashboard')->namespace('Dashboard')-> name('dashboard.') ->group(
+            function (){
+                Route::get('/index', 'DashboardController@index')->name('index');
+
+            }); // end of dashboard route
 });
+

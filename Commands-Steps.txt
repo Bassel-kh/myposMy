@@ -168,3 +168,20 @@ install Laravel Localization and Edit side and navbar
                 @endforeach
             </ul>
 
+#5 ----------------------------------------
+Make Dashboard Controller ( MultiLang page )
+    1- $ php artisan make:controller Dashboard/DashboardController
+    2- Edit web.php
+    3- Edit config/laravellocalization
+       to system will take app.php locale attribute:
+    4- add lang list (ar , em)
+    5- add DistEn to project for English page (public/dashboard AdminLte 3_files/distEn)
+    6- Edit _navbar and _aside blades
+        EX:
+            @if(app()->getLocale() == 'ar')
+                <!-- Right navbar links -->
+                    <ul class="navbar-nav mr-auto">
+            @else
+                <!-- left navbar links -->
+                    <ul class="navbar-nav ml-auto">
+            @endif

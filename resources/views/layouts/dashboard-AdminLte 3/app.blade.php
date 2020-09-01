@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" >
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +18,11 @@
     <!-- JQVMap -->
     <link rel="stylesheet" href="{{ asset( '/dashboard AdminLte 3_files/plugins/jqvmap/jqvmap.min.css' ) }}">
     <!-- Theme style -->
+    @if(app()->getLocale() == 'ar')
     <link rel="stylesheet" href="{{ asset( '/dashboard AdminLte 3_files/dist/css/adminlte.min.css' ) }}">
+    @else
+        <link rel="stylesheet" href="{{ asset( '/dashboard AdminLte 3_files/distEn/css/adminlte.min.css' ) }}">
+    @endif
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href="{{ asset( '/dashboard AdminLte 3_files/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
     <!-- Daterange picker -->
@@ -44,13 +48,10 @@
         @yield('content')
     </div>
     <!-- /.content-wrapper -->
-    <footer class="main-footer">
-        <strong>Copyright &copy; 2019-2020 <a href="#">AdminLTE HYBA-TEAM.io</a>.</strong>
-        All rights reserved.
-        <div class="float-right d-none d-sm-inline-block">
-            <b>Version</b> 1.0.0
-        </div>
-    </footer>
+    <!-- Footer Start -->
+    @extends('layouts.dashboard-AdminLte 3._footer')
+    <!-- Footer End -->
+
 
     <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-blue">
@@ -91,10 +92,22 @@
 <!-- overlayScrollbars -->
 <script src="{{ asset( '/dashboard AdminLte 3_files/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js' ) }}"></script>
 <!-- AdminLTE App -->
-<script src="{{ asset( '/dashboard AdminLte 3_files/dist/js/adminlte.js' ) }}"></script>
+@if(app()->getLocale() == 'ar')
+    <script src="{{ asset( '/dashboard AdminLte 3_files/dist/js/adminlte.js' ) }}"></script>
+@else
+    <script src="{{ asset( '/dashboard AdminLte 3_files/distEn/js/adminlte.js' ) }}"></script>
+@endif
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="{{ asset( '/dashboard AdminLte 3_files/dist/js/pages/dashboard.js' ) }}"></script>
+@if(app()->getLocale() == 'ar')
+    <script src="{{ asset( '/dashboard AdminLte 3_files/dist/js/pages/dashboard.js' ) }}"></script>
+@else
+    <script src="{{ asset( '/dashboard AdminLte 3_files/distEn/js/pages/dashboard.js' ) }}"></script>
+@endif
 <!-- AdminLTE for demo purposes -->
-<script src="{{ asset( '/dashboard AdminLte 3_files/dist/js/demo.js' ) }}"></script>
+@if(app()->getLocale() == 'ar')
+    <script src="{{ asset( '/dashboard AdminLte 3_files/dist/js/demo.js' ) }}"></script>
+@else
+    <script src="{{ asset( '/dashboard AdminLte 3_files/distEn/js/demo.js' ) }}"></script>
+@endif
 </body>
 </html>

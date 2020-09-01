@@ -17,8 +17,84 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43f369e8-6175-40c6-a52e-089c90166f3a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/css/adminlte.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/css/adminlte.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/css/adminlte.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/css/adminlte.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/css/alt/adminlte.components.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/css/alt/adminlte.components.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/css/alt/adminlte.components.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/css/alt/adminlte.components.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/css/alt/adminlte.core.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/css/alt/adminlte.core.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/css/alt/adminlte.core.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/css/alt/adminlte.core.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/css/alt/adminlte.extra-components.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/css/alt/adminlte.extra-components.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/css/alt/adminlte.extra-components.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/css/alt/adminlte.extra-components.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/css/alt/adminlte.pages.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/css/alt/adminlte.pages.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/css/alt/adminlte.pages.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/css/alt/adminlte.pages.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/css/alt/adminlte.plugins.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/css/alt/adminlte.plugins.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/css/alt/adminlte.plugins.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/css/alt/adminlte.plugins.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/AdminLTELogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/avatar04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/avatar2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/avatar3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/avatar5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/boxed-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/boxed-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/credit/american-express.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/credit/cirrus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/credit/mastercard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/credit/mestro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/credit/paypal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/credit/paypal2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/credit/visa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/default-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/photo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/photo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/photo3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/photo4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/prod-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/prod-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/prod-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/prod-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/prod-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/user1-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/user2-160x160.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/user3-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/user4-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/user5-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/user6-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/user7-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/img/user8-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/js/adminlte.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/js/adminlte.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/js/adminlte.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/js/adminlte.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/js/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/js/pages/dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/js/pages/dashboard2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/distEn/js/pages/dashboard3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/ar/site.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/en/site.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.styleci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.styleci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commands-Steps.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Commands-Steps.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/laravellocalization.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/laravellocalization.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_navBar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_navBar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +223,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/dashboard AdminLte 3_files/pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/dashboard AdminLte 3_files" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -160,11 +236,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\wamp64\www\myposMy\public\dashboard AdminLte 3_files\pages" />
       <recent name="D:\wamp64\www\myposMy\public\dashboard AdminLte 3_files" />
+      <recent name="D:\wamp64\www\myposMy\resources\lang\en" />
+      <recent name="D:\wamp64\www\myposMy\resources\views\dashboard" />
+      <recent name="D:\wamp64\www\myposMy\public\dashboard AdminLte 3_files\pages" />
       <recent name="D:\wamp64\www\myposMy\resources\views\layouts\dashboard-AdminLte 3.0.5" />
-      <recent name="D:\wamp64\www\myposMy\public" />
-      <recent name="D:\wamp64\www\myposMy\public\plugins" />
     </key>
   </component>
   <component name="RunManager">
@@ -217,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598948230899</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="4# install Laravel Localization and Edit side and navbar">
+      <created>1598958026530</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1598958026530</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,6 +348,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="462" y="104" key="#HTTP_Proxy/0.0.1366.738@0.0.1366.738" timestamp="1598856524910" />
+    <state x="449" y="170" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598966012345">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="449" y="170" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1598966012345" />
     <state x="462" y="118" key="FileChooserDialogImpl" timestamp="1598701097177">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -277,10 +364,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="390" y="73" width="585" height="592" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1598598150395" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1598945125470">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1598959038122">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1598945125470" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1598959038122" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
