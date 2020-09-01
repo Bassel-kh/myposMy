@@ -185,3 +185,10 @@ Make Dashboard Controller ( MultiLang page )
                 <!-- left navbar links -->
                     <ul class="navbar-nav ml-auto">
             @endif
+#6 -----------------------------------
+complement to #5 localization (#5#6 Adding languages in url)
+    Get Current Locale Direction
+    Return current locale's direction as string (ltr/rtl).
+
+        dir="{{ LaravelLocalization::getCurrentLocaleDirection() }}"
+
