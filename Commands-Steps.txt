@@ -237,13 +237,192 @@ complement to #5 localization (#5#6 Adding languages in url)
 
                 }
  #7.2- Commit before setup laratrust
-          php artisan laratrust:setup
-          This command will generate the migrations, create the Role and Permission models (if you are using the teams feature it will also create a Team model) and will add the trait to the configured user models.
+ #7.3 ------------------------------
+          1-  $ php artisan laratrust:setup
 
-          Dump the autoloader:
-          composer dump-autoload
-          Run the migrations:
-          php artisan migrate
+          This command will generate the migrations,
+          create the Role and Permission models (if you are using the teams feature it will also create a Team model)
+          and will add the trait to the configured user models.
+
+          2- Dump the autoloader:
+                $ composer dump-autoload
+          3- Run the migrations:
+                $ php artisan migrate
           IMPORTANT
-
           If you did the steps above you are done with the configuration, if not, please read and follow the whole configuration process
+
+            The migration will create five (or six if you use teams feature) tables in your database:
+
+            *   roles — stores role records.
+            *   permissions — stores permission records.
+            *   teams — stores teams records (Only if you use the teams feature).
+            *   role_user — stores polymorphic relations between roles and users.
+            *   permission_role — stores many-to-many relations between roles and permissions.
+            *   permission_user — stores polymorphic relations between users and permissions.
+
+          4- Seeder
+             Laratrust comes with a database seeder, this seeder helps you
+             fill the permissions for each role depending on the module,
+             and creates one user for each role.
+
+             [NOTE]
+
+             The seeder is going to work with the first user model inside the user_models array.
+             The seeder doesn't support teams.
+             To generate the seeder you have to run:
+                $ php artisan laratrust:seeder
+             and
+                $ composer dump-autoload
+             In the database/seeds/DatabaseSeeder.php file you have to add this to the run method:
+                $this->call(LaratrustSeeder::class);
+
+             [NOTE]
+             If you have not run php artisan vendor:publish --tag="laratrust" you should run it in order
+             to customize the roles, modules and permissions in each case.
+
+            Your { config/laratrust_seeder.php } file looks like this by default:
+            EX:
+                <?php
+
+                return [
+                    /**
+                     * Control if the seeder should create a user per role while seeding the data.
+                     */
+                    'create_users' => false,
+
+                    /**
+                     * Control if all the laratrust tables should be truncated before running the seeder.
+                     */
+                    'truncate_tables' => true,
+
+                    'roles_structure' => [
+                        'superadmin' => [
+                            'users' => 'c,r,u,d',
+                            'payments' => 'c,r,u,d',
+                            'profile' => 'r,u',
+                            'order' => 'c,r,u,d,e'
+                        ],
+                        'admin' => [
+                            'users' => 'c,r,u,d',
+                            'profile' => 'r,u',
+                            'order' => 'c,r,u,d'
+                        ],
+                        'user' => [
+                            'profile' => 'r,u',
+                            'order' => 'c,r'
+                        ],
+                        'role_name' => [
+                            'module_1_name' => 'c,r,u,d',
+                        ]
+                    ],
+
+                    'permissions_map' => [
+                        'c' => 'create',
+                        'r' => 'read',
+                        'u' => 'update',
+                        'd' => 'delete',
+                        'e' => 'edit'
+                    ]
+                ];
+
+            -------------------------------------
+            4.1- our file ( config/laratrust_seeder.php ) content:
+
+                <?php
+
+                return [
+                    /**
+                     * Control if the seeder should create a user per role while seeding the data.
+                     */
+                    'create_users' => false,
+
+                    /**
+                     * Control if all the laratrust tables should be truncated before running the seeder.
+                     */
+                    'truncate_tables' => true,
+
+                    'roles_structure' => [
+                        'super_admin' => [
+                            'users' => 'c,r,u,d',
+                            'payments' => 'c,r,u,d',
+                            'profile' => 'r,u'
+                        ],
+                    ],
+
+                    'permissions_map' => [
+                        'c' => 'create',
+                        'r' => 'read',
+                        'u' => 'update',
+                        'd' => 'delete'
+                    ]
+                ];
+
+            4.2- Edit file ( database/seeds/LaratrustSeeder.php )
+                [...]
+                    // Create default user for each role
+                    //                $user = \App\User::create([
+                    //                    'name' => ucwords(str_replace('_', ' ', $key)),
+                    //                    'email' => $key.'@app.com',
+                    //                    'password' => bcrypt('password')
+                    //                ]);
+                    //                $user->attachRole($role);
+                [...]
+
+            4.3- Edit file ( database/seeds/DatabaseSeeder.php )
+
+                     public function run()
+                        {
+                             $this->call(UsersTableSeeder::class);
+                            $this->call(LaratrustSeeder::class);
+                        }
+
+            4.4- Create UserSeeder:
+                    $ php artisan make:seeder UsersTableSeeder
+            4.5- Edit file ( database/migrations/2014_10_12_000000_create_users_table.php )
+                    [...]
+                    Schema::create('users', function (Blueprint $table) {
+                                $table->id();
+                                $table->string('first_name');
+                                $table->string('last_name');
+                                $table->string('email')->unique();
+                                $table->timestamp('email_verified_at')->nullable();
+                                $table->string('password');
+                                $table->rememberToken();
+                                $table->timestamps();
+                            });
+                    [...]
+            4.6- Edit (database/seeds/UsersTableSeeder.php) :
+                 public function run()
+                    {
+                        $user = \App\User::created([
+                            'first_name' => 'Super',
+                            'last_name' => 'admin',
+                            'email' => 'admin@admin.com',
+                            'password' => bcrypt('adminadmin'),
+                        ]);
+                    } // end of run
+
+            4.7- ReOrder ( database/seeds/DatabaseSeeder.php )
+                             $this->call(LaratrustSeeder::class);
+                             $this->call(UsersTableSeeder::class);
+
+            4.8- #Role Permissions Assignment & Removal
+                 #Assignment
+                 $admin->attachPermission($createPost); // parameter can be a Permission object, array or id
+                 // equivalent to $admin->permissions()->attach([$createPost->id]);
+
+                 Add role to user:Edit (database/seeds/UsersTableSeeder.php) :
+
+                    $user-> attachRole('super_admin');
+
+           4.9- Edit user Model:
+                [...]
+                    use LaratrustUserTrait;
+                [...]
+                    protected $fillable = [
+                        'first_name', 'last_name', 'email', 'password',
+                    ];
+                [...]
+
+           -4.9.1 :
+            $ php artisan migrate:refresh --seed
