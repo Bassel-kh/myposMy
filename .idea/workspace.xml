@@ -17,12 +17,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43f369e8-6175-40c6-a52e-089c90166f3a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/users/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/users/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_content.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_content_header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commands-Steps.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Commands-Steps.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/laratrust_seeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/laratrust_seeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/site.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/site.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_navBar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_navBar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598979246349</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="#7 (#7.3 1- laratrust:setup 2 3 4 seed )">
+      <created>1599028546329</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1599028546329</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,7 +306,8 @@
     <MESSAGE value="#5 Make Dashboard Controller ( MultiLang page )  ( Steps : 1 , 2 , 3 , 4 ,5, 6)" />
     <MESSAGE value="#6 Complement to #5 localization (#5#6 Adding languages in url)" />
     <MESSAGE value="#7 (#7.1- Roles and permissions - #7.2- Commit before setup laratrust )" />
-    <option name="LAST_COMMIT_MESSAGE" value="#7 (#7.1- Roles and permissions - #7.2- Commit before setup laratrust )" />
+    <MESSAGE value="#7 (#7.3 1- laratrust:setup 2 3 4 seed )" />
+    <option name="LAST_COMMIT_MESSAGE" value="#7 (#7.3 1- laratrust:setup 2 3 4 seed )" />
   </component>
   <component name="WindowStateProjectService">
     <state x="561" y="276" key="#Custom_Plugin_Repositories" timestamp="1598701111207">
@@ -322,10 +338,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="390" y="73" width="585" height="592" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1598598150395" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1598983546229">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1599114191992">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1598983546229" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1599114191992" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -334,6 +350,16 @@
           <url>file://$PROJECT_DIR$/resources/views/layouts/admin.blade.php</url>
           <line>715</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/dashboard/users/index.blade.php</url>
+          <line>51</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_content.blade.php</url>
+          <line>88</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -14,7 +14,7 @@
     </ul>
 
     <!-- SEARCH FORM -->
-    <form class="form-inline mr-3">
+    <form class="form-inline mr-auto-3">
         <div class="input-group input-group-sm">
             <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
             <div class="input-group-append">

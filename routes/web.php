@@ -28,15 +28,21 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
     Route::get('/home', 'HomeController@index')->name('home');
     ////////////////////////////////////////////////////////////////////////////
 
-}); // end of localization
-
-Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]],
-
-    function(){
-        Route::prefix('dashboard')->namespace('Dashboard')-> name('dashboard.') ->group(
-            function (){
-                Route::get('/index', 'DashboardController@index')->name('index');
-
-            }); // end of dashboard route
 });
+///////////////////////////////////////////////////////////////////////////////////////////////
+Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]],
+    function(){
+        Route::prefix('dashboard')->namespace('Dashboard')-> name('dashboard.') ->group(function (){
+
+
+            Route::get('/index', 'DashboardController@index')->name('index');
+
+
+            // User Routes
+            Route::resource('users' , 'UserController')->except(['show']);
+
+
+        }); // end of dashboard route
+
+});// end of localization
 

@@ -45,7 +45,33 @@
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
-        @yield('content')
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h5 class="m-0 font-weight-normal">{{__('site.users')}}</h5>
+                    </div><!-- /.col -->
+                    <div class="col-sm-6">
+                        @if(app()->getLocale() == 'ar')
+                            <ol class="breadcrumb float-sm-left">
+                        @else
+                            <ol class="breadcrumb float-sm-right">
+                        @endif
+                            @yield('Content_header_list_item')
+                        </ol>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+        <!-- Main content -->
+        <section class="Main_content content">
+            <div class="container-fluid">
+                @yield('Main_content')
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- /.Main_content -->
     </div>
     <!-- /.content-wrapper -->
     <!-- Footer Start -->
@@ -71,8 +97,11 @@
 </script>
 <!-- Bootstrap 4 -->
 <!-- Bootstrap -->
-<script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js"></script>
-<script src="{{ asset( '/dashboard AdminLte 3_files/plugins/bootstrap/js/bootstrap.bundle.min.js' ) }}"></script>
+@if(app()->getLocale() == 'ar')
+    <script src="{{ asset( '/dashboard AdminLte 3_files/plugins/bootstrap-4-rtl/js/bootstrap.bundle.min.js' ) }}"></script>
+@else
+    <script src="{{ asset( '/dashboard AdminLte 3_files/plugins/bootstrap/js/bootstrap.bundle.min.js' ) }}"></script>
+@endif
 <!-- ChartJS -->
 <script src="{{ asset( '/dashboard AdminLte 3_files/plugins/chart.js/Chart.min.js' ) }}"></script>
 <!-- Sparkline -->
