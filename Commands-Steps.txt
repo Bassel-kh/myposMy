@@ -529,4 +529,7 @@ Roles and permissions Controller and views
                     </div>
                 @stop
     1.7- Commit ---------
+    1.8- in public edit view and add user create card to (resources/views/dashboard/users/create.blade.php)
+            Edit fontawesome-free (Add version 5)
+
 

@@ -7,7 +7,7 @@
             </div><!-- /.col -->
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
-                    @yield('Content ie')
+                    @yield('Content_header_list-item')
                     <li class="breadcrumb-item"><a href="{{route('dashboard.index')}}">{{__('site.dashboard')}}</a></li>
                     <li class="breadcrumb-item active">{{__('site.users')}}</li>
                 </ol>

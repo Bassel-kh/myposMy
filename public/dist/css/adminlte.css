@@ -30735,4 +30735,8 @@ body .content-wrapper {
   text-align: right;
 }
 
+body .center {
+    float: none;
+    margin: 0 auto 10px;
+}
 /*# sourceMappingURL=adminlte.css.map */

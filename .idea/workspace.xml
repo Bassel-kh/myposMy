@@ -17,20 +17,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43f369e8-6175-40c6-a52e-089c90166f3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/users/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/users/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_content.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_content_header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/ar/messages.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commands-Steps.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Commands-Steps.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/site.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/validation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/site.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_navBar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_navBar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/_errors.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/_errors.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +162,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/dashboard AdminLte 3_files" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/plugins" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -174,11 +175,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\wamp64\www\myposMy\public\dashboard AdminLte 3_files" />
+      <recent name="D:\wamp64\www\myposMy\public\plugins" />
+      <recent name="D:\wamp64\www\myposMy\resources\views\partials" />
       <recent name="D:\wamp64\www\myposMy\resources\lang\en" />
-      <recent name="D:\wamp64\www\myposMy\resources\views\dashboard" />
-      <recent name="D:\wamp64\www\myposMy\public\dashboard AdminLte 3_files\pages" />
-      <recent name="D:\wamp64\www\myposMy\resources\views\layouts\dashboard-AdminLte 3.0.5" />
+      <recent name="D:\wamp64\www\myposMy\resources\lang\ar" />
+      <recent name="D:\wamp64\www\myposMy\public\dashboard AdminLte 3_files" />
     </key>
   </component>
   <component name="RunManager">
@@ -266,7 +267,35 @@
       <option name="project" value="LOCAL" />
       <updated>1599028546329</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="#8 Roles and permissions Controller and views (Steps: 1.1,1.2,1.3 , 1.4 , 1.5 , 1.6 , 1.7 )">
+      <created>1599118932195</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1599118932195</updated>
+    </task>
+    <task id="LOCAL-00011" summary="#8 Roles and permissions Controller and views (Steps:1.8- in public edit view and add user create card to (resources/views/dashboard/users/create.blade.php)&#10;                                                                 Edit fontawesome-free (Add version 5) )">
+      <created>1599145364377</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1599145364377</updated>
+    </task>
+    <task id="LOCAL-00012" summary="#8 Roles and permissions Controller and views (Steps:1.8- in public edit view and add user create card to (resources/views/dashboard/users/create.blade.php)&#10;                                                                 Edit fontawesome-free (Add version 5) )">
+      <created>1599145667739</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1599145667739</updated>
+    </task>
+    <task id="LOCAL-00013" summary="#8 Roles and permissions Controller and views (Steps:1.8- in public edit view and add user create card to (resources/views/dashboard/users/create.blade.php)&#10;                                                                 Edit fontawesome-free (Add version 5) )">
+      <created>1599146220018</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1599146220018</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +336,9 @@
     <MESSAGE value="#6 Complement to #5 localization (#5#6 Adding languages in url)" />
     <MESSAGE value="#7 (#7.1- Roles and permissions - #7.2- Commit before setup laratrust )" />
     <MESSAGE value="#7 (#7.3 1- laratrust:setup 2 3 4 seed )" />
-    <option name="LAST_COMMIT_MESSAGE" value="#7 (#7.3 1- laratrust:setup 2 3 4 seed )" />
+    <MESSAGE value="#8 Roles and permissions Controller and views (Steps: 1.1,1.2,1.3 , 1.4 , 1.5 , 1.6 , 1.7 )" />
+    <MESSAGE value="#8 Roles and permissions Controller and views (Steps:1.8- in public edit view and add user create card to (resources/views/dashboard/users/create.blade.php)&#10;                                                                 Edit fontawesome-free (Add version 5) )" />
+    <option name="LAST_COMMIT_MESSAGE" value="#8 Roles and permissions Controller and views (Steps:1.8- in public edit view and add user create card to (resources/views/dashboard/users/create.blade.php)&#10;                                                                 Edit fontawesome-free (Add version 5) )" />
   </component>
   <component name="WindowStateProjectService">
     <state x="561" y="276" key="#Custom_Plugin_Repositories" timestamp="1598701111207">
@@ -322,14 +353,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="449" y="170" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1598966012345" />
-    <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599027880642">
+    <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599151335067">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1599027880642" />
+    <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1599151335067" />
+    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1599146514523">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1599146514523" />
     <state x="462" y="118" key="FileChooserDialogImpl" timestamp="1598701097177">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="462" y="118" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1598701097177" />
+    <state x="502" y="71" key="RollbackChangesDialog" timestamp="1599146000822">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="502" y="71" key="RollbackChangesDialog/0.0.1366.738@0.0.1366.738" timestamp="1599146000822" />
     <state x="450" y="30" width="916" height="708" key="SettingsEditor" timestamp="1598703144309">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -338,10 +377,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="390" y="73" width="585" height="592" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1598598150395" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1599114191992">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1599204484822">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1599114191992" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1599204484822" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -353,7 +392,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/dashboard/users/index.blade.php</url>
-          <line>51</line>
+          <line>68</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
