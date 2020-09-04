@@ -10,7 +10,7 @@
 <!-- /.content-header -->
 <!-- Main content -->
 @section('Main_content')
-    <div class="card card-primary  with-border">
+    <div class="card card-info with-border">
         <div class="card-header">
             <h3 class="card-title ">{{ __('site.users') }}</h3>
         </div>

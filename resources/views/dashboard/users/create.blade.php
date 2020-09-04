@@ -13,12 +13,12 @@
 <!-- Main content -->
 @section('Main_content')
     <div class="card with-border  " style="width: 50%; margin: 0 auto;float: none;margin-bottom: 10px;">
-        <div class="card-header">
+        <div class="card-header" >
             <h3 class="card-title"><i class=" fa fa-plus" style="color: green;"></i> {{ __('site.add') }}</h3>
         </div>
 
         <!-- /.card-header -->
-        <div class="card-body ">
+        <div class="card-body " >
 {{--            @include('partials._errors')--}}
             <form action="{{ route('dashboard.users.store') }}" method="post">
 

@@ -533,3 +533,5 @@ Roles and permissions Controller and views
             Edit fontawesome-free (Add version 5)
 
 
+    1.9- Edit Controllers: app/Http/Controllers/Dashboard/UserController.php
+

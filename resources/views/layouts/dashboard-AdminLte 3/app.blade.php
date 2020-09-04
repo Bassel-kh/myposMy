@@ -67,7 +67,7 @@
         </div>
         <!-- /.content-header -->
         <!-- Alert-header -->
-            @include('partials._alerts')
+            @include('partials._session')
         <!-- /.Alert-header -->
         <!-- Main content -->
         <section class="Main_content content">
@@ -123,7 +123,7 @@
 {{--<!-- Summernote -->--}}
 {{--<script src="{{ asset( '/dashboard AdminLte 3_files/plugins/summernote/summernote-bs4.min.js' ) }}"></script>--}}
 {{--<!-- overlayScrollbars -->--}}
-{{--<script src="{{ asset( '/dashboard AdminLte 3_files/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js' ) }}"></script>--}}
+<script src="{{ asset( '/dashboard AdminLte 3_files/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js' ) }}"></script>
 <!-- AdminLTE App -->
 @if(app()->getLocale() == 'ar')
     <script src="{{ asset( '/dashboard AdminLte 3_files/dist/js/adminlte.js' ) }}"></script>
@@ -142,5 +142,10 @@
 {{--@else--}}
 {{--    <script src="{{ asset( '/dashboard AdminLte 3_files/distEn/js/demo.js' ) }}"></script>--}}
 {{--@endif--}}
+<script>
+    $(document).ready(function(){
+        $(".alert").delay(5000).slideUp(300);
+    });
+</script>
 </body>
 </html>

@@ -17,21 +17,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43f369e8-6175-40c6-a52e-089c90166f3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/lang/ar/messages.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commands-Steps.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Commands-Steps.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/site.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/site.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/_errors.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/_errors.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/_session.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/_session.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +35,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -152,6 +144,7 @@
       <path value="$PROJECT_DIR$/vendor/mcamara/laravel-localization" />
       <path value="$PROJECT_DIR$/vendor/kkszymanowski/traitor" />
       <path value="$PROJECT_DIR$/vendor/santigarcor/laratrust" />
+      <path value="$PROJECT_DIR$/vendor/mckenziearts/laravel-notify" />
     </include_path>
   </component>
   <component name="ProjectId" id="1giMYg7Hicj0JljXHzX3voRCpZB" />
@@ -295,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599146220018</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="#8 Roles and permissions Controller and views (Steps:1.8- in public edit view and add user create card to (resources/views/dashboard/users/create.blade.php)&#10;                                                                 Edit fontawesome-free (Add version 5) )">
+      <created>1599214200186</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1599214200186</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,10 +365,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="462" y="118" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1598701097177" />
-    <state x="502" y="71" key="RollbackChangesDialog" timestamp="1599146000822">
+    <state x="502" y="71" key="RollbackChangesDialog" timestamp="1599225348052">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="502" y="71" key="RollbackChangesDialog/0.0.1366.738@0.0.1366.738" timestamp="1599146000822" />
+    <state x="502" y="71" key="RollbackChangesDialog/0.0.1366.738@0.0.1366.738" timestamp="1599225348052" />
     <state x="450" y="30" width="916" height="708" key="SettingsEditor" timestamp="1598703144309">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
