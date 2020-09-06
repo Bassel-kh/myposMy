@@ -535,3 +535,12 @@ Roles and permissions Controller and views
 
     1.9- Edit Controllers: app/Http/Controllers/Dashboard/UserController.php
 
+#9 ----------------------------------
+Roles and permissions Controller and views (part 2)
+ 1- add laratrust views blade and edit store method in UserController
+
+    1.1- add admin role to laratrust seed file then run this command:
+        $ php artisan migrate:refresh --seed
+
+    1.2- make laratrust page management:
+

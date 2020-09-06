@@ -17,12 +17,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43f369e8-6175-40c6-a52e-089c90166f3a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/laratrust/Permission/edit_permission.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/laratrust/Role/edit_role.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/laratrust/Roles Assignment/edit_user_perm_role_assi.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/laratrust/Roles Assignment/roles_Assignment.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/laratrust/laratrustTab.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/laratrust/permissions.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/laratrust/roles.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commands-Steps.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Commands-Steps.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/_session.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/_session.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -295,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599214200186</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="# 9 prooooooooooooooblem">
+      <created>1599418669083</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1599418669083</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,7 +349,8 @@
     <MESSAGE value="#7 (#7.3 1- laratrust:setup 2 3 4 seed )" />
     <MESSAGE value="#8 Roles and permissions Controller and views (Steps: 1.1,1.2,1.3 , 1.4 , 1.5 , 1.6 , 1.7 )" />
     <MESSAGE value="#8 Roles and permissions Controller and views (Steps:1.8- in public edit view and add user create card to (resources/views/dashboard/users/create.blade.php)&#10;                                                                 Edit fontawesome-free (Add version 5) )" />
-    <option name="LAST_COMMIT_MESSAGE" value="#8 Roles and permissions Controller and views (Steps:1.8- in public edit view and add user create card to (resources/views/dashboard/users/create.blade.php)&#10;                                                                 Edit fontawesome-free (Add version 5) )" />
+    <MESSAGE value="# 9 prooooooooooooooblem" />
+    <option name="LAST_COMMIT_MESSAGE" value="# 9 prooooooooooooooblem" />
   </component>
   <component name="WindowStateProjectService">
     <state x="561" y="276" key="#Custom_Plugin_Repositories" timestamp="1598701111207">
@@ -357,10 +369,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1599151335067" />
-    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1599146514523">
+    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1599419093796">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1599146514523" />
+    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1599419093796" />
     <state x="462" y="118" key="FileChooserDialogImpl" timestamp="1598701097177">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -373,6 +385,14 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="450" y="30" width="916" height="708" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1598703144309" />
+    <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1599419093796">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1366.738@0.0.1366.738" timestamp="1599419093796" />
+    <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1599419093796">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.738@0.0.1366.738" timestamp="1599419093796" />
     <state x="390" y="73" width="585" height="592" key="find.popup" timestamp="1598598150395">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
