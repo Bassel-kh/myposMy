@@ -20,11 +20,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commands-Steps.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Commands-Steps.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/laratrust_seeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/laratrust_seeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/site.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/site.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/_alerts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/_alerts.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +210,7 @@
       <workItem from="1599594309534" duration="17000" />
       <workItem from="1599595212958" duration="23000" />
       <workItem from="1599630804606" duration="110000" />
-      <workItem from="1599637720189" duration="23728000" />
+      <workItem from="1599637720189" duration="32205000" />
     </task>
     <task id="LOCAL-00001" summary="#1 Add/Define dashboard Route file and controller-namespace ( Steps: 1 , 2 )">
       <created>1598597257857</created>
@@ -337,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599661093772</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="&#10;#11 Add permission to user is adding and edit View user/create and Dsh/UserController and add 'admin' Role to laratrust_seed ():">
+      <created>1599674305022</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1599674305022</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,7 +392,8 @@
     <MESSAGE value="# 9 Fix problem" />
     <MESSAGE value="#9Roles and permissions Controller and views (part 2) add alert package (Toastr) ( Steps: 1.1, 1.2 ,1.3 )" />
     <MESSAGE value="#10 Test edit datatable" />
-    <option name="LAST_COMMIT_MESSAGE" value="#10 Test edit datatable" />
+    <MESSAGE value="&#10;#11 Add permission to user is adding and edit View user/create and Dsh/UserController and add 'admin' Role to laratrust_seed ():" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;#11 Add permission to user is adding and edit View user/create and Dsh/UserController and add 'admin' Role to laratrust_seed ():" />
   </component>
   <component name="WindowStateProjectService">
     <state x="561" y="276" key="#Custom_Plugin_Repositories" timestamp="1598701111207">
@@ -431,10 +440,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="193" y="146" width="585" height="592" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1599463285749" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1599665543086">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1599683688960">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1599665543086" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1599683688960" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -446,7 +455,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/dashboard/users/index.blade.php</url>
-          <line>68</line>
+          <line>82</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">

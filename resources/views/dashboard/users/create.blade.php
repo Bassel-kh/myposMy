@@ -77,6 +77,7 @@
 
                 <?php
                     $models = ['users','categories', 'products'];
+                    $maps = ['create', 'read', 'update', 'delete'];
 
                     ?>
 
@@ -98,11 +99,10 @@
                         <div class="tab-content">
                             @foreach($models as $index => $model)
                                 <div class="tab-pane {{$index == 0 ?'active':''}} " id="{{$model}}">
-                                <label><input type="checkbox" class=" m{{$dir_}}-2" name="permissions[]" value="{{$model}}_create">{{__('site.create')}}</label>
-                                <label><input type="checkbox" class=" m{{$dir_}}-2" name="permissions[]" value="{{$model}}_read">{{__('site.read')}}</label>
-                                <label><input type="checkbox" class=" m{{$dir_}}-2" name="permissions[]" value="{{$model}}_update">{{__('site.update')}}</label>
-                                <label><input type="checkbox" class=" m{{$dir_}}-2" name="permissions[]" value="{{$model}}_delete">{{__('site.delete')}}</label>
-                            </div>
+                                    @foreach($maps as $map)
+                                        <label><input type="checkbox" class=" m{{$dir_}}-2" name="permissions[]" value="{{$model}}_{{$map}}">{{__('site.'.$map)}}</label>
+                                    @endforeach
+                                </div>
                             @endforeach
                             <!-- /.tab-pane -->
                             <div class="tab-pane" id="tab_2">
@@ -118,9 +118,9 @@
                     </div><!-- /.card-body -->
                 </div>
                 <!-- ./ form-group -->
-        </div>
+
         <!-- /.col -->
-    </div>
+
     <!-- /.row -->
     <!-- END CUSTOM TABS -->
                 <div class="form-group">

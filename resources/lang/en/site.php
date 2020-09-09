@@ -14,7 +14,9 @@ return [
 
     'added_successfully' => 'Data Added successfully',
     'updated_successfully' => 'Data Updated successfully',
+    'updated_permission_successfully' => 'Data and Permissions Updated successfully',
     'deleted_successfully' => 'Data deleted successfully',
+    'updated_fail'=> 'ُError : updated_fail',
 
 
     'users' => 'Users',

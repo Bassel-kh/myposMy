@@ -24,7 +24,12 @@
 
                 <div class="col-md-4">
                     <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-search"></i>@lang('site.search')</button>
-                    <a href="{{ route('dashboard.users.create') }}" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i>@lang('site.add')</a>
+                    @if(auth()->user()->hasPermission('users_create'))
+                        <a href="{{ route('dashboard.users.create') }}" class="btn btn-sm btn-primary "><i class="fa fa-plus"></i>@lang('site.add')</a>
+                    @else
+                        <a href="#" class="btn btn-sm btn-primary disabled"><i class="fa fa-plus"></i>@lang('site.add')</a>
+                    @endif
+
                 </div>
             </div>
         </form>
@@ -48,12 +53,21 @@
                             <td>{{ $user -> last_name }}</td>
                             <td>{{ $user -> email }}</td>
                             <td>
-                                <a class="btn btn-sm btn-info" href="{{ route('dashboard.users.edit', $user->id) }}">{{__('site.edit')}}</a>
-                                <form action="{{ route('dashboard.users.destroy', $user->id ) }}" method="post" style="display: inline-block">
-                                    {{ csrf_field() }}
-                                    {{ method_field('delete') }}
-                                    <button type="submit" class="btn btn-sm  btn-danger">@lang('site.delete')</button>
-                                </form>
+                                @if(auth()->user()->hasPermission('users_update'))
+                                    <a class="btn btn-sm btn-info" href="{{ route('dashboard.users.edit', $user->id) }}">{{__('site.edit')}}</a>
+                                @else
+                                    <a class="btn btn-sm btn-info disabled" href="#">{{__('site.edit')}}</a>
+
+                                @endif
+                                @if(auth()->user()->hasPermission('users_delete'))
+                                    <form action="{{ route('dashboard.users.destroy', $user->id ) }}" method="post" style="display: inline-block">
+                                        {{ csrf_field() }}
+                                        {{ method_field('delete') }}
+                                        <button type="submit" class="btn btn-sm  btn-danger">@lang('site.delete')</button>
+                                    </form>
+                                @else
+                                    <button class="btn btn-danger btn-sm disabled">{{__('site.delete')}}</button>
+                                @endif
                             </td>
                             </tr>
                         @endforeach

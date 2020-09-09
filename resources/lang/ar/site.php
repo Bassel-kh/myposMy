@@ -16,7 +16,9 @@ return [
 
     'added_successfully' => 'تمت إضافةالبيانات بنجاح',
     'updated_successfully' => 'تم تعديل البيانات بنجاح',
+    'updated_permission_successfully' => 'تم تعديل البيانات والصلاحيات بنجاح',
     'deleted_successfully' => 'تم حذف البيانات بنجاح',
+    'updated_fail'=> 'خطأ : لقد فشل التعديل',
 
 
 

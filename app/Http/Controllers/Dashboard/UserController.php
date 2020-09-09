@@ -110,24 +110,51 @@ protected  function  getMessages(){
      * Show the form for editing the specified resource.
      *
      * @param  \App\User  $user
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function edit(User $user)
     {
-        //
-    }
+        return view('dashboard.users.edit', compact('user'));
+
+    } // end of edit
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\User  $user
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function update(Request $request, User $user)
     {
-        //
-    }
+//        dd($request->all());
+        $roles = [
+            'first_name'=> 'required',
+            'last_name'=> 'required',
+            'email'=> 'required',
+            ];
+        $validator = Validator::make($request -> all(),$roles);
+
+        if($validator -> fails()){
+            //  return  $validator -> errors();
+            return  redirect() ->back() -> withErrors($validator)->withInputs($request -> all());
+        }
+        $request_data = $request->except(['permissions']);
+
+        $user->update($request_data);
+        if($request->has('permissions') ) {
+
+            $user->syncPermissions($request->permissions);
+
+            session()->flash('success', __('site.updated_permission_successfully'));
+            return redirect()->route('dashboard.users.index');
+//
+        }
+
+//        session()->flash('fail', __('site.update_fail'));
+        return redirect()->route('dashboard.users.index');
+
+    } // end of update
 
     /**
      * Remove the specified resource from storage.
@@ -138,6 +165,6 @@ protected  function  getMessages(){
     public function destroy(User $user)
     {
         //
-    }
+    } // end of destroy
 
 } // end controller
