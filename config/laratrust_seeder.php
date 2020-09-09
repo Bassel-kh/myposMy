@@ -17,6 +17,7 @@ return [
             'payments' => 'c,r,u,d',
             'profile' => 'r,u'
         ],
+        'admin'=>[],
     ],
 
     'permissions_map' => [

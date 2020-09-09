@@ -8,6 +8,10 @@ return [
     'add'=> 'Add',
     'edit'=> 'Edit',
     'delete'=> 'Delete',
+    'create' => 'Create',
+    'read' => 'Read',
+    'update' => 'Update',
+
     'added_successfully' => 'Data Added successfully',
     'updated_successfully' => 'Data Updated successfully',
     'deleted_successfully' => 'Data deleted successfully',

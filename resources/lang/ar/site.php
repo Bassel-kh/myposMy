@@ -8,6 +8,12 @@ return [
     'add'=> 'أضف',
     'edit'=> 'تعديل',
     'delete'=> 'حذف',
+    'create' => 'إنشاء',
+    'read' => 'عرض',
+    'update' => 'تحديث',
+
+
+
     'added_successfully' => 'تمت إضافةالبيانات بنجاح',
     'updated_successfully' => 'تم تعديل البيانات بنجاح',
     'deleted_successfully' => 'تم حذف البيانات بنجاح',

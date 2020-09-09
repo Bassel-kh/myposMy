@@ -770,3 +770,24 @@ Test edit datatable
         Laravel framework.
 
 ///////////////////////////////////////////////////////////////////////////////////////////
+
+#11 -----------------------------
+add permission to user is adding and edit View user/create and Dsh/UserController and add 'admin' Role to laratrust_seed ():
+            - resources/views/dashboard/users/create.blade.php
+            - Edit laratrust seeder:
+                                 'admin'=>[],
+
+            - run command:
+                          $ php artisan migrate:refresh --seed
+
+            -add foreach for user.create view
+                and add middleware  ('permission:users_read,users_create' )
+                to Dashboard/UserController
+                    {
+                      public function __construct()
+                        {
+                            $this->middleware(['auth','permission:users_read,users_create' ]);
+                    //        hasPermission('users_read')
+                        }
+                     }
+            - Edit store Method in Dashboard/UserController

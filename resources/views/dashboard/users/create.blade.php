@@ -12,8 +12,18 @@
 <!-- /.content-header -->
 <!-- Main content -->
 @section('Main_content')
-    <div class="card with-border  " style="width: 50%; margin: 0 auto;float: none;margin-bottom: 10px;">
-        <div class="card-header" >
+    @php
+        $dir= 'left';
+        $dir_ = 'l';
+        if(app()->getLocale() == 'en'){
+                $dir= 'right';
+                $dir_ = 'r';
+                }
+    @endphp
+
+    {{--    <div class="card with-border  " style="width: 50%; margin: 0 auto;float: none;margin-bottom: 10px;">--}}
+<div class="card with-border  " >
+    <div class="card-header" >
             <h3 class="card-title"><i class=" fa fa-plus" style="color: green;"></i> {{ __('site.add') }}</h3>
         </div>
 
@@ -65,6 +75,54 @@
                     <input class="form-control @error('password_confirmation') is-invalid @enderror" type="password" name="password_confirmation" >
                 </div>
 
+                <?php
+                    $models = ['users','categories', 'products'];
+
+                    ?>
+
+                <!-- Custom Tabs -->
+                <div class="form-group">
+                    <label>{{__('site.permissions')}}</label>
+
+                    <div class="nav-tabs-custom">
+                        <ul class="nav nav-tabs m{{$dir_}}-auto p-2">
+
+                            @foreach($models as $index => $model)
+
+                                <li class="nav-item"><a class="nav-link {{$index == 0? 'active':''}}" href="#{{$model}}" data-toggle="tab">{{__('site.'.$model)}}</a></li>
+
+                            @endforeach
+                        </ul>
+                    </div><!-- /.card-header -->
+                    <div class="card-body">
+                        <div class="tab-content">
+                            @foreach($models as $index => $model)
+                                <div class="tab-pane {{$index == 0 ?'active':''}} " id="{{$model}}">
+                                <label><input type="checkbox" class=" m{{$dir_}}-2" name="permissions[]" value="{{$model}}_create">{{__('site.create')}}</label>
+                                <label><input type="checkbox" class=" m{{$dir_}}-2" name="permissions[]" value="{{$model}}_read">{{__('site.read')}}</label>
+                                <label><input type="checkbox" class=" m{{$dir_}}-2" name="permissions[]" value="{{$model}}_update">{{__('site.update')}}</label>
+                                <label><input type="checkbox" class=" m{{$dir_}}-2" name="permissions[]" value="{{$model}}_delete">{{__('site.delete')}}</label>
+                            </div>
+                            @endforeach
+                            <!-- /.tab-pane -->
+                            <div class="tab-pane" id="tab_2">
+
+                            </div>
+                            <!-- /.tab-pane -->
+                            <div class="tab-pane" id="tab_3">
+
+                            </div>
+                            <!-- /.tab-pane -->
+                        </div>
+                        <!-- /.tab-content -->
+                    </div><!-- /.card-body -->
+                </div>
+                <!-- ./ form-group -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+    <!-- END CUSTOM TABS -->
                 <div class="form-group">
                     <button class="btn btn-primary" type="submit" ><i class="fa fa-plus"></i>{{__('site.add')}}</button>
                 </div>

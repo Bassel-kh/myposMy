@@ -17,20 +17,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43f369e8-6175-40c6-a52e-089c90166f3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/jquery-tabledit/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/jquery-tabledit/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/jquery-tabledit/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/jquery-tabledit/bower.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/jquery-tabledit/example.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/jquery-tabledit/jquery.tabledit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/jquery-tabledit/jquery.tabledit.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/test/table_edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mypos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mypos.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commands-Steps.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Commands-Steps.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/LaratrustController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/LaratrustController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/laratrust_seeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/laratrust_seeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/site.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/site.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +209,7 @@
       <workItem from="1599594309534" duration="17000" />
       <workItem from="1599595212958" duration="23000" />
       <workItem from="1599630804606" duration="110000" />
-      <workItem from="1599637720189" duration="15371000" />
+      <workItem from="1599637720189" duration="23728000" />
     </task>
     <task id="LOCAL-00001" summary="#1 Add/Define dashboard Route file and controller-namespace ( Steps: 1 , 2 )">
       <created>1598597257857</created>
@@ -336,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599647367693</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="#10 Test edit datatable">
+      <created>1599661093772</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1599661093772</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,7 +383,8 @@
     <MESSAGE value="# 9 prooooooooooooooblem" />
     <MESSAGE value="# 9 Fix problem" />
     <MESSAGE value="#9Roles and permissions Controller and views (part 2) add alert package (Toastr) ( Steps: 1.1, 1.2 ,1.3 )" />
-    <option name="LAST_COMMIT_MESSAGE" value="#9Roles and permissions Controller and views (part 2) add alert package (Toastr) ( Steps: 1.1, 1.2 ,1.3 )" />
+    <MESSAGE value="#10 Test edit datatable" />
+    <option name="LAST_COMMIT_MESSAGE" value="#10 Test edit datatable" />
   </component>
   <component name="WindowStateProjectService">
     <state x="561" y="276" key="#Custom_Plugin_Repositories" timestamp="1598701111207">
@@ -421,18 +423,18 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1366.738@0.0.1366.738" timestamp="1599470675847" />
-    <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1599419093796">
+    <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1599663390436">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.738@0.0.1366.738" timestamp="1599419093796" />
+    <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.738@0.0.1366.738" timestamp="1599663390436" />
     <state x="193" y="146" width="585" height="592" key="find.popup" timestamp="1599463285749">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="193" y="146" width="585" height="592" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1599463285749" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1599653069601">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1599665543086">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1599653069601" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1599665543086" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -107,6 +107,7 @@
                 </li><!-- ./Management permission and Role List -->
 
                 <!-- Management Users Customers Admins List -->
+                @if(@auth()->user()->hasPermission('users_read'))
                 <li class="nav-item has-treeview ">
                     <a href="#" class="nav-link bg-gradient-success text-white  ">
                         <i class="nav-icon fas fa-user-edit"></i>
@@ -116,14 +117,14 @@
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
-                        @if(@auth()->user()->hasPermission('users_read'))
+
                             <li class="nav-item">
                                 <a href="{{ route('dashboard.users.index') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon text-success"></i>
                                     <p>{{ __('site.users') }} v2</p>
                                 </a>
                             </li>
-                        @endif
+
                         <li class="nav-item">
                             <a href="" class="nav-link">
                                 <i class="far fa-circle nav-icon text-success"></i>
@@ -136,9 +137,10 @@
                                 <p>----------------</p>
                             </a>
                         </li>
+
                     </ul>
                 </li><!-- ./Management Users Customers Admins List -->
-
+            @endif
                 <!-- Management Payments List -->
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link bg-gradient-info text-white">

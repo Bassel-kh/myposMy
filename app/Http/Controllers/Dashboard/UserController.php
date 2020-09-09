@@ -12,7 +12,8 @@ class UserController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware(['auth','permission:users_read,users_create' ]);
+//        hasPermission('users_read')
     }
     /**
      * Display a listing of the resource.
@@ -45,7 +46,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-
+//        dd($request->all());
         // validate data before insert to database
         // make para: array , validation roles, message
         $roles = $this -> getRoles();
@@ -58,10 +59,14 @@ class UserController extends Controller
 //            return  $validator -> errors();
             return  redirect() ->back() -> withErrors($validator)->withInputs($request -> all());
         }
-        $request_data = $request->except('password');
+        $request_data = $request->except(['password', 'password_confirmation', 'permissions']);
         $request_data['password'] = bcrypt($request->password);
 
         $user = User::create($request_data);
+        $user->attachRole('admin');
+        if($request->has('permissions') ) {
+            $user->syncPermissions($request->permissions);
+        }
         session()->flash('success', __('site.added_successfully'));
         return redirect()->route('dashboard.users.index');
 //
