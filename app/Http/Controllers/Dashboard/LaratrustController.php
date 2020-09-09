@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
 use App\User;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -71,6 +72,7 @@ class LaratrustController extends Controller
 
 
 
+
 protected function  getRoles(){
     return [
         'first_name'=> 'required',
@@ -96,9 +98,9 @@ protected  function  getMessages(){
      * @param  \App\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function show(User $user)
+    public function show(Model $model)
     {
-        //
+
     }
 
     /**
@@ -134,5 +136,6 @@ protected  function  getMessages(){
     {
         //
     }
+
 
 } // end controller

@@ -116,5 +116,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="ionicons" level="application" />
     <orderEntry type="library" name="jquery-3.4.1" level="application" />
+    <orderEntry type="library" name="tabledit" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
   </component>
 </module>

@@ -584,3 +584,189 @@ Roles and permissions Controller and views (part 2)
 
     1.3- add views laratrust page management
 
+#10 ----------------------------------
+
+Test edit datatable
+    1- Download Laravel Framework
+    2- Make Database Connection
+    3- Create Controller
+        In Laravel framework for handle http request, we have t
+        o make controller class in Laravel framework. In Laravel framework controller
+        file has been store under app/Http/Controllers/Test folder. For create new controller class file,
+        we have to go command prompt and run following command.
+            $ php artisan make:controller Test/TableditController
+
+        This command will make TableditController.php controller file. In this tutorial for make Live or inline table edit or delete mysql database
+        operation, here in this controller file, we have make following method.
+
+            * index() - This is the root method of this controller class. This method has been fetch data from sample_datas
+                        table and it will send this data to view file for display on web page.
+
+            * action() - This method has received Ajax request for edit or delete mysql data operation.
+                         If it has received Ajax request for edit or update mysql data, then it will update or edit mysql table data,
+                         and if this method has received Ajax request for delete data operation,
+                         then it has been delete data from Mysql table.
+
+
+            app/Http/Controllers/Test/TableditController.php
+                <?php
+
+                namespace App\Http\Test\Controllers;
+
+                use Illuminate\Http\Request;
+                use DB;
+
+                class TableditController extends Controller
+                {
+                    function index()
+                    {
+                    	$data = DB::table('sample_datas')->get();
+                    	return view('table_edit', compact('data'));
+                    }
+
+                    function action(Request $request)
+                    {
+                    	if($request->ajax())
+                    	{
+                    		if($request->action == 'edit')
+                    		{
+                    			$data = array(
+                    				'first_name'	=>	$request->first_name,
+                    				'last_name'		=>	$request->last_name,
+                    				'gender'		=>	$request->gender
+                    			);
+                    			DB::table('sample_datas')
+                    				->where('id', $request->id)
+                    				->update($data);
+                    		}
+                    		if($request->action == 'delete')
+                    		{
+                    			DB::table('sample_datas')
+                    				->where('id', $request->id)
+                    				->delete();
+                    		}
+                    		return response()->json($request);
+                    	}
+                    }
+                }
+
+    4- Create View Blade File
+        4 - Create View Blade File
+
+        For display HTML output in browser, here in Laravel framework it has use view blade
+        file, which has been store in resources/views folder. In this folder we have create
+        table_edit.blade.php file. In this file we have include jQuery, Bootstrap and Tabledit
+        plugin library link.
+
+
+        In this file, we have crate one HTML table and in this table we have add one id="editable" attribute. This attribute value is used for initialize tabledit plugin by using Tabledit() method. In this plugin, we have to define table column, which we want to convert into editable cell. We can define editable cell details in editable option of Tabledit method. This method will send Ajax request to action() method of TableditController class.
+        Below you can find complete source code of view blade file.
+
+            resources/views/table_edit.blade.php
+
+            <html>
+              <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>Live Table Edit Delete Mysql Data using Tabledit Plugin in Laravel</title>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+                <script src="https://markcell.github.io/jquery-tabledit/assets/js/tabledit.min.js"></script>
+              </head>
+              <body>
+                <div class="container">
+                  <br />
+                  <h3 align="center">Live Table Edit Delete with jQuery Tabledit in Laravel</h3>
+                  <br />
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Sample Data</h3>
+                    </div>
+                    <div class="panel-body">
+                      <div class="table-responsive">
+                        @csrf
+                        <table id="editable" class="table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th>ID</th>
+                              <th>First Name</th>
+                              <th>Last Name</th>
+                              <th>Gender</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            @foreach($data as $row)
+                            <tr>
+                              <td>{{ $row->id }}</td>
+                              <td>{{ $row->first_name }}</td>
+                              <td>{{ $row->last_name }}</td>
+                              <td>{{ $row->gender }}</td>
+                            </tr>
+                            @endforeach
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </body>
+            </html>
+
+            <script type="text/javascript">
+            $(document).ready(function(){
+
+              $.ajaxSetup({
+                headers:{
+                  'X-CSRF-Token' : $("input[name=_token]").val()
+                }
+              });
+
+              $('#editable').Tabledit({
+                url:'{{ route("tabledit.action") }}',
+                dataType:"json",
+                columns:{
+                  identifier:[0, 'id'],
+                  editable:[[1, 'first_name'], [2, 'last_name'], [3, 'gender', '{"1":"Male", "2":"Female"}']]
+                },
+                restoreButton:false,
+                onSuccess:function(data, textStatus, jqXHR)
+                {
+                  if(data.action == 'delete')
+                  {
+                    $('#'+data.id).remove();
+                  }
+                }
+              });
+
+            });
+            </script>
+
+    5- Ret Controller Method Route
+
+    Once your all code is ready, then lastly, we have to set the route of Controller class method. For set route, we have to open routes/web.php file and in this file we have to define route for all controller class method.
+
+
+    routes/web.php
+
+        Route::get('tabledit', 'TableditController@index');
+
+        Route::post('tabledit/action', 'TableditController@action')->name('tabledit.action');
+
+    6- Run Laravel Application
+
+        Afer setting of Route for controller class method. Now our Laravel Inline edit or delete application is ready by using jQuery Tabledit plugin. For this application, we have to go command prompt and run following command.
+
+            $ php artisan serve
+
+        This command will start Laravel application server and give you base
+        URL of your Laravel application. For test above Live table edit delete
+        Mysql data application, you have to enter following URL in your browser.
+
+        http://127.0.0.1:8000/tabledit
+
+
+        I hope this post will helps anyone who was looking for How to make Live or
+        Inline update or delete table row data by using jQuery Tabledit plugin with
+        Laravel framework.
+
+///////////////////////////////////////////////////////////////////////////////////////////

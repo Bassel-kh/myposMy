@@ -47,3 +47,12 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => [ 'l
 
 });// end of localization
 
+///////////////////// Start Test ///////////////////
+Route::namespace('Test')->group(function () {
+
+
+    Route::get('tabledit', 'TableditController@index');
+
+    Route::post('tabledit/action', 'TableditController@action')->name('tabledit.action');
+});
+//////////////////// End Test ///////////////////
