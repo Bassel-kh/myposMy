@@ -22,5 +22,18 @@ return [
     'password_confirmation' => 'تأكيد كلمة المرور',
     'action'=>'الإجراء',
 
+    'daily_payments' => 'المدفوعات اليوميه',
+    'new_orders' => 'الطلبات الجديدة',
+    'customer_balances' => 'أرصدة العملاء',
+    'financial_profit' => 'الربح المالي',
+
+    'permissions_management' => 'إدارة الصلاحيات',
+    'permissions' => 'الصلاحيات',
+    'roles' => 'الأدوار',
+    'assign_roles_and_permissions' => 'إسناد الأدوار والصلاحيات',
+    'for_users' => 'للمستخدمين',
+    'for_roles' => 'للأدوار',
+
+
 ]
 ;

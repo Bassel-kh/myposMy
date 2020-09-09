@@ -11,4 +11,5 @@
 <!-- /.content-header -->
 
 @section('Main_content')
+    @include('layouts.dashboard-AdminLte 3.content.index._mainContent')
 @endsection

@@ -41,7 +41,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => [ 'l
             // User Routes
             Route::resource('users' , 'UserController')->except(['show']);
 
-
+            // laratrust Routes
+            Route::resource('permissions' , 'LaratrustController');
         }); // end of dashboard route
 
 });// end of localization

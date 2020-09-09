@@ -17,16 +17,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43f369e8-6175-40c6-a52e-089c90166f3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/laratrust/Permission/edit_permission.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/laratrust/Role/edit_role.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/laratrust/Roles Assignment/edit_user_perm_role_assi.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/laratrust/Roles Assignment/roles_Assignment.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/laratrust/laratrustTab.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/laratrust/permissions.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/laratrust/roles.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/LaratrustController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/laratrust/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/laratrust/laratrust.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/laratrust/laratrust_rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendor/laratrust/mix-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/laratrust/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/content/index/_mainContent.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mypos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mypos.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commands-Steps.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Commands-Steps.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/site.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/site.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_content.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_navBar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_navBar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard/_aside.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard/app.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/_alerts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/_alerts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +174,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/plugins" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/toastr" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -172,11 +187,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp64\www\myposMy\public\dashboard AdminLte 3_files\plugins\toastr" />
+      <recent name="D:\wamp64\www\myposMy\resources\views\dashboard\laratrust" />
+      <recent name="D:\wamp64\www\myposMy\app\Http\Controllers\Dashboard" />
       <recent name="D:\wamp64\www\myposMy\public\plugins" />
       <recent name="D:\wamp64\www\myposMy\resources\views\partials" />
-      <recent name="D:\wamp64\www\myposMy\resources\lang\en" />
-      <recent name="D:\wamp64\www\myposMy\resources\lang\ar" />
-      <recent name="D:\wamp64\www\myposMy\public\dashboard AdminLte 3_files" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\wamp64\www\myposMy\resources\views\layouts\dashboard-AdminLte 3\content\index" />
+      <recent name="D:\wamp64\www\myposMy\resources\views\layouts\dashboard-AdminLte 3\_mainContent" />
     </key>
   </component>
   <component name="RunManager">
@@ -200,6 +219,14 @@
       <workItem from="1598702750856" duration="10752000" />
       <workItem from="1598784134463" duration="18000" />
       <workItem from="1598785139668" duration="11404000" />
+      <workItem from="1599563052315" duration="4311000" />
+      <workItem from="1599591783096" duration="858000" />
+      <workItem from="1599592921195" duration="207000" />
+      <workItem from="1599593917013" duration="41000" />
+      <workItem from="1599594309534" duration="17000" />
+      <workItem from="1599595212958" duration="23000" />
+      <workItem from="1599630804606" duration="110000" />
+      <workItem from="1599637720189" duration="8008000" />
     </task>
     <task id="LOCAL-00001" summary="#1 Add/Define dashboard Route file and controller-namespace ( Steps: 1 , 2 )">
       <created>1598597257857</created>
@@ -306,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599418669083</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="# 9 Fix problem">
+      <created>1599419360132</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1599419360132</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,7 +384,8 @@
     <MESSAGE value="#8 Roles and permissions Controller and views (Steps: 1.1,1.2,1.3 , 1.4 , 1.5 , 1.6 , 1.7 )" />
     <MESSAGE value="#8 Roles and permissions Controller and views (Steps:1.8- in public edit view and add user create card to (resources/views/dashboard/users/create.blade.php)&#10;                                                                 Edit fontawesome-free (Add version 5) )" />
     <MESSAGE value="# 9 prooooooooooooooblem" />
-    <option name="LAST_COMMIT_MESSAGE" value="# 9 prooooooooooooooblem" />
+    <MESSAGE value="# 9 Fix problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="# 9 Fix problem" />
   </component>
   <component name="WindowStateProjectService">
     <state x="561" y="276" key="#Custom_Plugin_Repositories" timestamp="1598701111207">
@@ -385,22 +420,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="450" y="30" width="916" height="708" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1598703144309" />
-    <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1599419093796">
+    <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1599470675847">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1366.738@0.0.1366.738" timestamp="1599419093796" />
+    <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1366.738@0.0.1366.738" timestamp="1599470675847" />
     <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1599419093796">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.738@0.0.1366.738" timestamp="1599419093796" />
-    <state x="390" y="73" width="585" height="592" key="find.popup" timestamp="1598598150395">
+    <state x="193" y="146" width="585" height="592" key="find.popup" timestamp="1599463285749">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="390" y="73" width="585" height="592" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1598598150395" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1599204484822">
+    <state x="193" y="146" width="585" height="592" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1599463285749" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1599642387309">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1599204484822" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1599642387309" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -416,7 +451,7 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_content.blade.php</url>
+          <url>file://$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_mainContent/_content.blade.php</url>
           <line>88</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>

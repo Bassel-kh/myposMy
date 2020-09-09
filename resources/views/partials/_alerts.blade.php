@@ -1,6 +1,38 @@
+
+@php
+    $dir= 'left';
+    $dir_ = 'r';
+    if(app()->getLocale() == 'en'){
+            $dir= 'right';
+            $dir_ = 'l';
+            }
+@endphp
 @if (session('success'))
-    <div class="alert alert-success col-md-auto align-content-center" role="alert">
-        {{session('success')}}
-    </div>
+<script src="{{ asset( 'dashboard AdminLte 3_files/plugins/toastr/toastr.min.js') }}"></script>
+
+<script>
+
+    toastr.options = {
+        "closeButton": true,
+        "debug": false,
+        "newestOnTop": false,
+        "progressBar": true,
+        "positionClass": "toast-top-{{$dir}}",
+        "preventDuplicates": false,
+        "showDuration": "3000",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    }
+
+    toastr["success"]("{{ session('success') }}")
+    // toastr["info"]("My name is Inigo Montoya. You killed my father. Prepare to die!")
+    // toastr["warning"]("My name is Inigo Montoya. You killed my father. Prepare to die!")
+    // toastr["error"]("My name is Inigo Montoya. You killed my father. Prepare to die!")
+</script>
 
 @endif

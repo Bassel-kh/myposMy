@@ -36,8 +36,8 @@
                 <!-- Add icons to the links using the .nav-icon class
                      with font-awesome or any other icon font library -->
                 <!-- Main list -->
-                <li class="nav-item has-treeview menu-open">
-                    <a href="#" class="nav-link bg-gradient-blue active">
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link bg-gradient-blue text-white">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             {{ __('site.dashboard') }}
@@ -47,48 +47,60 @@
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="{{ route('dashboard.index') }}" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>{{ __('site.dashboard') }} v1</p>
+                                <i class="far fa-circle nav-icon text-blue"></i>
+                                <p>{{ __('site.daily_payments') }}</p>
                             </a>
                         </li>
-                        {{--                        @if(@auth()->user()->hasPermission('users_read'))--}}
+
                         <li class="nav-item">
-                            <a href="{{ route('dashboard.users.index') }}" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>{{ __('site.users') }} v2</p>
+                            <a href="{{ route('dashboard.index') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon text-blue"></i>
+                                <p>{{ __('site.new_orders') }}</p>
                             </a>
                         </li>
-                        {{--                        @endif--}}
+                        <li class="nav-item">
+                            <a href="{{ route('dashboard.index') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon text-blue"></i>
+                                <p>{{ __('site.customer_balances') }}</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('dashboard.index') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon text-blue"></i>
+                                <p>{{ __('site.financial_profit') }}</p>
+                            </a>
+                        </li>
+
                     </ul>
                 </li><!-- ./ Main List -->
 
                 <!-- Management permission and Role List -->
                 <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link bg-gradient-danger text-white ">
+                    <a href="#" class="nav-link bg-gradient-danger text-white">
                         <i class="nav-icon fas fa-user-lock"></i>
                         <p>
-                            إدارة الصلاحيات
+                            {{__('site.permissions_management')}}
                             <i class="{{$dir}} fa fa-angle-left"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ route('dashboard.index') }}" class="nav-link active">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>------------</p>
+                            <a href="{{ url('dashboard/permissions') }}" class="nav-link active">
+                                <i class="far fa-circle nav-icon text-danger"></i>
+                                <p>{{__('site.permissions')}}</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a href="" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>-----------</p>
+                                <i class="far fa-circle nav-icon text-danger"></i>
+                                <p>{{__('site.roles')}}</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p></p>
+                                <i class="far fa-circle nav-icon text-danger"></i>
+                                <p>{{__('site.assign_roles_and_permissions')}}</p>
                             </a>
                         </li>
                     </ul>
@@ -104,31 +116,32 @@
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="{{ route('dashboard.index') }}" class="nav-link active">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>------------</p>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>-----------</p>
-                            </a>
-                        </li>
+                        @if(@auth()->user()->hasPermission('users_read'))
+                            <li class="nav-item">
+                                <a href="{{ route('dashboard.users.index') }}" class="nav-link">
+                                    <i class="far fa-circle nav-icon text-success"></i>
+                                    <p>{{ __('site.users') }} v2</p>
+                                </a>
+                            </li>
+                        @endif
                         <li class="nav-item">
                             <a href="" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
+                                <i class="far fa-circle nav-icon text-success"></i>
                                 <p></p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <i class="far fa-circle nav-icon text-success"></i>
+                                <p>----------------</p>
+                            </a>
+                        </li>
                     </ul>
-                </li><!-- ./Management permission and Role List -->
+                </li><!-- ./Management Users Customers Admins List -->
 
                 <!-- Management Payments List -->
                 <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link bg-gradient-info text-white ">
+                    <a href="#" class="nav-link bg-gradient-info text-white">
                         <i class="nav-icon fas fa-hand-holding-usd"></i>
                         <p>
                             إدارةالفواتير
@@ -138,29 +151,29 @@
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="{{ route('dashboard.index') }}" class="nav-link active">
-                                <i class="far fa-circle nav-icon"></i>
+                                <i class="far fa-circle nav-icon text-info"></i>
                                 <p>------------</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a href="" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
+                                <i class="far fa-circle nav-icon text-info"></i>
                                 <p>-----------</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p></p>
+                                <i class="far fa-circle nav-icon text-info"></i>
+                                <p>----------</p>
                             </a>
                         </li>
                     </ul>
-                </li><!-- ./Management permission and Role List -->
+                </li><!-- ./Management Payments List  -->
 
                 <!-- Management Site Content List -->
-                <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link bg-gradient-maroon text-white ">
+                <li class="nav-item has-treeview ">
+                    <a href="#" class="nav-link bg-gradient-maroon text-white">
                         <i class="nav-icon fas fa-book-open"></i>
                         <p>
                             إدارة محتوى الموقع
@@ -170,25 +183,25 @@
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="{{ route('dashboard.index') }}" class="nav-link active">
-                                <i class="far fa-circle nav-icon"></i>
+                                <i class="far fa-circle nav-icon text-maroon"></i>
                                 <p>------------</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a href="" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
+                                <i class="far fa-circle nav-icon text-maroon"></i>
                                 <p>-----------</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
+                                <i class="far fa-circle nav-icon text-maroon"></i>
                                 <p></p>
                             </a>
                         </li>
                     </ul>
-                </li><!-- ./Management permission and Role List -->
+                </li><!-- ./Management Site Content List -->
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

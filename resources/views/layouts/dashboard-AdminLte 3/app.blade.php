@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="{{ asset( 'https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' ) }}">
     <!-- Tempusdominus Bbootstrap 4 -->
     <link rel="stylesheet" href="{{ asset( '/dashboard AdminLte 3_files/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css' ) }}">
-
     <!-- iCheck -->
     <link rel="stylesheet" href="{{ asset( '/dashboard AdminLte 3_files/plugins/icheck-bootstrap/icheck-bootstrap.min.css' ) }}">
 
@@ -33,6 +32,9 @@
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     @yield('Header')
+    <!-- My Alert -->
+    <link rel="stylesheet" href="{{ asset( 'dashboard AdminLte 3_files/plugins/toastr/toastr.css') }}">
+
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -66,9 +68,7 @@
             </div><!-- /.container-fluid -->
         </div>
         <!-- /.content-header -->
-        <!-- Alert-header -->
-            @include('partials._session')
-        <!-- /.Alert-header -->
+
         <!-- Main content -->
         <section class="Main_content content">
             <div class="container-fluid">
@@ -142,10 +142,9 @@
 {{--@else--}}
 {{--    <script src="{{ asset( '/dashboard AdminLte 3_files/distEn/js/demo.js' ) }}"></script>--}}
 {{--@endif--}}
-<script>
-    $(document).ready(function(){
-        $(".alert").delay(5000).slideUp(300);
-    });
-</script>
+<!-- Alert-header -->
+@include('partials._alerts')
+<!-- /.Alert-header -->
+
 </body>
 </html>
