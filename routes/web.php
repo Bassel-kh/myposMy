@@ -43,6 +43,11 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => [ 'l
 
             // laratrust Routes
             Route::resource('permissions' , 'LaratrustController');
+
+            // Error404
+            Route::get('/dash_Error_404', function (){
+                return view('pages.dashboard_404');
+            });
         }); // end of dashboard route
 
 });// end of localization
@@ -56,3 +61,10 @@ Route::namespace('Test')->group(function () {
     Route::post('tabledit/action', 'TableditController@action')->name('tabledit.action');
 });
 //////////////////// End Test ///////////////////
+
+//////////////// Error pages ////////////////////
+Route::get('/Error_404', function (){
+    return view('pages.404');
+});
+
+

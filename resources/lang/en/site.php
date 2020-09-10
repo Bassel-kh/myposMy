@@ -39,4 +39,7 @@ return [
     'for_roles' => 'for_roles',
 
     'action'=>'action',
+
+    // Pages
+    '404_Error_Page'=> '404 Error Page not found',
 ];

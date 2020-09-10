@@ -12,17 +12,31 @@ class UserController extends Controller
 
     public function __construct()
     {
-        $this->middleware(['auth','permission:users_read,users_create' ]);
-//        hasPermission('users_read')
+        // create update delete read
+        $this->middleware('auth');
+        $this->middleware('permission:users_create')->only('create');
+        $this->middleware('permission:users_read')->only('index');
+        $this->middleware('permission:users_update')->only('update');
+        $this->middleware('permission:users_delete')->only('destroy');
+
+
     }
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
-    public function index()
+    public function index(Request $request)
     {
-        $users = User::all();
+        $users = User::whereRoleIs('admin')
+                ->when($request->search , function ($q) use ($request){
+                        return $q   ->where('first_name','like','%'.$request->search.'%')
+                                    ->orwhere('last_name','like','%'.$request->search.'%')
+                                    ->orwhere('email','like','%'.$request->search.'%');
+                })->get();
+//        $users = User::all();
+
+
         return view('dashboard.users.index' ,compact('users'));
 
     } // end of index

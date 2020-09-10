@@ -41,7 +41,8 @@ return [
     'assign_roles_and_permissions' => 'إسناد الأدوار والصلاحيات',
     'for_users' => 'للمستخدمين',
     'for_roles' => 'للأدوار',
-
+// pages
+    '404_Error_Page'=> '404 Error Page not found',
 
 ]
 ;

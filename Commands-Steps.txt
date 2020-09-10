@@ -845,7 +845,7 @@ optimize code and Enable Edit and Update users (view user/edit&create) (controll
                 } // end of update
 
 #13 -----------------------------
-add auth user-> name to _aside and _navBar (resources/views/layouts/dashboard-AdminLte 3/_aside&&_navBar .blade.php
+add auth user-> name to _aside and _navBar (resources/views/layouts/dashboard-AdminLte 3/_aside&&_navBar .blade.php)
     add two method get to user Model:
         public function getFirstNameAttribute($value){
             return ucfirst($value);
@@ -854,3 +854,80 @@ add auth user-> name to _aside and _navBar (resources/views/layouts/dashboard-Ad
         public function getLastNameAttribute($value){
             return ucfirst($value);
         }
+
+#14 ----------------------------------
+Edit view and deny users who don't have permissions from access to route (dashboard/users/create)and hide super admin form user table and enable search feature
+    1- edit Dash/UserController
+        add Constructor:
+        public function __construct()
+            {
+                // create update delete read
+                $this->middleware('auth');
+                $this->middleware('permission:users_create')->only('create');
+                $this->middleware('permission:users_read')->only('index');
+                $this->middleware('permission:users_update')->only('update');
+                $this->middleware('permission:users_delete')->only('destroy');
+            }
+
+    2- understand redirection 403:
+            in file: config/laratrust.php
+
+    3- hide super admin form user table and enable search feature
+        3.1- edit Dash/UserController index method
+                public function index()
+                {
+                    [...]
+                    $users = User::whereRoleIs('admin')->get();
+
+                    return view('dashboard.users.index' ,compact('users'));
+
+                } // end of index
+
+        3.2- there is two methods to enable search in index.blade
+            - hard method :{
+             public function index(Request $request)
+                {
+                [...]
+                    if($request->search){
+
+                        $users = User::
+                            where('first_name', 'like' , '%'.$request->search.'%')
+                            ->orwhere('last_name', 'like' , '%'.$request->search.'%')
+                            ->orwhere('email', 'like' , '%'.$request->search.'%')
+                            ->whereRoleIs('admin')
+                            ->get();
+
+                    }
+                    else{
+
+                            $users = User::whereRoleIs('admin')->get();
+
+                    }
+
+                [...]
+
+            }
+
+            - pro method 1:{
+                    $users = User::whereRoleIs('admin')->where(function ($q) use ($request) {
+
+                        return $q->when($request->search , function ($q) use ($request){
+                            return $q   ->where('first_name','like','%'.$request->search.'%')
+                                        ->orwhere('last_name','like','%'.$request->search.'%')
+                                        ->orwhere('email','like','%'.$request->search.'%');
+
+                        });
+
+                    })->get();
+            }
+            -pro method 2:{
+                       $users = User::whereRoleIs('admin')
+                                        ->when($request->search , function ($q) use ($request){
+                                           return $q   ->where('first_name','like','%'.$request->search.'%')
+                                                       ->orwhere('last_name','like','%'.$request->search.'%')
+                                                       ->orwhere('email','like','%'.$request->search.'%');
+                                            })->get();
+               }
+
+
+

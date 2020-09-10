@@ -16,7 +16,7 @@
         </div>
 
         <!-- /.card-header -->
-        <form action="">
+        <form action="{{ route('dashboard.users.index') }}" method="get">
             <div class="row p-2">
                 <div class="col-md-4">
                     <input type="text" name="search" class="form-control"  placeholder="{{__('site.search')}}">
@@ -24,6 +24,7 @@
 
                 <div class="col-md-4">
                     <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-search"></i>@lang('site.search')</button>
+
                     @if(auth()->user()->hasPermission('users_create'))
                         <a href="{{ route('dashboard.users.create') }}" class="btn btn-sm btn-primary "><i class="fa fa-plus"></i>@lang('site.add')</a>
                     @else
@@ -54,19 +55,19 @@
                             <td>{{ $user -> email }}</td>
                             <td>
                                 @if(auth()->user()->hasPermission('users_update'))
-                                    <a class="btn btn-sm btn-info" href="{{ route('dashboard.users.edit', $user->id) }}">{{__('site.edit')}}</a>
+                                    <a class="btn btn-sm btn-info" href="{{ route('dashboard.users.edit', $user->id) }}"><i class="fa fa-edit"></i> {{__('site.edit')}}</a>
                                 @else
-                                    <a class="btn btn-sm btn-info disabled" href="#">{{__('site.edit')}}</a>
+                                    <a class="btn btn-sm btn-info disabled" href="#"><i class="fa fa-edit"></i> {{__('site.edit')}}</a>
 
                                 @endif
                                 @if(auth()->user()->hasPermission('users_delete'))
                                     <form action="{{ route('dashboard.users.destroy', $user->id ) }}" method="post" style="display: inline-block">
                                         {{ csrf_field() }}
                                         {{ method_field('delete') }}
-                                        <button type="submit" class="btn btn-sm  btn-danger">@lang('site.delete')</button>
+                                        <button type="submit" class="btn btn-sm  btn-danger"><i class="fa fa-trash"></i> @lang('site.delete')</button>
                                     </form>
                                 @else
-                                    <button class="btn btn-danger btn-sm disabled">{{__('site.delete')}}</button>
+                                    <button class="btn btn-danger btn-sm disabled"><i class="fa fa-trash"></i> {{__('site.delete')}}</button>
                                 @endif
                             </td>
                             </tr>
