@@ -844,3 +844,13 @@ optimize code and Enable Edit and Update users (view user/edit&create) (controll
 
                 } // end of update
 
+#13 -----------------------------
+add auth user-> name to _aside and _navBar (resources/views/layouts/dashboard-AdminLte 3/_aside&&_navBar .blade.php
+    add two method get to user Model:
+        public function getFirstNameAttribute($value){
+            return ucfirst($value);
+        }
+
+        public function getLastNameAttribute($value){
+            return ucfirst($value);
+        }

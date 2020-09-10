@@ -34,14 +34,17 @@
 
         <!-- logout and lang Start -->
         <li class="nav-item dropdown">
+
+
             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                {{ Auth::user()->first_name }}
+                <img src="{{ asset( 'dashboard AdminLte 3_files/dist/img/user2-160x160.jpg' ) }}" class="img-circle " alt="User Image" style="width: 25px;">
+                {{ Auth::user()->first_name }} {{ Auth::user()->last_name }}
             </a>
 
             <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{{ route('logout') }}"
-                   onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+
+                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                     document.getElementById('logout-form').submit();">
                     {{ __('Logout') }}
                 </a>
             @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
