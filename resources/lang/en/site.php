@@ -40,6 +40,12 @@ return [
 
     'action'=>'action',
 
-    // Pages
+// Pages
     '404_Error_Page'=> '404 Error Page not found',
+
+//Confirm
+    'confirm_delete'=>'Confirm Delete',
+    'Close'=>'Close',
+    'Are_you_sure_you_want_to'=>'Are you sure you want to',
+
 ];

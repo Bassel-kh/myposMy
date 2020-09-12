@@ -8,7 +8,7 @@
 @extends('layouts.dashboard-AdminLte 3.app')
 
 @section('Header')
-    <link href="{{ asset($dir) }}" rel="stylesheet">
+{{--    <link href="{{ asset($dir) }}" rel="stylesheet">--}}
 @stop
 <!-- Content Header (Page header) -->
 @section('HeaderTitle')

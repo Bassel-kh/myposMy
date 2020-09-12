@@ -44,5 +44,10 @@ return [
 // pages
     '404_Error_Page'=> '404 Error Page not found',
 
+// Confirm
+    'confirm_delete'=>'تأكيد حذف',
+    'Close'=>'إلغاء',
+    'Are_you_sure_you_want_to'=>'هل أنت مُتأكد من أنك تريد ',
+
 ]
 ;

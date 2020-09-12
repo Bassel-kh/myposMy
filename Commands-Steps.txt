@@ -542,7 +542,7 @@ Roles and permissions Controller and views (part 2)
     1.1- add admin role to laratrust seed file then run this command:
         $ php artisan migrate:refresh --seed
 
-    1.2- add alert package (Toastr)
+    1.2- add notification alert package (Toastr)
 
                 @php
                     $dir= 'left';
@@ -929,5 +929,76 @@ Edit view and deny users who don't have permissions from access to route (dashbo
                                             })->get();
                }
 
+
+#15 ---------------------------------------
+pagination (Eidt view and Controller)
+    1- Edit user/index.blade.php :
+        add {{ $users->links() }}
+
+    2- Edit Dsh/UserController:
+        replace get() to paginate(2) or latest()->paginate(2)
+
+                      })->get();  to       })->latest()->paginate(2);
+
+    3- in previous step (#15 - 2) the search doesn't work with pagination:
+        to enable that:
+                  - in user/index.blade.com:
+                    add in form :
+                        [...]
+                          <input type="text" name="search" class="form-control"  placeholder="{{__('site.search')}}" value="{{ request()->search }}">
+                        [...]
+                          <div class=""> {{ $users->appends(request()->query())->links() }}</div>
+                        [...]
+                  - to show nuber of users add:
+                        $users->total()
+
+    4- redirect to dashboard/index after login:
+        - edit auth/LoginController:
+            protected $redirectTo = 'dashboard/index';
+
+    5- Disable Register :
+        - Edit web:
+                Auth::routes(['register'=>false]);
+
+    6- Enable Delete button in user/index :
+        1- First method:
+                - Edit Dsh/UserController destroy method:
+                    - add confirm delete model
+                        - in form add :
+                             <!-- Button-Delete trigger Delete modal -->
+
+                                 <button type="button" class="btn btn-sm  btn-danger" data-toggle="modal" data-target="#Delete_Modal">
+
+                                    <i class="fa fa-trash"></i> @lang('site.delete')
+
+                                 </button>
+                             <!-- ./ Button-Delete trigger Delete modal -->
+                        - out form :
+                                  <!-- Delete Modal -->
+                                  <div class="modal fade" id="Delete_Modal" tabindex="-1" role="dialog"  aria-hidden="true">
+                                      <div class="modal-dialog modal-dialog-centered" role="document">
+                                          <div class="modal-content">
+                                              <div class="modal-header">
+                                                  <h5 class="modal-title" id="exampleModalLabel">{{__('site.confirm_delete')}}</h5>
+                                              </div>
+                                              <div form="users_form" class="modal-body">
+
+                                              {{__('site.Are_you_sure_you_want_to').__('site.delete').'?'}}
+                                              </div>
+                                              <div class="modal-footer">
+                                                  <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">{{__('site.Close')}}</button>
+                                                  <button type="submit" form="users_form" class="btn btn-sm  btn-danger"><i class="fa fa-trash"></i> @lang('site.confirm_delete')</button>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div><!--./Delete Modal -->
+
+        - Second method:
+            - install Noty package:
+                    https://ned.im/noty/#/installation
+                    https://github.com/needim/noty
+
+                    1- run command:
+                        $ composer require needim/noty
 
 

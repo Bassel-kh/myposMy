@@ -33,7 +33,9 @@ class UserController extends Controller
                         return $q   ->where('first_name','like','%'.$request->search.'%')
                                     ->orwhere('last_name','like','%'.$request->search.'%')
                                     ->orwhere('email','like','%'.$request->search.'%');
-                })->get();
+//                })->get();
+                })->latest()->paginate(5);
+
 //        $users = User::all();
 
 
@@ -178,7 +180,9 @@ protected  function  getMessages(){
      */
     public function destroy(User $user)
     {
-        //
+        $user->delete();
+        session()->flash('success',__('site.deleted_successfully'));
+        return redirect()->route('dashboard.users.index');
     } // end of destroy
 
 } // end controller
