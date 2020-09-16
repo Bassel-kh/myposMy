@@ -34,6 +34,9 @@
     @yield('Header')
     <!-- My Alert -->
     <link rel="stylesheet" href="{{ asset( 'dashboard AdminLte 3_files/plugins/toastr/toastr.css') }}">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset( 'dashboard AdminLte 3_files/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="{{ asset( 'dashboard AdminLte 3_files/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
 
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -100,31 +103,19 @@
     $.widget.bridge('uibutton', $.ui.button)
 </script>
 <!-- Bootstrap 4 -->
-<!-- Bootstrap -->
 @if(app()->getLocale() == 'ar')
     <script src="{{ asset( '/dashboard AdminLte 3_files/plugins/bootstrap-4-rtl/js/bootstrap.bundle.min.js' ) }}"></script>
 @else
     <script src="{{ asset( '/dashboard AdminLte 3_files/plugins/bootstrap/js/bootstrap.bundle.min.js' ) }}"></script>
 @endif
-{{--<!-- ChartJS -->--}}
-{{--<script src="{{ asset( '/dashboard AdminLte 3_files/plugins/chart.js/Chart.min.js' ) }}"></script>--}}
-{{--<!-- Sparkline -->--}}
-{{--<script src="{{ asset( '/dashboard AdminLte 3_files/plugins/sparklines/sparkline.js' ) }}"></script>--}}
-{{--<!-- JQVMap -->--}}
-{{--<script src="{{ asset( '/dashboard AdminLte 3_files/plugins/jqvmap/jquery.vmap.min.js' ) }}"></script>--}}
-{{--<script src="{{ asset( '/dashboard AdminLte 3_files/plugins/jqvmap/maps/jquery.vmap.usa.js' ) }}"></script>--}}
-{{--<!-- jQuery Knob Chart -->--}}
-{{--<script src="{{ asset( '/dashboard AdminLte 3_files/plugins/jquery-knob/jquery.knob.min.js' ) }}"></script>--}}
-{{--<!-- daterangepicker -->--}}
-{{--<script src="{{ asset( '/dashboard AdminLte 3_files/plugins/moment/moment.min.js' ) }}"></script>--}}
-{{--<script src="{{ asset( '/dashboard AdminLte 3_files/plugins/daterangepicker/daterangepicker.js' ) }}"></script>--}}
-{{--<!-- Tempusdominus Bootstrap 4 -->--}}
-{{--<script src="{{ asset( '/dashboard AdminLte 3_files/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js' ) }}"></script>--}}
-{{--<!-- Summernote -->--}}
-{{--<script src="{{ asset( '/dashboard AdminLte 3_files/plugins/summernote/summernote-bs4.min.js' ) }}"></script>--}}
-{{--<!-- overlayScrollbars -->--}}
+<!-- DataTables -->
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.js"></script>
+{{--<script src="{{ asset( '/dashboard AdminLte 3_files/plugins/datatables/jquery.dataTables.min.js' ) }}"></script>--}}
+<script src="{{ asset( '/dashboard AdminLte 3_files/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js' ) }}"></script>
+<script src="{{ asset( '/dashboard AdminLte 3_files/plugins/datatables-responsive/js/dataTables.responsive.min.js' ) }}"></script>
+<script src="{{ asset( '/dashboard AdminLte 3_files/plugins/datatables-responsive/js/responsive.bootstrap4.min.js' ) }}"></script>
 <script src="{{ asset( '/dashboard AdminLte 3_files/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js' ) }}"></script>
-<!-- AdminLTE App -->
+{{--<!-- AdminLTE App -->--}}
 @if(app()->getLocale() == 'ar')
     <script src="{{ asset( '/dashboard AdminLte 3_files/dist/js/adminlte.js' ) }}"></script>
 @else
@@ -143,8 +134,11 @@
 {{--    <script src="{{ asset( '/dashboard AdminLte 3_files/distEn/js/demo.js' ) }}"></script>--}}
 {{--@endif--}}
 <!-- Alert-header -->
+<script src="{{ asset( 'dashboard AdminLte 3_files/plugins/toastr/toastr.min.js') }}"></script>
 @include('partials._alerts')
 <!-- /.Alert-header -->
-
+<!-- scripts -->
+@yield('scripts')
+<!--/ scripts -->
 </body>
 </html>

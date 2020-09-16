@@ -23,7 +23,7 @@ class LaratrustController extends Controller
     public function index()
     {
 //        $users = User::all();
-        return view('dashboard.laratrust.index');
+        return view('dashboard.laratrust.admin.permissions.index');
 
     } // end of index
 

@@ -1001,4 +1001,224 @@ pagination (Eidt view and Controller)
                     1- run command:
                         $ composer require needim/noty
 
+                    not complete
+#16 ------------------------------
+16.1- Add laratrust views
+16.2- Form Request Validation
+      Creating Form Requests : https://laravel.com/docs/7.x/validation#form-request-validation
+      16.2.1- create permissions Form request Validations:
+          For more complex validation scenarios, you may wish to create a "form request". Form requests are custom request classes that contain validation logic. To create a form request class, use the make:request Artisan CLI command:
+
+            $ php artisan make:request CreatePermissionRequest
+
+          The generated class will be placed in the app/Http/Requests directory.
+           - Edit :
+             /**
+                 * Determine if the user is authorized to make this request.
+                 *
+                 * @return bool
+                 */
+                public function authorize()
+                {
+                    return true;
+                }
+
+                public function rules()
+                {
+                    return [
+                        'name' => 'required|min:2|max:32',
+                        'description' => 'nullable|min:2|max:128',
+                        'display_name' => 'nullable|min:2|max:32',
+                    ];
+                }
+
+                public function messages()
+                {
+                    return [
+                        'name.required' => 'Permission name required.',
+                        'name.min' => 'Permission name needs to min. 2',
+                        'name.max' => 'Permission name can max be. 32',
+                        'description.min' => 'Description needs to min. 2',
+                        'description.max' => 'Description name can max be. 128',
+                        'display_name.min' => 'Display name needs to min. 2',
+                        'display_name.max' => 'Display name can max be. 32',
+                    ];
+                }
+            }
+
+    16.3- add permissions Controller an Permissions' route
+
+            $ php artisan make:controller Dashboard\LaratrustControllers\PermissionController --resource
+
+            - Add route to route/dashboard/:
+
+                  Route::resource('permissions', 'LaratrustControllers\PermissionController');
+           -Edit:
+           {
+               <?php
+               namespace App\Http\Controllers\Dashboard\LaratrustControllers;
+               use App\Http\Controllers\Controller;
+               use Illuminate\Http\Request;
+               use DB;
+               use App\Models\Role_Permission\Permission;
+               use App\Http\Requests\CreatePermissionRequest;
+
+               class PermissionController extends Controller
+               { /**
+                * Display a listing of the resource.
+                *
+                * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
+                */
+                   public function index()
+                   {
+                       $permissions = Permission::latest()->paginate(5);
+                       return view('dashboard.laratrust.permissions.index', compact('permissions'));
+                   }
+
+                   /**
+                    * Show the form for creating a new resource.
+                    *
+                    * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
+                    */
+                   public function create()
+                   {
+                       return view('dashboard.permissions.create');
+                   }
+
+                   /**
+                    * Store a newly created resource in storage.
+                    *
+                    * @param  \Illuminate\Http\Request  $request
+                    * @return \Illuminate\Http\Response
+                    */
+                   public function store(CreatePermissionRequest $request)
+                   {
+                       $permission = Permission::create([
+                           'name' => $request->name,
+                           'display_name' => $request->display_name,
+                           'description' => $request->description,
+                       ]);
+
+                       return redirect(route('dashboard.permissions.index'));
+                   }
+
+                   /**
+                    * Display the specified resource.
+                    *
+                    * @param  int  $id
+                    * @return \Illuminate\Http\Response
+                    */
+                   public function show(Permission $permission)
+                   {
+                       return view('dashboard.permissions.show', compact('permission'));
+                   }
+
+                   /**
+                    * Show the form for editing the specified resource.
+                    *
+                    * @param  int  $id
+                    * @return \Illuminate\Http\Response
+                    */
+                   public function edit(Permission $permission)
+                   {
+                       return view('dashboard.permissions.edit', compact('permission'));
+                   }
+
+                   /**
+                    * Update the specified resource in storage.
+                    *
+                    * @param  \Illuminate\Http\Request  $request
+                    * @param  int  $id
+                    * @return \Illuminate\Http\Response
+                    */
+                   public function update(CreatePermissionRequest $request, Permission $permission)
+                   {
+                       $permission->update([
+                           'name' => $request->name,
+                           'display_name' => $request->display_name,
+                           'description' => $request->description,
+                       ]);
+
+                       return redirect(route('dashboard.permissions.index'));
+                   }
+
+                   /**
+                    * Remove the specified resource from storage.
+                    *
+                    * @param  int  $id
+                    * @return \Illuminate\Http\Response
+                    */
+                   public function destroy(Permission $permission)
+                   {
+                       $permission->delete();
+                       return redirect(route('dashboard.permissions.index'));
+                   }
+               }
+
+           }
+
+        [info]:
+
+          <!-- Button-Delete trigger Delete modal -->
+
+               <button type="button" class="btn btn-sm  btn-danger" data-toggle="modal" data-target="#Create_Modal">
+
+                   <i class="fa fa-plus"></i> @lang('site.create')
+
+               </button>
+          <!-- ./ Button-Delete trigger Delete modal -->
+
+            <!-- Create Model -->
+            <div class="modal fade" id="Create_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="create_permission" action="{{ route('dashboard.permissions.store') }}" method="post">
+                                @csrf
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label class="form-label">Permission name</label>
+                                        <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" >
+
+                                        @error('name')
+                                        <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                        @enderror
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="form-label">Permission display name</label>
+                                        <input type="text" name="display_name" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Permission Description</label>
+                                    <input type="text" name="description" class="form-control">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">{{__('site.Close')}}</button>
+                            <button form="create_permission" type="submit" class="btn btn-primary btn-sm">{{__('site.create_new_permission')}}</button>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- ./ Create Model -->
+
+        16.3- add permissions Controller an Permissions' route:
+                and install Yajra package to use datatable;
+
+                - show (Command_Yajra.text) for more info and details.
+                - make notifications  with toastr and noty package not work will.
+                - add export datatable buttons and method
+                - edit pdfMake file and vs-fonts.js to support arabic fonts
+                - pdfmake problem with arabic words orders not solve???!!!
+
+
 

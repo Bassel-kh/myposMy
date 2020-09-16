@@ -29,28 +29,6 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
     ////////////////////////////////////////////////////////////////////////////
 
 });
-///////////////////////////////////////////////////////////////////////////////////////////////
-Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]],
-    function(){
-        Route::prefix('dashboard')->namespace('Dashboard')-> name('dashboard.') ->group(function (){
-
-
-            Route::get('/index', 'DashboardController@index')->name('index');
-
-
-            // User Routes
-            Route::resource('users' , 'UserController')->except(['show']);
-
-            // laratrust Routes
-            Route::resource('permissions' , 'LaratrustController');
-
-            // Error404
-            Route::get('/dash_Error_404', function (){
-                return view('pages.dashboard_404');
-            });
-        }); // end of dashboard route
-
-});// end of localization
 
 ///////////////////// Start Test ///////////////////
 Route::namespace('Test')->group(function () {
@@ -66,5 +44,8 @@ Route::namespace('Test')->group(function () {
 Route::get('/Error_404', function (){
     return view('pages.404');
 });
-
-
+//Route::namespace('dashboard') ->group(function () {
+////    Route::resource('permissionsReAjax', 'LaratrustControllers\ReAjaxPermissionController');
+////    Route::get('permissionsReAjax/{id}/edit/', 'LaratrustControllers\ReAjaxPermissionController@edit');
+//
+//});

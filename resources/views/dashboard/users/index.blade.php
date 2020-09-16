@@ -109,7 +109,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">{{__('site.confirm_delete')}}</h5>
+                    <h5 class="modal-title" id="ModalLabel">{{__('site.confirm_delete')}}</h5>
                 </div>
                 <div form="users_form" class="modal-body">
 
@@ -117,7 +117,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">{{__('site.Close')}}</button>
-                    <button type="submit" form="users_form" class="btn btn-sm  btn-danger"><i class="fa fa-trash"></i> @lang('site.confirm_delete')</button>
+                    <button type="submit" form="users_form" class="btn btn-sm  btn-danger"><i class="fa fa-trash"></i> @lang('site.confirm_Edit')</button>
                 </div>
             </div>
         </div>

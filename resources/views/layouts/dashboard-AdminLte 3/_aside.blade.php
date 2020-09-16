@@ -74,7 +74,7 @@
                     </ul>
                 </li><!-- ./ Main List -->
 
-                <!-- Management permission and Role List -->
+                <!-- Management permission and Role List Users Roles Permissions Teams -->
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link bg-gradient-danger text-white">
                         <i class="nav-icon fas fa-user-lock"></i>
@@ -85,9 +85,9 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ url('dashboard/permissions') }}" class="nav-link active">
+                            <a href="{{ url('dashboard/permissions') }}" class="nav-link ">
                                 <i class="far fa-circle nav-icon text-danger"></i>
-                                <p>{{__('site.permissions')}}</p>
+                                <p>{{__('site.users')}}</p>
                             </a>
                         </li>
 
@@ -97,6 +97,22 @@
                                 <p>{{__('site.roles')}}</p>
                             </a>
                         </li>
+
+                        <li class="nav-item">
+                            <a href="{{ url('dashboard/permissions') }}" class="nav-link ">
+                                <i class="far fa-circle nav-icon text-danger"></i>
+                                <p>{{__('site.permissions')}}</p>
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a href="{{ url('dashboard/permissions') }}" class="nav-link ">
+                                <i class="far fa-circle nav-icon text-danger"></i>
+                                <p>{{__('site.team')}}</p>
+                            </a>
+                        </li>
+
                         <li class="nav-item">
                             <a href="" class="nav-link">
                                 <i class="far fa-circle nav-icon text-danger"></i>

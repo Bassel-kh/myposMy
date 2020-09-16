@@ -1,0 +1,447 @@
+#1 Install Yajra Datatable Package
+    the following command helps you installing the Yajra DataTable plugin in Laravel.
+
+[Note]: install laravel 7 version and Yajra 9  else you will get problems in laravel 8 ..etc:
+
+        $ composer require yajra/laravel-datatables-oracle
+        $ composer require yajra/laravel-datatables-oracle:"~9.0"
+    Bash
+    As soon as we complete the installation, then we add the foundational service of the package such as
+    datatable service provider in
+    providers and alias inside the config/app.php file.
+
+            .....
+            .....
+            'providers' => [
+                ....
+                ....
+                Yajra\DataTables\DataTablesServiceProvider::class,
+            ]
+            'aliases' => [
+                ....
+                ....
+                'DataTables' => Yajra\DataTables\Facades\DataTables::class,
+            ]
+            .....
+            .....
+            Configuration (Optional)
+            $ php artisan vendor:publish --provider="Yajra\DataTables\DataTablesServiceProvider"
+#2- Set Up Model and Migrations
+    Run command to create a model, and it holds the schema of the database table.
+
+        $ php artisan make:model Student -m
+    Bash
+    Open database/migrations/timestamp_create_students_table.php file and add the given below code.
+
+    public function up()
+    {
+        Schema::create('students', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->string('username');
+            $table->string('phone');
+            $table->string('dob');
+            $table->timestamps();
+        });
+    }
+    PHP
+
+    Open app/Student.php and define the schema in the $fillable array.
+
+    <?php
+
+    namespace App;
+
+    use Illuminate\Database\Eloquent\Model;
+
+    class Student extends Model
+    {
+        protected $fillable = [
+            'name',
+            'email',
+            'username',
+            'phone',
+            'dob',
+        ];
+    }
+    PHP
+    Run migration using the following command.
+
+    $ php artisan migrate
+
+#3 Insert Dummy Data or Records
+   To give you the demo of Yajra DataTables in Laravel,
+   we need to generate a handful of dummy data.
+   Use the built-in plugin Faker, and it respectively creates the fake data in the database.
+
+   Open the database/seeds/DatabaseSeeder.php file and add the following code.
+
+   <?php
+
+   use Illuminate\Database\Seeder;
+
+   // Import DB and Faker services
+   use Illuminate\Support\Facades\DB;
+   use Faker\Factory as Faker;
+
+   class DatabaseSeeder extends Seeder
+   {
+       /**
+        * Seed the application's database.
+        *
+        * @return void
+        */
+       public function run()
+       {
+           $faker = Faker::create();
+
+           $gender = $faker->randomElement(['male', 'female']);
+
+       	foreach (range(1,200) as $index) {
+               DB::table('students')->insert([
+                   'name' => $faker->name($gender),
+                   'email' => $faker->email,
+                   'username' => $faker->username,
+                   'phone' => $faker->phoneNumber,
+                   'dob' => $faker->date($format = 'Y-m-d', $max = 'now')
+               ]);
+           }
+       }
+   }
+   PHP
+   Run the following command to generate dummy data:
+
+        $ php artisan db:seed
+
+#4 - Define Route
+     In this step, we need to create a route, and possibly it brings datatables template in the view for our laravel application.
+
+     Open routes/web.php and add the given code.
+
+     Route::get('students', [
+         'uses' => 'StudentController@index',
+         'as' => 'student-list'
+     ]);
+
+#5 - Create DataTable Controller
+     Preferably create a StudentController it consists of core logic for
+     handling requests to fetch data and display the records from the database.
+
+     Create a controller using the below command.
+
+        $ php artisan make:controller StudentController
+     Bash
+     Open app/Http/Controllers/StudentController.php file and add the following code.
+
+     <?php
+
+     namespace App\Http\Controllers;
+
+     use Illuminate\Http\Request;
+     use App\Student;
+     use DataTables;
+
+     class StudentController extends Controller
+     {
+         public function index(Request $request)
+         {
+             if ($request->ajax()) {
+                 $data = Student::latest()->get();
+                 return Datatables::of($data)
+                     ->addIndexColumn()
+                     ->addColumn('action', function($row){
+                         $btn = '<a href="javascript:void(0)" class="edit btn btn-success btn-sm">Edit</a> <a href="javascript:void(0)" class="delete btn btn-danger btn-sm">Delete</a>';
+                         return $btn;
+                     })
+                     ->rawColumns(['action'])
+                     ->make(true);
+             }
+
+             return view('index');
+         }
+     }
+
+#6- Home  »  Laravel   »   Laravel 7|8 Datatables Example: Use Yajra Datatables in Laravel
+    Laravel 7|8 Datatables Example: Use Yajra Datatables in Laravel
+    Last updated on September 14, 2020 by Digamber
+    Displaying data to the user is a foundational requirement in web development. The primary reason for this tutorial is to create Datatables in Laravel using a third-party package called Yajra Datatables.
+    This Laravel 7 datatables tutorial respectively teach us the essential methods to create and show the yajra datatables laravel 7 examples.
+
+    We will try to destroy the vagueness you might get surrounded while creating laravel 7 datatables example. Simultaneously, we will have a look on laravel 7 datatables AJAX example along with Bootstrap datatable in laravel 7.
+
+    Laravel 7 Datatables Example
+    Imagine about the situation when you see thousands of records, and you have to scan through every record to get the required information. Seems difficult isn’t? Well, I reckon Datatables makes our work less miserable and offers quick search, pagination, ordering, sorting functionalities to manage the data dynamically in the table.
+
+    DataTables is a plug-in powered by jQuery often known as Javascript library. It is a notably flexible tool, developed upon the foundations of progressive and dynamic enhancement, that incorporates all of these subtle and advanced features to any static HTML table.
+
+    Some of the top-notch features:
+
+    Pagination
+    Instant search
+    Multi-column ordering
+    Use almost any data source
+    Easily theme-able
+    Wide variety of extensions
+    Mobile friendly
+    Fully internationalisable
+    Although we are only going to use a handful of functionalities like search, sort and pagination, we will try to blend these features with visually appealing HTML table sturdy from the UI/UX perspective.
+
+    Table of Contents
+    Install Laravel App
+    Install Yajra Datatables
+    Set Up Model and Migrations
+    Insert Dummy Data
+    Define Route
+    Create Controller
+    Create View
+    Conclusion
+    Install Laravel App
+    In general, our first step primarily focuses on installing a new laravel application. Run the below-mentioned artisan command to install the sacred canon.
+
+    composer create-project laravel/laravel laravel-yajra-datatables --prefer-dist
+    Bash
+    Run command to get inside the project directory.
+
+    cd laravel-yajra-datatables
+    Bash
+    Install Yajra Datatable Package
+    I wonder if you haven’t heard about Yajra Datatables library, it is a jQuery DataTables API for Laravel 4|5|6|7. This plugin handles server-side works of DataTables jQuery plugin through AJAX option by considering the Eloquent ORM, Fluent Query Builder or Collection.
+
+    Theoretically, the following command helps you installing the Yajra DataTable plugin in Laravel.
+
+    composer require yajra/laravel-datatables-oracle
+    Bash
+    As soon as we complete the installation, then we add the foundational service of the package such as datatable service provider in providers and alias inside the config/app.php file.
+
+    .....
+    .....
+    'providers' => [
+    	....
+    	....
+    	Yajra\DataTables\DataTablesServiceProvider::class,
+    ]
+    'aliases' => [
+    	....
+    	....
+    	'DataTables' => Yajra\DataTables\Facades\DataTables::class,
+    ]
+    .....
+    .....
+    PHP
+    Set Up Model and Migrations
+    Run command to create a model, and it holds the schema of the database table.
+
+    php artisan make:model Student -m
+    Bash
+    Open database/migrations/timestamp_create_students_table.php file and add the given below code.
+
+    public function up()
+    {
+        Schema::create('students', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->string('username');
+            $table->string('phone');
+            $table->string('dob');
+            $table->timestamps();
+        });
+    }
+    PHP
+    Open app/Student.php and define the schema in the $fillable array.
+
+    <?php
+
+    namespace App;
+
+    use Illuminate\Database\Eloquent\Model;
+
+    class Student extends Model
+    {
+        protected $fillable = [
+            'name',
+            'email',
+            'username',
+            'phone',
+            'dob',
+        ];
+    }
+    PHP
+    Run migration using the following command.
+
+    php artisan migrate
+    Bash
+    Insert Dummy Data or Records
+    To give you the demo of Yajra DataTables in Laravel, we need to generate a handful of dummy data. Use the built-in plugin Faker, and it respectively creates the fake data in the database.
+
+    Open the database/seeds/DatabaseSeeder.php file and add the following code.
+
+    <?php
+
+    use Illuminate\Database\Seeder;
+
+    // Import DB and Faker services
+    use Illuminate\Support\Facades\DB;
+    use Faker\Factory as Faker;
+
+    class DatabaseSeeder extends Seeder
+    {
+        /**
+         * Seed the application's database.
+         *
+         * @return void
+         */
+        public function run()
+        {
+            $faker = Faker::create();
+
+            $gender = $faker->randomElement(['male', 'female']);
+
+        	foreach (range(1,200) as $index) {
+                DB::table('students')->insert([
+                    'name' => $faker->name($gender),
+                    'email' => $faker->email,
+                    'username' => $faker->username,
+                    'phone' => $faker->phoneNumber,
+                    'dob' => $faker->date($format = 'Y-m-d', $max = 'now')
+                ]);
+            }
+        }
+    }
+    PHP
+    Run the following command to generate dummy data:
+
+    php artisan db:seed
+    Bash
+    Laravel Yajra Datatables Example
+
+    Define Route
+    In this step, we need to create a route, and possibly it brings datatables template in the view for our laravel application.
+
+    Open routes/web.php and add the given code.
+
+    Route::get('students', [
+        'uses' => 'StudentController@index',
+        'as' => 'student-list'
+    ]);
+    PHP
+    Create DataTable Controller
+    Preferably create a StudentController it consists of core logic for handling requests to fetch data and display the records from the database.
+
+    Create a controller using the below command.
+
+    php artisan make:controller StudentController
+    Bash
+    Open app/Http/Controllers/StudentController.php file and add the following code.
+
+    <?php
+
+    namespace App\Http\Controllers;
+
+    use Illuminate\Http\Request;
+    use App\Student;
+    use DataTables;
+
+    class StudentController extends Controller
+    {
+        public function index(Request $request)
+        {
+            if ($request->ajax()) {
+                $data = Student::latest()->get();
+                return Datatables::of($data)
+                    ->addIndexColumn()
+                    ->addColumn('action', function($row){
+                        $btn = '<a href="javascript:void(0)" class="edit btn btn-success btn-sm">Edit</a> <a href="javascript:void(0)" class="delete btn btn-danger btn-sm">Delete</a>';
+                        return $btn;
+                    })
+                    ->rawColumns(['action'])
+                    ->make(true);
+            }
+
+            return view('index');
+        }
+    }
+    PHP
+    Display Data with Yajra Datatables
+    Ultimately, we have reached to the last part of this laravel datatables tutorial, and we have to create an index.blade.php file spontaneously. Designing a beautiful table is a bit tricky if you don’t know how to work with HTML and CSS. This is what bootstrap set out to do.
+
+    Open resources/views/index.blade.php file and place the following code.
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Laravel 7 Datatables Tutorial</title>
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+        <link href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet">
+        <link href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+    </head>
+    <body>
+
+    <div class="container mt-5">
+        <h2 class="mb-4">Laravel 7 Yajra Datatables Example</h2>
+        <table class="table table-bordered yajra-datatable">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Username</th>
+                    <th>Phone</th>
+                    <th>DOB</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+
+    <script type="text/javascript">
+      $(function () {
+
+        var table = $('.yajra-datatable').DataTable({
+            processing: true,
+            serverSide: true,
+            ajax: "{{ route('student-list') }}",
+            columns: [
+                {data: 'DT_RowIndex', name: 'DT_RowIndex'},
+                {data: 'name', name: 'name'},
+                {data: 'email', name: 'email'},
+                {data: 'username', name: 'username'},
+                {data: 'phone', name: 'phone'},
+                {data: 'dob', name: 'dob'},
+                {
+                    data: 'action',
+                    name: 'action',
+                    orderable: true,
+                    searchable: true
+                },
+            ]
+        });
+
+      });
+    </script>
+    </html>
+    PHP
+    Essentially let me interpret what i have done above. The DataTable() method is defined, and the AJAX request is fetching the data from the server and displaying the name, email, user name, phone number and date of birth with the help of Yajra DataTable package.
+
+    Moreover, we have set orderable and searchable properties to true, so that you can search the data smoothly and make your programming tasks prosperous.
+
+    Run the following command and check our progress on the browser.
+
+        $ php artisan serve
+    Bash
+    Here is the output you get after executing the mentioned command:
+
+    http://127.0.0.1:8000/students
+

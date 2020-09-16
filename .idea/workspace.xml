@@ -17,15 +17,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43f369e8-6175-40c6-a52e-089c90166f3a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/LaratrustControllers/AjaxPermissionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/LaratrustControllers/ReAjaxPermissionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UpdatePermissionRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/pdfmake.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/pdfmake.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/pdfmake.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/pdfmake.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/vfs_fonts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/laratrust/permissions/reIndex.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mypos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mypos.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commands-Steps.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Commands-Steps.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/myCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/myCss.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/LaratrustController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/LaratrustController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Role_Permission/Permission.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Role_Permission/Permission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/site.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/site.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/laratrust/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/laratrust/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/laratrust/Permission/edit_permission.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/laratrust/Role/edit_role.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/laratrust/Roles Assignment/edit_user_perm_role_assi.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/laratrust/Roles Assignment/roles_Assignment.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/laratrust/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/laratrust/laratrustTab.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/laratrust/permissions.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/laratrust/roles.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/_alerts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/_alerts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/dashboard/wep.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/dashboard/wep.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -149,6 +175,7 @@
       <path value="$PROJECT_DIR$/vendor/kkszymanowski/traitor" />
       <path value="$PROJECT_DIR$/vendor/santigarcor/laratrust" />
       <path value="$PROJECT_DIR$/vendor/mckenziearts/laravel-notify" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-oracle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1giMYg7Hicj0JljXHzX3voRCpZB" />
@@ -159,7 +186,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -167,20 +194,23 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp64\www\myposMy\public\js" />
+      <recent name="D:\wamp64\www\myposMy\resources\views\dashboard\laratrust\permissions" />
+      <recent name="D:\wamp64\www\myposMy\app\Http\Controllers\Dashboard\LaratrustControllers" />
+      <recent name="D:\wamp64\www\myposMy\app\Http\Requests" />
+      <recent name="D:\wamp64\www\myposMy\resources\views\dashboard\laratrust" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\wamp64\www\myposMy\public\js" />
+      <recent name="D:\wamp64\www\myposMy\resources\views\dashboard\laratrust" />
+      <recent name="D:\wamp64\www\myposMy\app\Http\Requests" />
       <recent name="D:\wamp64\www\myposMy\resources\views\layouts\dashboard-AdminLte 3\content\index" />
       <recent name="D:\wamp64\www\myposMy\resources\views\layouts\dashboard-AdminLte 3\_mainContent" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\wamp64\www\myposMy\resources\views\layouts\dashboard-AdminLte 3" />
-      <recent name="D:\wamp64\www\myposMy\public\dashboard AdminLte 3_files\plugins" />
-      <recent name="D:\wamp64\www\myposMy\public\dashboard AdminLte 3_files\plugins\toastr" />
-      <recent name="D:\wamp64\www\myposMy\resources\views\dashboard\laratrust" />
-      <recent name="D:\wamp64\www\myposMy\app\Http\Controllers\Dashboard" />
     </key>
   </component>
   <component name="RunManager">
@@ -213,6 +243,9 @@
       <workItem from="1599630804606" duration="110000" />
       <workItem from="1599637720189" duration="42963000" />
       <workItem from="1599730998156" duration="12802000" />
+      <workItem from="1600146198771" duration="11601000" />
+      <workItem from="1600160267218" duration="21422000" />
+      <workItem from="1600237551575" duration="16329000" />
     </task>
     <task id="LOCAL-00001" summary="#1 Add/Define dashboard Route file and controller-namespace ( Steps: 1 , 2 )">
       <created>1598597257857</created>
@@ -368,7 +401,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599728336470</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="#15.0 pagination (Eidt view and Controller) and endable delete button _ redirect after login _ Disable Register _ All ( Steps: 1 ---- 6.1) before install noty package">
+      <created>1599910154224</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1599910154224</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,7 +459,8 @@
     <MESSAGE value="#12 optimize code and Enable Edit and Update users (view user/edit&amp;create) (controller Dsh/UserController Methods : edit &amp; update ):" />
     <MESSAGE value="#13 add auth user-&gt; name to _aside and _navBar (resources/views/layouts/dashboard-AdminLte 3/_aside&amp;&amp;_navBar .blade.php&#10;    add two method get to user Model" />
     <MESSAGE value="#14 Edit view and deny users who don't have permissions from access to route (dashboard/users/create)and hide super admin form user table and enable search feature (Steps: 1 , 2 , 3 )" />
-    <option name="LAST_COMMIT_MESSAGE" value="#14 Edit view and deny users who don't have permissions from access to route (dashboard/users/create)and hide super admin form user table and enable search feature (Steps: 1 , 2 , 3 )" />
+    <MESSAGE value="#15.0 pagination (Eidt view and Controller) and endable delete button _ redirect after login _ Disable Register _ All ( Steps: 1 ---- 6.1) before install noty package" />
+    <option name="LAST_COMMIT_MESSAGE" value="#15.0 pagination (Eidt view and Controller) and endable delete button _ redirect after login _ Disable Register _ All ( Steps: 1 ---- 6.1) before install noty package" />
   </component>
   <component name="WindowStateProjectService">
     <state x="561" y="276" key="#Custom_Plugin_Repositories" timestamp="1598701111207">
@@ -430,14 +471,14 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="462" y="104" key="#HTTP_Proxy/0.0.1366.738@0.0.1366.738" timestamp="1598856524910" />
-    <state x="449" y="170" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598966012345">
+    <state x="449" y="170" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599916674893">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="449" y="170" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1598966012345" />
-    <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599151335067">
+    <state x="449" y="170" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1599916674893" />
+    <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600148879841">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1599151335067" />
+    <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1600148879841" />
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1599419093796">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -446,14 +487,14 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="462" y="118" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1598701097177" />
-    <state x="502" y="71" key="RollbackChangesDialog" timestamp="1599225348052">
+    <state x="502" y="71" key="RollbackChangesDialog" timestamp="1600207868532">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="502" y="71" key="RollbackChangesDialog/0.0.1366.738@0.0.1366.738" timestamp="1599225348052" />
-    <state x="450" y="30" width="916" height="708" key="SettingsEditor" timestamp="1598703144309">
+    <state x="502" y="71" key="RollbackChangesDialog/0.0.1366.738@0.0.1366.738" timestamp="1600207868532" />
+    <state x="450" y="30" width="916" height="708" key="SettingsEditor" timestamp="1599915252460">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="450" y="30" width="916" height="708" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1598703144309" />
+    <state x="450" y="30" width="916" height="708" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1599915252460" />
     <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1599728358890">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -462,10 +503,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1366.738@0.0.1366.738" timestamp="1599910074522" />
-    <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1599910074522">
+    <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600239959576">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.738@0.0.1366.738" timestamp="1599910074522" />
+    <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.738@0.0.1366.738" timestamp="1600239959576" />
     <state x="284" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1599727845887">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -474,10 +515,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="466" y="7" width="585" height="592" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1599732837982" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1599821928656">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1600252261704">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1599821928656" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1600252261704" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -491,6 +532,12 @@
           <url>file://$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_mainContent/_content.blade.php</url>
           <line>88</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/public/js/pdfmake.min.js</url>
+          <line>1</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

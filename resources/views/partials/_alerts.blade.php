@@ -1,15 +1,13 @@
 
 @php
     $dir= 'left';
-    $dir_ = 'r';
     if(app()->getLocale() == 'en'){
             $dir= 'right';
-            $dir_ = 'l';
             }
 @endphp
 @if (session('success'))
 
-<script src="{{ asset( 'dashboard AdminLte 3_files/plugins/toastr/toastr.min.js') }}"></script>
+{{--<script src="{{ asset( 'dashboard AdminLte 3_files/plugins/toastr/toastr.min.js') }}"></script>--}}
 
 <script>
 
@@ -40,7 +38,7 @@
 
 @if (session('fail'))
 
-    <script src="{{ asset( 'dashboard AdminLte 3_files/plugins/toastr/toastr.min.js') }}"></script>
+{{--    <script src="{{ asset( 'dashboard AdminLte 3_files/plugins/toastr/toastr.min.js') }}"></script>--}}
 
     <script>
 
