@@ -10,7 +10,7 @@
 
 
 <!-- Main Sidebar Container -->
-<aside class="main-sidebar sidebar-dark-gray-dark elevation-4 ">
+<aside class="main-sidebar sidebar-dark-blue elevation-4 ">
     <!-- Brand Logo -->
     <a href="" class="brand-link">
         <img src="{{ asset( 'dashboard AdminLte 3_files/dist/img/AdminLTELogo.png' ) }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
@@ -87,34 +87,47 @@
                         <li class="nav-item">
                             <a href="{{ url('dashboard/permissions') }}" class="nav-link ">
                                 <i class="far fa-circle nav-icon text-danger"></i>
-                                <p>{{__('site.users')}}</p>
+                                <p>{{__('site.permissions')}}</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="" class="nav-link">
+                            <a href="{{ url('dashboard/permissionsAjax') }}" class="nav-link ">
+                                <i class="far fa-circle nav-icon text-danger"></i>
+                                <p>Ajax {{__('site.permissions')}}</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{ url('dashboard/permissionsReAjax') }}" class="nav-link ">
+                                <i class="far fa-circle nav-icon text-danger"></i>
+                                <p>ReAjax {{__('site.permissions')}}</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{ url('dashboard/roles') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon text-danger"></i>
                                 <p>{{__('site.roles')}}</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ url('dashboard/permissions') }}" class="nav-link ">
+                            <a href="{{ url('dashboard/rolesReAjax') }}" class="nav-link ">
                                 <i class="far fa-circle nav-icon text-danger"></i>
-                                <p>{{__('site.permissions')}}</p>
-                            </a>
-                        </li>
-
-
-                        <li class="nav-item">
-                            <a href="{{ url('dashboard/permissions') }}" class="nav-link ">
-                                <i class="far fa-circle nav-icon text-danger"></i>
-                                <p>{{__('site.team')}}</p>
+                                <p>ReAjax {{__('site.roles')}}</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="" class="nav-link">
+                            <a href="{{ url('dashboard/teamsReAjax') }}" class="nav-link ">
+                                <i class="far fa-circle nav-icon text-danger"></i>
+                                <p>ReAjax {{__('site.team')}}</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{ url('dashboard/userTestAjax') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon text-danger"></i>
                                 <p>{{__('site.assign_roles_and_permissions')}}</p>
                             </a>
@@ -124,6 +137,7 @@
 
                 <!-- Management Users Customers Admins List -->
                 @if(@auth()->user()->hasPermission('users_read'))
+{{--                    @if(@auth()->user()->hasRole('admin'))--}}
                 <li class="nav-item has-treeview ">
                     <a href="#" class="nav-link bg-gradient-success text-white  ">
                         <i class="nav-icon fas fa-user-edit"></i>

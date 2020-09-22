@@ -3,14 +3,17 @@ return [
     'dashboard'=> 'dashboard',
     'no_data_found'=> 'no data found',
 
-    'search' => 'Search',
-
     'add'=> 'Add',
     'edit'=> 'Edit',
+    'editing'=> 'Editing',
     'delete'=> 'Delete',
     'create' => 'Create',
     'read' => 'Read',
     'update' => 'Update',
+
+    'was_created'=> 'was created',
+    'last_updated'=> 'last updated',
+    'and' => 'and',
 
     'added_successfully' => 'Data Added successfully',
     'updated_successfully' => 'Data Updated successfully',
@@ -33,9 +36,7 @@ return [
     'customer_balances' => 'Customer Balances',
     'financial_profit' => 'Financial Profit',
 
-    'permissions_management' => 'Permissions Management',
-    'permissions' => 'Permissions',
-    'roles' => 'Roles',
+
     'assign_roles_and_permissions' => 'Assign roles & permissions',
     'for_users' => 'for_users',
     'for_roles' => 'for_roles',
@@ -54,6 +55,7 @@ return [
 
 // titles
     // Permissions
+    'permissions_management' => 'Permissions Management',
     'permission' => 'Permission',
     'Permission_Dashboard'=>'Permission Dashboard',
     'create_new_permission'=>'Create a new Permission',
@@ -65,9 +67,28 @@ return [
     'permission_name' => 'Permission name',
 
         // actions
-        'update-permission'=>'Update Permission',
-        'delete-permission'=>'Delete Permission',
-        'create-permission'=>'Create Permission',
+        'update-permission'=>'Update permission',
+        'delete-permission'=>'Delete permission',
+        'create-permission'=>'Create permission',
+
+    // Roles
+    'roles_management' => 'Roles Management',
+    'roles' => 'Roles',
+    'role' => 'Role',
+    'Role_Dashboard'=>'Role Dashboard',
+    'create_new_role'=>'Create a new role',
+    'role_name' => 'Role name',
+        // actions
+        'update-role'=>'Update role',
+        'delete-role'=>'Delete role',
+        'create-role'=>'Create role',
+
+    // Users
+    'create_new_user' => 'Create a new user',
+    'update-user'=> 'Update the user',
+    'added_user_successfully' => 'added user successfully',
+    'delete_user_successfully' => 'delete user successfully',
+    'users_Dashboard'=> 'Users Dashboard',
 
 // DataTable
     'next'=> 'Next',

@@ -1,7 +1,7 @@
 @extends('layouts.dashboard-AdminLte 3.app')
 <!-- Content Header (Page header) -->
 @section('HeaderTitle')
-    {{__('site.permissions_management')}}
+    {{__('site.teams_management')}}
     @php
         $dir= 'left';
         if(app()->getLocale() == 'en'){
@@ -56,7 +56,7 @@
 @stop
 @section('Content_header_list_item')
     <li class="breadcrumb-item"><a href="{{route('dashboard.index')}}"><i class=" fa fa-tachometer-alt " style="color: red;"></i> {{__('site.dashboard')}}</a></li>
-    <li class="breadcrumb-item active"><i class=" fa fa-users " style="color: blue;"></i> {{__('site.permissions')}}</li>
+    <li class="breadcrumb-item active"><i class=" fa fa-users " style="color: blue;"></i> {{__('site.teams')}}</li>
 @stop
 <!-- /.content-header -->
 @section('Main_content')
@@ -65,19 +65,18 @@
 <div class="container" style="width: 100%;">
     <div class="row justify-content-center">
         <div class="col-sm-2 col-md-10 col-lg-12">
-            <div class="card">
-                <div class="card-header">{{__('site.Permission_Dashboard')}}</div>
+            <div class="card" >
+                <div class="card-header card-h-blue text-white " >{{__('site.Team_Dashboard')}}</div>
                 <div class="card-body">
                     <div class="mb-2">
-                    <a class="btn btn-primary btn-sm" href="{{ route('dashboard.permissions.create') }}">{{__('site.create_new_permission')}}</a>
-                    <!-- Button-Add trigger Add Permission modal -->
+                    <!-- Button-Add trigger Add Team modal -->
 
                     <button type="button" class="btn btn-sm  btn-primary"onclick="show_create_model(event.target)" id="Ajax_create_btn" >
 
                         <i class="fa fa-plus"></i> Ajax @lang('site.create')
 
                     </button>
-                    <!-- ./ Button-Add trigger Add Permission modal -->
+                    <!-- ./ Button-Add trigger Add Team modal -->
                     </div>
                     <table  class="table table-hover my-2 data-table">
                         <thead>
@@ -116,13 +115,13 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">{{__('site.Close')}}</button>
-                <button type="button" id="confirm_delete_btn" onclick="deletePermission(event.target)"   class="btn btn-sm  btn-danger"><i class="fa fa-trash"></i> {{__('site.confirm_delete')}}</button>
+                <button type="button" id="confirm_delete_btn" onclick="deleteTeam(event.target)"   class="btn btn-sm  btn-danger"><i class="fa fa-trash"></i> {{__('site.confirm_delete')}}</button>
             </div>
         </div>
     </div>
 </div><!--./Delete Modal -->
 
-<!-- Add Permission Model -->
+<!-- Add Team Model -->
 <div class="modal fade" id="Add_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -130,19 +129,14 @@
                 <h5 class="modal-title" id="ModalLabel"></h5>
             </div>
             <div class="modal-body">
-                <form id="create_permission" >
+                <form id="create_team"  method="POST">
                     @csrf
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <input type="hidden" name="post_id" id="post_id">
-                            <label class="form-label">{{__('site.permission_name')}}</label>
+                            <label class="form-label">{{__('site.team_name')}}</label>
                             <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" >
                             <span id="nameError" class="alert-message text-danger"></span>
-                            @error('name')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                            @enderror
                         </div>
                         <div class="form-group col-md-6">
                             <label class="form-label">{{__('site.display_name')}}</label>
@@ -156,15 +150,15 @@
                         <span id="descriptionError" class="alert-message text-danger"></span>
 
                     </div>
-                            </form>
+                </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">{{__('site.Close')}}</button>
-                <button id="create_permission_btn" type="button" onclick="addPermission(event.target)" class="btn btn-primary btn-sm">{{__('site.create_new_permission')}}</button>
+                <button id="create_team_btn"  form="create_team" type="submit"  class="btn btn-primary btn-sm">{{__('site.create_new_team')}}</button>
             </div>
         </div>
     </div>
-</div><!-- ./ Add Permission Model -->
+</div><!-- ./ Add Team Model -->
 <!--Begin ///////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 
@@ -210,35 +204,13 @@
                     'excelHtml5',
                 ],
 
-                // buttons: [
-                //     'copyHtml5',
-                //     'excelHtml5',
-                //     //PDF
-                //     // {
-                //     //     extend: 'pdf',
-                //     //     text: 'PDF',
-                //     //     customize: function (doc) {
-                //     //          doc.defaultStyle =
-                //     //             {
-                //     //                  // font: 'ِAmiri',
-                //     //             };
-                //     //     },
-                //     //     titleAttr: 'Generate PDF',
-                //     //     className: 'btn-outline-danger btn-sm ',
-                //     //     exportOptions: {
-                //     //         columns: ':not(.select-checkbox)',
-                //     //         orthogonal: "myExport",
-                //     //         modifier: { order: 'index', page: 'current' }
-                //     //     },
-                //     // },
-                // ],
                 processing: true,
                 serverSide: true,
                 "searchable": false,
                 "scrollY": "300px",
                 "scrollCollapse": true,
                 "paging": true,
-                ajax: "{{ route('dashboard.permissionsReAjax.index') }}",
+                ajax: "{{ route('dashboard.teamsReAjax.index') }}",
 
                 columns: [
                     {data: 'DT_RowIndex', name: '#'},
@@ -266,24 +238,6 @@
                     }
                 },
 
-                // columnDefs: [
-                // //revese arabic words for pdf exporting
-                //     {
-                //         // target columns to reverse words
-                //         targets: [2,3,4],
-                //         render: function (data, type, row) {
-                //             if (type === 'myExport') {
-                //                 return data.split(' ').reverse().join(' ');
-                //             }
-                //             return data;
-                //         }
-                //     }],
-
-                // columnDefs: [
-                //     {
-                //         targets: [2,3,4],
-                //         className: 'dt-center'
-                //     }],
         });
             function show_delete_model(event) {
                 var id = $(event).data("id");
@@ -295,13 +249,13 @@
             function show_create_model(event) {
                 clear_input();
                 var id = $(event).data("id");
-                $('#create_permission_btn').data("id", id);
+                $('#create_team_btn').data("id", id);
                 $('#Add_Modal').modal('show');
             }
 
-            function deletePermission(event) {
+            function deleteTeam(event) {
                 var id = $(event).data("id");
-                let _url = `permissionsReAjax/${id}`;
+                let _url = `teamsReAjax/${id}`;
 
                 $.ajax({
                     url: _url,
@@ -312,7 +266,7 @@
                     },
                     success: function (response) {
                         $("#row_" + id).remove();
-                        fun_toastr('success', '{{__('site.delete-permission')}}');
+                        fun_toastr('success', '{{__('site.delete-team')}}');
                         $('#post_id').val("");
                         $('#Delete_Modal').modal('hide');
                         table.ajax.reload();
@@ -321,39 +275,33 @@
             }
 
             $("#Ajax_create_btn").click(function () {
-                    $('#nameError').text('');
-                    $('#display_nameError').text('');
-                    $('#descriptionError').text('');
+                clear_input();
+                $("#ModalLabel").html("{{__('site.create_new_team')}}");
                 }
             );
 
-            function addPermission(event) {
-                var id = $('#post_id').val();
-                var name = $('#name').val();
-                var description = $('#description').val();
-                var display_name = $('#display_name').val();
-                let _url = "{{ route('dashboard.permissionsReAjax.store') }}";
-                $('#nameError').text('');
-                $('#display_nameError').text('');
-                $('#descriptionError').text('');
-
+            // function addTeam(event) {
+                $("#create_team").submit(function(e) {
+                    e.preventDefault(); // prevent actual form submit
+                let id = $('#post_id').val();
+                // let name = $('#name').val();
+                // let description = $('#description').val();
+                // let display_name = $('#display_name').val();
+                let _url = "{{ route('dashboard.teamsReAjax.store') }}";
+                    let form = $(this);
+                    console.log('bayyyyyyyyyyy');
                 $.ajax({
                     url: _url,
                     type: "POST",
-                    data: {
-                        id: id,
-                        name: name,
-                        display_name: display_name,
-                        description: description,
-                        "_token": "{{ csrf_token() }}",
-                    },
+                    data: form.serialize(), // serializes form input
+
                     success: function (response) {
                         if (response.code === 200) {
                             if (id != "") {
                                 fun_toastr('success', '{{__('site.updated_successfully')}}');
                                 table.ajax.reload();
                             } else {
-                                fun_toastr('success', '{{__('site.added_permission_successfully')}}');
+                                fun_toastr('success', '{{__('site.added_successfully')}}');
                                 table.ajax.reload();
                             }
                             $('#name').val('');
@@ -362,6 +310,7 @@
                             $('#post_id').val("");
 
                             $('#Add_Modal').modal('hide');
+                            // clear_check();
 
                         }
                     },
@@ -372,14 +321,14 @@
 
                     }
                 });
-            }
+            });
 
 
-            function editPermission(event) {
+            function editTeam(event) {
+                clear_input();
                 var id = $(event).data("id");
-                let _url = `permissionsReAjax/${id}`;
-                // clear_input();
-                $("#ModalLabel").html("{{__('site.update-permission')}}");
+                let _url = `teamsReAjax/${id}`;
+                $("#ModalLabel").html("{{__('site.update-team')}}");
 
                 $.ajax({
                     url: _url,
@@ -388,12 +337,13 @@
                         {{--"_token": "{{ csrf_token() }}",--}}
                     },
                     success: function (response) {
-                        if (response) {
-                            $("#post_id").val(response.id);
-                            $("#name").val(response.name);
-                            $("#display_name").val(response.display_name);
-                            $("#description").val(response.description);
-                            $('#Add_Modal').modal('show');
+                        console.log(response);
+                        if (response.code === 200) {
+                                $("#post_id").val(response.team.id);
+                                $("#name").val(response.team.name);
+                                $("#display_name").val(response.team.display_name);
+                                $("#description").val(response.team.description);
+                                $('#Add_Modal').modal('show');
                             $('#name').prop('readonly', true);
                             table.ajax.reload();
                         } else {
@@ -431,18 +381,11 @@
                 // toastr["error"]("My name is Inigo Montoya. You killed my father. Prepare to die!")
             }
 
-            function reload_doc() {
-                location.reload(true);
-            }
-
 
             function clear_input() {
-                $("#ModalLabel").html('{{__('site.create_new_permission')}}');
+
+                $("#create_team")[0].reset();
                 $('#name').prop('readonly', false);
-                $("#post_id").val('');
-                $("#name").val('');
-                $("#display_name").val('');
-                $("#description").val('');
                 $('#nameError').text('');
                 $('#display_nameError').text('');
                 $('#descriptionError').text('');

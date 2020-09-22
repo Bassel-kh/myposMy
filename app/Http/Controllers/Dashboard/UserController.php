@@ -36,7 +36,7 @@ class UserController extends Controller
 //                })->get();
                 })->latest()->paginate(5);
 
-//        $users = User::all();
+
 
 
         return view('dashboard.users.index' ,compact('users'));
@@ -130,6 +130,7 @@ protected  function  getMessages(){
      */
     public function edit(User $user)
     {
+//        dd($user);
         return view('dashboard.users.edit', compact('user'));
 
     } // end of edit

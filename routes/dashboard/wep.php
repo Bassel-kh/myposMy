@@ -7,7 +7,6 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => [ 'l
     function(){
         Route::prefix('dashboard')-> name('dashboard.') ->group(function (){
 
-
             Route::get('/index', 'DashboardController@index')->name('index');
 
 
@@ -15,11 +14,31 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => [ 'l
             Route::resource('users' , 'UserController')->except(['show']);
 
             // laratrust Routes
-            Route::resource('permissions', 'LaratrustControllers\PermissionController');
-            Route::resource('permissionsAjax', 'LaratrustControllers\AjaxPermissionController');
-            Route::resource('permissionsReAjax', 'LaratrustControllers\ReAjaxPermissionController');
-            Route::get('permissionsReAjax/{id}/edit/', 'LaratrustControllers\ReAjaxPermissionController@edit');
+                // Permissions
+                Route::resource('permissions', 'LaratrustControllers\PermissionController');
+                Route::resource('permissionsAjax', 'LaratrustControllers\AjaxPermissionController');
+                Route::resource('permissionsReAjax', 'LaratrustControllers\ReAjaxPermissionController')->except(['edit']);
+                Route::get('permissionsReAjax/{id}/edit/', 'LaratrustControllers\ReAjaxPermissionController@edit');
 
+                // Roles
+                Route::resource('roles', 'LaratrustControllers\RoleController');
+                Route::resource('rolesReAjax', 'LaratrustControllers\ReAjaxRoleController')->except(['edit']);
+                Route::get('rolesReAjax/{id}/edit/', 'LaratrustControllers\ReAjaxRoleController@edit');
+
+                // Teams
+
+                Route::resource('teamsReAjax', 'LaratrustControllers\ReAjaxTeamController')->except(['edit']);
+                Route::get('teamsReAjax/{id}/edit/', 'LaratrustControllers\ReAjaxTeamController@edit');
+                // Users
+                Route::resource('userTest', 'LaratrustControllers\UserTestController');
+                Route::resource('userTestAjax', 'LaratrustControllers\UserTestAjaxController');
+
+//            Route::resource('usersLara', 'LaratrustControllers\UserLaraController');
+//                Route::get('usersLara/{id}/edit/', 'LaratrustControllers\UserLaraController@edit');
+
+                //RolesAssignmentController
+//             Route::resource('/roles_assignment', 'LaratrustControllers\RolesAssignmentController')
+//                ->only(['index', 'edit', 'update']);
 
 //            Route::resource('permissions' , 'LaratrustController');
 

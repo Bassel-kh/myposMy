@@ -37,7 +37,10 @@
     <!-- DataTables -->
     <link rel="stylesheet" href="{{ asset( 'dashboard AdminLte 3_files/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
     <link rel="stylesheet" href="{{ asset( 'dashboard AdminLte 3_files/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="{{ asset( 'css/app.css') }}">
 
+    <style>
+    </style>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -61,11 +64,14 @@
                     <div class="col-sm-6">
                         @if(app()->getLocale() == 'ar')
                             <ol class="breadcrumb float-sm-left">
+                                @yield('Content_header_list_item')
+                            </ol>
                         @else
                             <ol class="breadcrumb float-sm-right">
+                                @yield('Content_header_list_item')
+                            </ol>
                         @endif
-                            @yield('Content_header_list_item')
-                        </ol>
+
                     </div><!-- /.col -->
                 </div><!-- /.row -->
             </div><!-- /.container-fluid -->

@@ -2,6 +2,7 @@
 
 namespace App\Models\Role_Permission;
 
+use Carbon\Carbon;
 use DateTimeInterface;
 use Laratrust\Models\LaratrustPermission;
 
@@ -25,7 +26,16 @@ class Permission extends LaratrustPermission
 //        return $value->diffForHumans();
 //
 //    }
+//    public function getCreatedAtAttribute(){
 //
+//        return Carbon::createFromTimeStamp(strtotime($this->attributes['created_at']) )->diffForHumans();
+//    }
+
+    public function getUpdatedAtAttribute(){
+
+        return Carbon::createFromTimeStamp(strtotime($this->attributes['updated_at']) )->diffForHumans();
+    }
+
 //    public function getUpdatedAtAttribute($value)
 //    {
 //        // example

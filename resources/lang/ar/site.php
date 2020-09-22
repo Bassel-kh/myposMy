@@ -7,12 +7,17 @@ return [
 
     'add'=> 'أضف',
     'edit'=> 'تعديل',
+    'editing'=> 'تعديل',
     'delete'=> 'حذف',
     'create' => 'إنشاء',
     'read' => 'عرض',
     'update' => 'تحديث',
 
+//    Role test was created منذ 7 ثواني and last updated
 
+    'was_created'=> 'تم الإنشاء ',
+    'last_updated'=> 'التعديل الاّخير',
+    'and' => 'و',
 
     'added_successfully' => 'تمت إضافةالبيانات بنجاح',
     'updated_successfully' => 'تم تعديل البيانات بنجاح',
@@ -23,7 +28,7 @@ return [
     'Error_add' => 'فشل الحفظ الرجاء المحاولة محددا',
 
 
-    'users'=> 'المشرفون/المستخدمون',
+    'users'=> 'المستخدمون',
     'first_name'=> 'الاسم الأول',
     'last_name'=> 'الاسم الأخير',
     'email'=> 'البريد الالكتروني',
@@ -36,9 +41,7 @@ return [
     'customer_balances' => 'أرصدة العملاء',
     'financial_profit' => 'الربح المالي',
 
-    'permissions_management' => 'إدارة الصلاحيات',
-    'permissions' => 'الصلاحيات',
-    'roles' => 'الأدوار',
+
     'assign_roles_and_permissions' => 'إسناد الأدوار والصلاحيات',
     'for_users' => 'للمستخدمين',
     'for_roles' => 'للأدوار',
@@ -54,8 +57,10 @@ return [
 
 // titles
     // Permissions
+    'permissions_management' => 'إدارة الصلاحيات',
+    'permissions' => 'الصلاحيات',
     'permission' => 'صلاحية',
-    'Permission_Dashboard'=>'لوحة تجكم الصلاحيات',
+    'Permission_Dashboard'=>'لوحة تحكم الصلاحيات',
     'create_new_permission'=>'إنشاء صلاحيه جديدة',
     'name'	=> 'الاسم',
     'display_name'=> 'الاسم الظاهر',
@@ -67,6 +72,25 @@ return [
         'update-permission'=>'تعديل الصالاحية',
         'delete-permission'=>'حذف الصالاحية',
         'create-permission'=>'إنشاء الصالاحية',
+
+    // Roles
+    'roles_management'=>'إدارة الأدوار ( القواعد )',
+    'roles' => 'الأدوار',
+    'role' => 'دور',
+    'Role_Dashboard'=>'لوحة تحكم الأدوار',
+    'create_new_role'=>'إنشاء دور جديد',
+    'role_name' => 'اسم الدور',
+        // actions
+        'update-role'=>'تحديث الدور',
+        'delete-role'=>'حذف الدور',
+        'create-role'=>'إنشاء الدور',
+
+    // Users
+    'create_new_user' => 'إنشاء مستخدم جديد',
+    'update-user'=> 'تحديث المستخدم',
+    'added_user_successfully' => 'تم إضافة المستخدم بنجاح',
+    'delete_user_successfully' => 'تم حذف المستخدم بنجاح',
+    'users_Dashboard'=> 'لوحة تحكم المستخدمين',
 
 // DataTable
     'next'=> 'التالي',

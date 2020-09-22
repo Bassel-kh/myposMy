@@ -10,7 +10,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laratrust\Traits\LaratrustUserTrait;
 
-class User extends Authenticatable
+class Usertest extends Authenticatable
 {
     use  LaratrustUserTrait, Notifiable;
 
@@ -31,7 +31,7 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
-
+//
     protected function serializeDate(DateTimeInterface $date) : string
     {
         return $date->format('Y-m-d H:i:s');
@@ -43,24 +43,10 @@ class User extends Authenticatable
 //        return Carbon::createFromTimeStamp(strtotime($this->attributes['created_at']) )->diffForHumans();
 //    }
 
-//      public function getUpdatedAtAttribute(){
+//    public function getUpdatedAtAttribute(){
 //
 //        return Carbon::createFromTimeStamp(strtotime($this->attributes['updated_at']) )->diffForHumans();
 //    }
-    /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
-//    protected $casts = [
-//        'email_verified_at' => 'datetime',
-//    ];
 
-//    public function getFirstNameAttribute($value){
-//        return ucfirst($value);
-//    }
-//
-//    public function getLastNameAttribute($value){
-//        return ucfirst($value);
-//    }
+
 }

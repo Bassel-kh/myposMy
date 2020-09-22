@@ -2552,7 +2552,29 @@ textarea.form-control.is-invalid {
   border-color: #e3342f;
   box-shadow: 0 0 0 0.2rem rgba(227, 52, 47, 0.25);
 }
+/* add */
+.card{
+    box-shadow: 0 0 20px 0.1rem rgb(247,247,247);
+}
 
+.card-h-red{
+    background: linear-gradient(to left, red, rgb(247,247,247));
+}
+/*rgb(52,144,220)*/
+.card-h-blue{
+    background: linear-gradient(to left, dodgerblue, rgb(247,247,247));
+}
+
+.card-h-green{
+    background: linear-gradient(to left, green, rgb(247,247,247));
+}
+
+.card-h-black{
+    background: linear-gradient(to left, black, rgb(247,247,247));
+}
+
+
+/* ./ add */
 .form-inline {
   display: flex;
   flex-flow: row wrap;

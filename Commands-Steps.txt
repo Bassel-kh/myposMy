@@ -1220,5 +1220,37 @@ pagination (Eidt view and Controller)
                 - edit pdfMake file and vs-fonts.js to support arabic fonts
                 - pdfmake problem with arabic words orders not solve???!!!
 
+#17 ----------------------------------
+ Complement step: #16
+ 17.1- Roles views and controllers make:
 
+    1- add Role controler and it's Request edit it's views.
+    2- Teams Feature
+       NOTE
 
+       The teams feature is optional, this part covers how to configure it after the installation.
+
+       If you had your teams.enabled value set to true during the installation and automatic setup, you can skip this part.
+
+       Set the teams.enabled value to true in your config/laratrust.php file.
+       {
+        | Defines if Laratrus
+        | Please check the do
+        |
+        */
+        'enabled' => true,
+       }
+
+       Run:
+
+        $ php artisan laratrust:setup-teams
+       Run:
+        $ php artisan migrate
+
+       Now you can use the teams feature in you code.
+
+       Please refer to the teams concepts concepts to learn how to use them.
+
+    3- all laratrust views and controller and models are added
+
+## ----------------------------------

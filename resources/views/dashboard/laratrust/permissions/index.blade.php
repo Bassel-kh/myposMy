@@ -60,8 +60,10 @@
                                 <td><a href="#">{{ $permission->name }}</a></td>
                                 <td>{{ $permission->display_name }}</td>
                                 <td>{{ $permission->description }}</td>
-                                <td>{{ $permission->created_at->diffForHumans() }}</td>
-                                <td>{{ $permission->updated_at->diffForHumans() }}</td>
+                                <td>{{ $permission->created_at }}</td>
+                                <td>{{ $permission->updated_at }}</td>
+{{--                                <td>{{ $permission->created_at->diffForHumans() }}</td>--}}
+{{--                                <td>{{ $permission->updated_at->diffForHumans() }}</td>--}}
                                 <td>
                                     {{-- Ajax --}}
                                     <a href="javascript:void(0)" data-id="{{ $permission->id }}" onclick="editPermission(event.target)" class="btn btn-info btn-sm">{{__('site.edit')}}</a>
