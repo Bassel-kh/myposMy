@@ -4,11 +4,14 @@
     {{__('site.roles_management')}}
     @php
         $dir= 'left';
+        $dirI='rlt';
         if(app()->getLocale() == 'en'){
                 $dir= 'right';
+                $dirI='ltr';
                 }
     @endphp
     @if(app()->getLocale() == 'ar')
+
     <style>
 
         .dataTables_filter {
@@ -65,7 +68,7 @@
 <div class="container" style="width: 100%;">
     <div class="row justify-content-center">
         <div class="col-sm-2 col-md-10 col-lg-12">
-            <div class="card"  style="box-shadow: 0 0 20px 0.1rem rgb(169,206,238);">
+            <div class="card "  >
                 <div class="card-header  card-h-red text-white ">{{__('site.Role_Dashboard')}}</div>
                 <div class="card-body">
                     <div class="mb-2">
@@ -263,8 +266,10 @@
                 clear_input();
                 var id = $(event).data("id");
                 $('#create_role_btn').data("id", id);
+                $('#create_role_btn').html('{{__("site.create_new_role")}}');
                 $('#Add_Modal').modal('show');
             }
+
 
             function deleteRole(event) {
                 var id = $(event).data("id");
@@ -339,6 +344,7 @@
 
             function editRole(event) {
                 clear_input();
+                $('#create_role_btn').html('{{__("site.update-role")}}');
                 var id = $(event).data("id");
                 let _url = `rolesReAjax/${id}`;
                 $("#ModalLabel").html("{{__('site.update-role')}}");

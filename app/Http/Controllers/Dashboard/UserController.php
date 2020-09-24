@@ -5,7 +5,9 @@ namespace App\Http\Controllers\Dashboard;
 use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
+use Intervention\Image\Facades\Image;
 
 class UserController extends Controller
 {
@@ -78,11 +80,46 @@ class UserController extends Controller
         $request_data = $request->except(['password', 'password_confirmation', 'permissions']);
         $request_data['password'] = bcrypt($request->password);
 
+        if($request->image){
+           $img = Image::make($request->image)->resize(320, null, function ($constraint) {
+                $constraint->aspectRatio();
+            });// to use save method the folder where the file will save in it mustn't link with storage (*_~)
+            $img->stream(); // <-- Key point
+//
+//            //dd();
+            $fileName = $request->image->hashName();
+            Storage::disk('public_uploads')->put('userImages'.'/'.$fileName, $img, 'public');
+
+            $request_data['image']= $request->image->hashName();
+//            Storage::disk('local')->put($request->image, 'Contents');
+        } // end of if
+
+//
+//        if ($request->hasFile('image')) {
+//            $image      = $request->file('image');
+//            $fileName   = time() . '.' . $image->getClientOriginalExtension();
+//            $fileName = $request->image->hashName();
+//
+//            $img = Image::make($image->getRealPath());
+//            $img->resize(120, 120, function ($constraint) {
+//                $constraint->aspectRatio();
+//            });
+//
+//            $img->stream(); // <-- Key point
+//
+//            //dd();
+//            Storage::disk('public_uploads')->put('userImages'.'/'.$fileName, $img, 'public');
+//        }
+
+//        dd($request_data);
+
         $user = User::create($request_data);
         $user->attachRole('admin');
         if($request->has('permissions') ) {
             $user->syncPermissions($request->permissions);
         }
+
+
         session()->flash('success', __('site.added_successfully'));
         return redirect()->route('dashboard.users.index');
 //
@@ -177,11 +214,72 @@ protected  function  getMessages(){
      * Remove the specified resource from storage.
      *
      * @param  \App\User  $user
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy(User $user)
     {
+        // Delete File from Public Storage Folder
+
+        // method 1:
+        // 1: Using File System
+            //dd($user->image);
+//            if(\File::exists(public_path('uploads/userImages/'.$user->image))){
+//                \File::delete(public_path('uploads/userImages/'.$user->image));
+//            }else{
+//                dd('File does not exists.');
+//            }
+
+
+
+
+        // method 2:
+        // 2: Using Storage System
+//
+//           if( Storage::disk('public_uploads')->exists('userImages/'.$user->image)){
+//               Storage::disk('public_uploads')->delete('userImages/'.$user->image);
+//           }else{
+//               dd('File does not exists.');
+//           }
+
+
+
+        // method 3:
+        // 3:  Using Core PHP Functions
+
+        if(file_exists(public_path('uploads/userImages/'.$user->image))){
+            unlink(public_path('uploads/userImages/'.$user->image));
+        }else{
+            dd('File does not exists.');
+        }
+
+
+//        dd($user->image);
+//       $disk = Storage::disk('public');
+//       dd($disk);
+//        $visibility = Storage::getVisibility(public_path('uploads/3.jpeg'));
+////        $directories = Storage::directories(public_path());
+//        dd($visibility);
+//        Storage::disk('uploads')->delete('3.jpeg');
+
+//        Storage::makeDirectory('test');
+//        Storage::disk('public_uploads')->delete('userImages/4.png');
+
+//        Storage::deleteDirectory('test');
+//        Storage::disk('uploads')->put('public/uploads/2.jpeg', $content);
+//        Storage::delete('public/uploads/userImages/vvEXVeEmMNeetOWTZk52EzmCvemAVNmwanT9DTGv.jpeg');
+//        Storage::disk('public')->delete('\555.jpeg');
+//        dd($user->image);
+//        if($user->image != 'default.png'){
+
+//            Storage::disk('public_uploads')->delete('userImages/'.$user->image);
+//            555.jpeg
+
+
+
+//        } // end of if
+
         $user->delete();
+
         session()->flash('success',__('site.deleted_successfully'));
         return redirect()->route('dashboard.users.index');
     } // end of destroy

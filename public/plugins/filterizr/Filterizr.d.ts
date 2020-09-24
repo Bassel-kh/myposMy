@@ -64,12 +64,12 @@ export default class Filterizr {
     private rebindFilterContainerEvents;
     private bindEvents;
     /**
-     * If it contains images it makes use of the imagesloaded npm package
-     * to trigger the first render after the images have finished loading
-     * in the DOM. Otherwise, overlapping can occur if the images do not
+     * If it contains userImages it makes use of the imagesloaded npm package
+     * to trigger the first render after the userImages have finished loading
+     * in the DOM. Otherwise, overlapping can occur if the userImages do not
      * have the height attribute explicitly set on them.
      *
-     * In case the grid contains no images, then a simple render is performed.
+     * In case the grid contains no userImages, then a simple render is performed.
      */
     private renderWithImagesLoaded;
     private updateDimensionsAndRerender;

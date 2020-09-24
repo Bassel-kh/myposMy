@@ -20,9 +20,17 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'first_name', 'last_name', 'email', 'password',
+        'first_name', 'last_name', 'email', 'password','image'
     ];
 
+    protected $appends = ['image_path'];
+
+    public function getImagePathAttribute(){
+
+        return  asset('uploads/userImages/'.$this->image);
+        return asset('uploads5/userImages/'.$this->image);
+
+    } // end of get image path
     /**
      * The attributes that should be hidden for arrays.
      *

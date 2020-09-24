@@ -103,6 +103,8 @@ return [
     'info' => 'إظهار _START_ إلى _END_ من أصل _TOTAL_ سجل',
 
 
+    // media
+    'image'=>'صورة',
 
 ]
 ;

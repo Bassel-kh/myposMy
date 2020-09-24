@@ -103,4 +103,6 @@ return [
 
 
 
+    // media
+    'image'=>'image',
 ];

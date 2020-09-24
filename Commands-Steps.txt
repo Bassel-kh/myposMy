@@ -1253,4 +1253,173 @@ pagination (Eidt view and Controller)
 
     3- all laratrust views and controller and models are added
 
-## ----------------------------------
+#18 ----------------------------------
+Image compression part 1 (add image to user);
+    18.1- edit view resources/views/dashboard/users/create.blade.php
+        1- add image input field to form :
+               {{--    image      --}}
+               <div class="form-group">
+                   <label>{{__('site.image')}}</label>
+                   <input class="form-control @error('image') is-invalid @enderror" type="file" name="image" >
+                   @error('image')
+                   <small class="form-text text-danger">{{ $message }}</small>
+                   @enderror
+               </div>
+               {{--    ./image      --}}
+
+        2- install image compression package:
+            http://image.intervention.io/
+
+            1- php composer.phar require intervention/image:
+                - run command :
+                    $ composer  require intervention/image
+
+                - Integration in Laravel
+                    After you have installed Intervention Image, open your Laravel config file [ config/app.php ] and add the following lines.
+                        In the [$providers ] array add the service providers for this package.
+                            {
+                                [...]
+                                Intervention\Image\ImageServiceProvider::class
+                                [...]
+                            }
+
+                    Add the facade of this package to the [$aliases] array.
+
+                            {
+                                [...]
+                                'Image' => Intervention\Image\Facades\Image::class
+                                [...]
+                            }
+
+                    Now the Image Class will be auto-loaded by Laravel.
+
+                    - Configuration
+                      By default Intervention Image uses PHP's GD library extension to process all images. If you want to switch to Imagick, you can pull a configuration file
+                        into your application by running one of the following artisan command.
+                        Publish configuration in Laravel
+                      $ php artisan vendor:publish --provider="Intervention\Image\ImageServiceProviderLaravelRecent"
+
+                      [Note] {
+                          Currently Intervention Image supports two Image processing extensions.
+                              GD
+                              Imagick
+                          Make sure you have one of these installed in your PHP environment, before you start.
+                      }
+        3- add to form:
+            enctype="multipart/form-data"
+        4- edit user controller to handle with $request->Image:
+
+            $img = Image::make('foo.jpg')->resize(320, 240)->insert('watermark.png');
+            Usage:{
+                Return Values
+                Instance of Intervention\Image\Image
+
+                Examples
+                // create instance
+                $img = Image::make('public/foo.jpg');
+
+                // resize image to fixed size
+                $img->resize(300, 200);
+
+                // resize only the width of the image
+                $img->resize(300, null);
+
+                // resize only the height of the image
+                $img->resize(null, 200);
+
+                // resize the image to a width of 300 and constrain aspect ratio (auto height)
+                $img->resize(300, null, function ($constraint) {
+                    $constraint->aspectRatio();
+                });
+
+                // resize the image to a height of 200 and constrain aspect ratio (auto width)
+                $img->resize(null, 200, function ($constraint) {
+                    $constraint->aspectRatio();
+                });
+
+                // prevent possible upsizing
+                $img->resize(null, 400, function ($constraint) {
+                    $constraint->aspectRatio();
+                    $constraint->upsize();
+                });
+
+                // resize the image so that the largest side fits within the limit; the smaller
+                // side will be scaled to maintain the original aspect ratio
+                $img->resize(400, 400, function ($constraint) {
+                    $constraint->aspectRatio();
+                    $constraint->upsize();
+                });
+            }
+
+        5- define where image will be saved:
+            1- make directory   upload in public folder.
+            2- Edit in fileSystem.php in folder config;
+                  'public_uploads' => [
+                            'driver' => 'local',
+                            'root' => public_path('app/public/uploads'),
+                        ],
+
+            3- save image :
+                 $img = Image::make($request->image)->resize(320, null, function ($constraint) {
+                                $constraint->aspectRatio();
+                            })->save(public_path('uploads/'.$request->image->hashName()));
+
+            4- create folder userImages in folder uploads
+            5- edit user schema to add image column:
+                    edit create user table :
+                        $table->string('image')->default('default.png');
+
+                    $ php artisan migrate:fresh --seed
+
+            6- add to user model:
+                protect $appends = ['image_path'];
+
+                public function getImagePathAttribute(){
+
+                }
+            7- edit userController to delete image when user delete:
+           { added 3 method to delete file }
+
+            [   $ php artisan storage:link    ]
+
+                    if(user->image != 'default.png'){
+                        // method : 1
+                        // Using File System
+                               //dd($user->image);
+                               if(\File::exists(public_path('uploads/userImages/'.$user->image))){
+                                   \File::delete(public_path('uploads/userImages/'.$user->image));
+                               }else{
+                                   dd('File does not exists.');
+                               }
+
+                        // method : 2
+                        // Using Storage System
+                              if( Storage::disk('public_uploads')->exists('userImages/'.$user->image)){
+                                  Storage::disk('public_uploads')->delete('userImages/'.$user->image);
+                              }else{
+                                  dd('File does not exists.');
+                              }
+
+                        // method : 3
+                        // Using Core PHP Functions
+                              if(file_exists(public_path('uploads/userImages/'.$user->image))){
+                                 unlink(public_path('uploads/userImages/'.$user->image));
+                              }else{
+                                   dd('File does not exists.');
+                              }
+
+                    }
+
+            [note] :
+            {
+             to delete file using Strong class in laravel must folder which contents your file must be  linked  with storage in config/fileSystem
+             like this link:
+                  'links' => [
+                            public_path('uploads') => storage_path('app/public/uploads'),
+                //            public_path('uploads1') => storage_path('app/public'),
+
+                    ],
+            }
+
+            8- edit some words in views (TR)
+## ----------------------------------------

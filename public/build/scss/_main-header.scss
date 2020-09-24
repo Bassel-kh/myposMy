@@ -1,7 +1,7 @@
 //
 // Component: Main Header
 //
- 
+
 .main-header {
   border-bottom: $main-header-bottom-border;
   z-index: $zindex-main-header;
@@ -49,7 +49,7 @@
   }
 }
 
-// Add this class to images within a nav-link
+// Add this class to userImages within a nav-link
 .navbar-img {
   height: $main-header-height / 2;
   width: auto;

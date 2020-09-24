@@ -69,7 +69,7 @@ export default class Filterizr implements Destructible {
     private initialize;
     private bindEvents;
     /**
-     * Resolves when the images of the grid have finished loading into the DOM
+     * Resolves when the userImages of the grid have finished loading into the DOM
      */
     private waitForImagesToLoad;
 }

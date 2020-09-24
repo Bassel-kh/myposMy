@@ -27829,7 +27829,7 @@ var JPEG = /*#__PURE__*/function () {
         Height: this.height,
         ColorSpace: this.colorSpace,
         Filter: 'DCTDecode'
-      }); // add extra decode params for CMYK images. By swapping the
+      }); // add extra decode params for CMYK userImages. By swapping the
       // min and max values from the default, we invert the colors. See
       // section 4.8.4 of the spec.
 
@@ -27992,7 +27992,7 @@ var PNGImage = /*#__PURE__*/function () {
         var imgData = new Buffer(pixelCount * colorCount);
         var alphaChannel = new Buffer(pixelCount);
         var i = p = a = 0;
-        var len = pixels.length; // For 16bit images copy only most significant byte (MSB) - PNG data is always stored in network byte order (MSB first)
+        var len = pixels.length; // For 16bit userImages copy only most significant byte (MSB) - PNG data is always stored in network byte order (MSB first)
 
         var skipByteCount = _this.image.bits === 16 ? 1 : 0;
 
@@ -42068,7 +42068,7 @@ var ImageTable = new r.Struct({
 });
 
 // This is the Apple sbix table, used by the "Apple Color Emoji" font.
-// It includes several image tables with images for each bitmap glyph
+// It includes several image tables with userImages for each bitmap glyph
 // of several different sizes.
 var sbix = new r.Struct({
   version: r.uint16,
@@ -65554,7 +65554,7 @@ LayoutBuilder.prototype.buildNextLine = function (textNode) {
 	return line;
 };
 
-// images
+// userImages
 LayoutBuilder.prototype.processImage = function (node) {
 	var position = this.writer.addImage(node);
 	node.positions.push(position);

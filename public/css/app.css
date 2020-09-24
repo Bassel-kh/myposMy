@@ -2554,22 +2554,37 @@ textarea.form-control.is-invalid {
 }
 /* add */
 .card{
-    box-shadow: 0 0 20px 0.1rem rgb(247,247,247);
+    /*box-shadow: 0 0 20px 0.1rem rgb(247,247,247);*/
+   box-shadow: 0 0 20px 0.1rem rgb(169,206,238);
 }
 
 .card-h-red{
-    background: linear-gradient(to left, red, rgb(247,247,247));
+    background: linear-gradient(to right, red, rgb(247,247,247));
 }
+
+[dir="rtl"] .card-h-red {
+    background: linear-gradient(to left, red, rgb(247, 247, 247));
+}
+
 /*rgb(52,144,220)*/
 .card-h-blue{
+    background: linear-gradient(to right, dodgerblue, rgb(247,247,247));
+}
+[dir="rtl"] .card-h-blue{
     background: linear-gradient(to left, dodgerblue, rgb(247,247,247));
 }
 
 .card-h-green{
-    background: linear-gradient(to left, green, rgb(247,247,247));
+    background: linear-gradient(to right, green, rgb(247,247,247));
 }
+[dir="rtl"] .card-h-green{
+     background: linear-gradient(to left, green, rgb(247,247,247));
+ }
 
 .card-h-black{
+    background: linear-gradient(to right, black, rgb(247,247,247));
+}
+[dir="rtl"] .card-h-black{
     background: linear-gradient(to left, black, rgb(247,247,247));
 }
 

@@ -156,7 +156,7 @@
                         <span id="descriptionError" class="alert-message text-danger"></span>
 
                     </div>
-                            </form>
+                </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">{{__('site.Close')}}</button>
@@ -294,8 +294,10 @@
 
             function show_create_model(event) {
                 clear_input();
+                var pr_btn=$('#create_permission_btn');
                 var id = $(event).data("id");
                 $('#create_permission_btn').data("id", id);
+                $('#create_permission_btn').html('{{__("site.create_new_permission")}}');
                 $('#Add_Modal').modal('show');
             }
 
@@ -376,6 +378,8 @@
 
 
             function editPermission(event) {
+                $('#create_permission_btn').html('{{__("site.update-permission")}}');
+
                 var id = $(event).data("id");
                 let _url = `permissionsReAjax/${id}`;
                 // clear_input();

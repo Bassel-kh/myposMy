@@ -22,7 +22,7 @@
     @endphp
 
     {{--    <div class="card with-border  " style="width: 50%; margin: 0 auto;float: none;margin-bottom: 10px;">--}}
-<div class="card with-border  " >
+<div class="card with-border col-xl-7 grid-width-50  mx-auto" >
     <div class="card-header" >
             <h3 class="card-title"><i class=" fa fa-plus" style="color: green;"></i> {{ __('site.add') }}</h3>
         </div>
@@ -30,7 +30,7 @@
         <!-- /.card-header -->
         <div class="card-body " >
 {{--            @include('partials._errors')--}}
-            <form action="{{ route('dashboard.users.store') }}" method="post">
+            <form action="{{ route('dashboard.users.store') }}" method="post" enctype="multipart/form-data">
 
                 {{csrf_field()}}
                 {{method_field('post')}}
@@ -60,6 +60,17 @@
                         <small class="form-text text-danger">{{ $message }}</small>
                     @enderror
                 </div>
+
+                {{--    image      --}}
+                <div class="form-group">
+                    <label>{{__('site.image')}}</label>
+                    <input class="form-control @error('image') is-invalid @enderror" type="file" name="image" >
+                    @error('image')
+                    <small class="form-text text-danger">{{ $message }}</small>
+                    @enderror
+                </div>
+                {{--    ./image      --}}
+
 
 
                 <div class="form-group">
