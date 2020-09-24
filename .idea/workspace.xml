@@ -20,17 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43f369e8-6175-40c6-a52e-089c90166f3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/uploads/userImages/default.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commands-Steps.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Commands-Steps.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads5/userImages/default.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_navBar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_navBar.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +220,7 @@
       <workItem from="1600515510030" duration="102815000" />
       <workItem from="1600770340841" duration="26830000" />
       <workItem from="1600874875534" duration="4020000" />
-      <workItem from="1600879997239" duration="16584000" />
+      <workItem from="1600879997239" duration="18251000" />
     </task>
     <task id="LOCAL-00001" summary="#1 Add/Define dashboard Route file and controller-namespace ( Steps: 1 , 2 )">
       <created>1598597257857</created>
@@ -412,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600946340456</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="#19 image compression part 2 (steps : 1 -show image in create and edit user page , add permissions to lang/ar/validation , add rule validation to update user , add rule to validate email user in update and unique:users to create user )">
+      <created>1600975186896</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1600975186896</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,7 +466,8 @@
     <MESSAGE value="#16 16.1- Add laratrust views 16.2- Form Request Validation 16.3- add permissions Controller an Permissions' route 16.3- add permissions Controller an Permissions' route" />
     <MESSAGE value="#17Complement step: #16&#10; 17.1- Roles views and controllers make laratrust package:" />
     <MESSAGE value="#18       &#10;Image compression part 1 (add image to user);&#10; 1- add image input field to form             2- install image compression package&#10; 3 ,4- edit user controller to handle with $request-&gt;Image, 5- define where image will be saved" />
-    <option name="LAST_COMMIT_MESSAGE" value="#18       &#10;Image compression part 1 (add image to user);&#10; 1- add image input field to form             2- install image compression package&#10; 3 ,4- edit user controller to handle with $request-&gt;Image, 5- define where image will be saved" />
+    <MESSAGE value="#19 image compression part 2 (steps : 1 -show image in create and edit user page , add permissions to lang/ar/validation , add rule validation to update user , add rule to validate email user in update and unique:users to create user )" />
+    <option name="LAST_COMMIT_MESSAGE" value="#19 image compression part 2 (steps : 1 -show image in create and edit user page , add permissions to lang/ar/validation , add rule validation to update user , add rule to validate email user in update and unique:users to create user )" />
   </component>
   <component name="WindowStateProjectService">
     <state x="561" y="276" key="#Custom_Plugin_Repositories" timestamp="1598701111207">

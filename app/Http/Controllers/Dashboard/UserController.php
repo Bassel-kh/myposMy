@@ -30,15 +30,25 @@ class UserController extends Controller
      */
     public function index(Request $request)
     {
-        $users = User::whereRoleIs('admin')
-                ->when($request->search , function ($q) use ($request){
-                        return $q   ->where('first_name','like','%'.$request->search.'%')
-                                    ->orwhere('last_name','like','%'.$request->search.'%')
-                                    ->orwhere('email','like','%'.$request->search.'%');
-//                })->get();
-                })->latest()->paginate(5);
+        // has problem in search
+//        $users = User::whereRoleIs('admin')
+//                ->when($request->search , function ($q) use ($request){
+//                        return $q   ->where('first_name','like','%'.$request->search.'%')
+//                                    ->orwhere('last_name','like','%'.$request->search.'%')
+//                                    ->orwhere('email','like','%'.$request->search.'%');
+////                })->get();
+//                })->latest()->paginate(5);
 
+// fix previous problem
 
+            $users = User::whereRoleIs('admin')->where(function ($q) use ($request){
+                return $q->when($request->search, function ($query) use ($request) {
+
+                    return $query->where('first_name','like','%'.$request->search.'%')
+                        ->orwhere('last_name','like','%'.$request->search.'%')
+                        ->orwhere('email','like','%'.$request->search.'%');
+                });
+            })->latest()->paginate(5);
 
 
         return view('dashboard.users.index' ,compact('users'));
