@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rule;
 use Intervention\Image\Facades\Image;
 
 class UserController extends Controller
@@ -68,15 +68,8 @@ class UserController extends Controller
         // validate data before insert to database
         // make para: array , validation roles, message
         $roles = $this -> getRoles();
-//$request->validate($roles); // get error messages from validation en/ar
-//        $messages = $this -> getMessages();
-////        $validator = Validator::make($request -> all(),$roles, $messages);
-        $validator = Validator::make($request -> all(),$roles);
+        $request->validate($roles);
 
-        if($validator -> fails()){
-//            return  $validator -> errors();
-            return  redirect() ->back() -> withErrors($validator)->withInputs($request -> all());
-        }
         $request_data = $request->except(['password', 'password_confirmation', 'permissions']);
         $request_data['password'] = bcrypt($request->password);
 
@@ -133,8 +126,10 @@ protected function  getRoles(){
     return [
         'first_name'=> 'required',
         'last_name'=> 'required',
-        'email'=> 'required',
-        'password'=> 'required|confirmed'
+        'email'=> 'required|unique:users',
+        'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        'password'=> 'required|confirmed',
+        'permissions' =>'required|min:1',
     ];
 }
 
@@ -182,18 +177,34 @@ protected  function  getMessages(){
     public function update(Request $request, User $user)
     {
 //        dd($request->all());
-        $roles = [
+        $request->validate([
             'first_name'=> 'required',
             'last_name'=> 'required',
-            'email'=> 'required',
-            ];
-        $validator = Validator::make($request -> all(),$roles);
+            'email'=>[
+                'required',
+                Rule::unique('users')->ignore($user->id),
+            ],
+            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            ]);
 
-        if($validator -> fails()){
-            //  return  $validator -> errors();
-            return  redirect() ->back() -> withErrors($validator)->withInputs($request -> all());
+//        $request_data = $request->except(['permissions']);
+        $request_data = $request->only(['first_name','last_name', 'email']);
+        if ( $request->image) {
+            if( $request->imga != 'default.png' ){
+                Storage::disk('public_uploads')->delete('userImages/'.$user->image);
+            }
+
+           $img = Image::make($request->image)->resize(320, null, function ($constraint) {
+                  $constraint->aspectRatio();
+              });// to use save method the folder where the file will save in it mustn't link with storage (*_~)
+            $img->stream(); // <-- Key point
+//
+//            //dd();
+            $fileName = $request->image->hashName();
+            Storage::disk('public_uploads')->put('userImages'.'/'.$fileName, $img, 'public');
+
+            $request_data['image']= $request->image->hashName();
         }
-        $request_data = $request->except(['permissions']);
 
         $user->update($request_data);
         if($request->has('permissions') ) {

@@ -28,9 +28,7 @@ class User extends Authenticatable
     public function getImagePathAttribute(){
 
         return  asset('uploads/userImages/'.$this->image);
-        return asset('uploads5/userImages/'.$this->image);
-
-    } // end of get image path
+            } // end of get image path
     /**
      * The attributes that should be hidden for arrays.
      *

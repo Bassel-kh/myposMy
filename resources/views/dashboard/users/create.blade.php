@@ -64,10 +64,16 @@
                 {{--    image      --}}
                 <div class="form-group">
                     <label>{{__('site.image')}}</label>
-                    <input class="form-control @error('image') is-invalid @enderror" type="file" name="image" >
+                    <input id="imgInp" class="form-control image_class  @error('image') is-invalid @enderror" type="file" name="image" >
                     @error('image')
                     <small class="form-text text-danger">{{ $message }}</small>
                     @enderror
+                </div>
+                {{--    ./image      --}}
+
+                {{--    image      --}}
+                <div class="form-group">
+                    <img id="img_preview" class="img-thumbnail  img_preview_class" src="{{asset('uploads/userImages/default.png')}}" style="width: 100px;" alt="not found">
                 </div>
                 {{--    ./image      --}}
 
@@ -111,8 +117,12 @@
                             @foreach($models as $index => $model)
                                 <div class="tab-pane {{$index == 0 ?'active':''}} " id="{{$model}}">
                                     @foreach($maps as $map)
-                                        <label><input type="checkbox" class=" m{{$dir_}}-2" name="permissions[]" value="{{$model}}_{{$map}}">{{__('site.'.$map)}}</label>
+                                        <label><input type="checkbox" class=" m{{$dir_}}-2  @error('permissions') is-invalid @enderror" name="permissions[]" value="{{$model}}_{{$map}}">{{__('site.'.$map)}}</label>
                                     @endforeach
+
+                                        @error('permissions')
+                                        <small class="form-text text-danger">{{ $message }}</small>
+                                        @enderror
                                 </div>
                             @endforeach
                             <!-- /.tab-pane -->
@@ -143,3 +153,38 @@
 
 @stop
 <!--/Main content -->
+@section('scripts')
+    <script>
+        // method 1
+        // function readURL(input) {
+        //     if (input.files && input.files[0]) {
+        //         var reader = new FileReader();
+        //
+        //         reader.onload = function(e) {
+        //             $('#img_preview').attr('src', e.target.result);
+        //         }
+        //
+        //         reader.readAsDataURL(input.files[0]); // convert to base64 string
+        //     }
+        // }
+        //
+        // $("#imgInp").change(function() {
+        //     readURL(this);
+        // });
+
+        // OR
+        // method 2
+        $('.image_class').change(function (){
+
+            if(this.files && this.files[0]){
+                var reader = new FileReader();
+
+                reader.onload = function (e){
+                    $('.img_preview_class').attr('src', e.target.result);
+                }
+
+                reader.readAsDataURL(this.files[0]); // convert to base64 string
+            }
+        });
+    </script>
+@endsection

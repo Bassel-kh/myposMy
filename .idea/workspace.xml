@@ -20,48 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43f369e8-6175-40c6-a52e-089c90166f3a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/mypos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mypos.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/userImages/default.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commands-Steps.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Commands-Steps.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Role_Permission/Team.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Role_Permission/Team.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/scss/_main-header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/scss/_main-header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/filterizr/Filterizr.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/filterizr/Filterizr.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/filterizr/Filterizr/Filterizr.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/filterizr/Filterizr/Filterizr.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/filterizr/filterizr.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/filterizr/filterizr.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/filterizr/jquery.filterizr.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/filterizr/jquery.filterizr.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/filterizr/vanilla.filterizr.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/filterizr/vanilla.filterizr.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/flot-old/jquery.flot.image.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/flot-old/jquery.flot.image.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/jquery-ui/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/jquery-ui/jquery-ui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/jquery-ui/jquery-ui.theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/jquery-ui/jquery-ui.theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/pdfmake/pdfmake.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/pdfmake/pdfmake.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dashboard_files/plugins/ckeditor/ckeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/dashboard_files/plugins/ckeditor/ckeditor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dashboard_files/plugins/ckeditor/plugins/image/dialogs/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/dashboard_files/plugins/ckeditor/plugins/image/dialogs/image.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dashboard_files/plugins/ckeditor/samples/old/htmlwriter/outputforflash.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/dashboard_files/plugins/ckeditor/samples/old/htmlwriter/outputforflash.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/pdfmake.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/pdfmake.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/filterizr/Filterizr.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/filterizr/Filterizr.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/filterizr/Filterizr/Filterizr.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/filterizr/Filterizr/Filterizr.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/filterizr/filterizr.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/filterizr/filterizr.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/filterizr/jquery.filterizr.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/filterizr/jquery.filterizr.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/filterizr/vanilla.filterizr.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/filterizr/vanilla.filterizr.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/flot-old/jquery.flot.image.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/flot-old/jquery.flot.image.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/jquery-ui/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/jquery-ui/jquery-ui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/jquery-ui/jquery-ui.theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/jquery-ui/jquery-ui.theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/pdfmake/pdfmake.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/pdfmake/pdfmake.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/site.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/site.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/laratrust/permissions/reIndex.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/laratrust/permissions/reIndex.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/laratrust/roles/indexAjax.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/laratrust/roles/indexAjax.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads5/userImages/default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/validation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_navBar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_navBar.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +165,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/migrations" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/uploads/userImages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -216,11 +185,11 @@
       <recent name="D:\wamp64\www\myposMy\app\Http\Requests" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp64\www\myposMy\public\uploads\userImages" />
       <recent name="D:\wamp64\www\myposMy\database\migrations" />
       <recent name="D:\wamp64\www\myposMy\public\uploads" />
       <recent name="D:\wamp64\www\myposMy\public" />
       <recent name="D:\wamp64\www\myposMy\app\Http\Controllers\Dashboard\LaratrustControllers" />
-      <recent name="D:\wamp64\www\myposMy\resources\views\dashboard\laratrust\teams" />
     </key>
   </component>
   <component name="RunManager">
@@ -259,7 +228,7 @@
       <workItem from="1600515510030" duration="102815000" />
       <workItem from="1600770340841" duration="26830000" />
       <workItem from="1600874875534" duration="4020000" />
-      <workItem from="1600879997239" duration="7773000" />
+      <workItem from="1600879997239" duration="16584000" />
     </task>
     <task id="LOCAL-00001" summary="#1 Add/Define dashboard Route file and controller-namespace ( Steps: 1 , 2 )">
       <created>1598597257857</created>
@@ -436,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600773050515</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="#18       &#10;Image compression part 1 (add image to user);&#10; 1- add image input field to form             2- install image compression package&#10; 3 ,4- edit user controller to handle with $request-&gt;Image, 5- define where image will be saved">
+      <created>1600946340456</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1600946340456</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,7 +466,8 @@
     <MESSAGE value="#15.0 pagination (Eidt view and Controller) and endable delete button _ redirect after login _ Disable Register _ All ( Steps: 1 ---- 6.1) before install noty package" />
     <MESSAGE value="#16 16.1- Add laratrust views 16.2- Form Request Validation 16.3- add permissions Controller an Permissions' route 16.3- add permissions Controller an Permissions' route" />
     <MESSAGE value="#17Complement step: #16&#10; 17.1- Roles views and controllers make laratrust package:" />
-    <option name="LAST_COMMIT_MESSAGE" value="#17Complement step: #16&#10; 17.1- Roles views and controllers make laratrust package:" />
+    <MESSAGE value="#18       &#10;Image compression part 1 (add image to user);&#10; 1- add image input field to form             2- install image compression package&#10; 3 ,4- edit user controller to handle with $request-&gt;Image, 5- define where image will be saved" />
+    <option name="LAST_COMMIT_MESSAGE" value="#18       &#10;Image compression part 1 (add image to user);&#10; 1- add image input field to form             2- install image compression package&#10; 3 ,4- edit user controller to handle with $request-&gt;Image, 5- define where image will be saved" />
   </component>
   <component name="WindowStateProjectService">
     <state x="561" y="276" key="#Custom_Plugin_Repositories" timestamp="1598701111207">
@@ -553,10 +530,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1600799879941" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1600882324042">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1600973832612">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1600882324042" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1600973832612" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

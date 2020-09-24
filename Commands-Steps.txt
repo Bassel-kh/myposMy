@@ -1422,4 +1422,49 @@ Image compression part 1 (add image to user);
             }
 
             8- edit some words in views (TR)
+#19 ----------------------------------------
+image compression part 2
+1- show image in create user page using JQuery  (resources/views/dashboard/users/create.blade.php)
+    - Edit view :
+    add Jquery function:
+         function readURL(input) {
+                    if (input.files && input.files[0]) {
+                        var reader = new FileReader();
+
+                        reader.onload = function(e) {
+                            $('#imgView').attr('src', e.target.result);
+                        }
+
+                        reader.readAsDataURL(input.files[0]); // convert to base64 string
+                    }
+                }
+
+                $("#imgInp").change(function() {
+                    readURL(this);
+                });
+
+    - add permissions to lang/ar/validation
+    - add rule validation to update user :
+        To instruct the validator to ignore the user's ID,
+        we'll use the Rule class to fluently define the rule.
+        In this example, we'll also specify the validation rules
+        as an array instead of using the | character to delimit the rules:
+
+        use Illuminate\Validation\Rule;
+
+        Validator::make($data, [
+            'email' => [
+                'required',
+                Rule::unique('users')->ignore($user->id),
+            ],
+        ]);
+        - add rule to validate email user in update and unique:users to create user
+          import class :{
+          use Illuminate\Validation\Rule;
+
+          }
+
+
 ## ----------------------------------------
+
+

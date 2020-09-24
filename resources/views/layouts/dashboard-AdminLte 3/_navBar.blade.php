@@ -37,7 +37,8 @@
 
 
             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                <img src="{{ asset( 'dashboard AdminLte 3_files/dist/img/user2-160x160.jpg' ) }}" class="img-circle " alt="User Image" style="width: 25px;">
+                <img src="{{ asset('uploads/userImages/'.Auth::user()->image ) }}" class="img-circle " alt="User Image" style="width: 25px;">
+{{--                <img src="{{ asset( 'dashboard AdminLte 3_files/dist/img/user2-160x160.jpg' ) }}" class="img-circle " alt="User Image" style="width: 25px;">--}}
                 {{ Auth::user()->first_name }} {{ Auth::user()->last_name }}
             </a>
 

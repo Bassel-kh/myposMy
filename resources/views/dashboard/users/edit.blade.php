@@ -30,12 +30,12 @@
         <!-- /.card-header -->
         <div class="card-body " >
             {{--            @include('partials._errors')--}}
-            <form action="{{ route('dashboard.users.update', $user->id) }}" method="post" enctype="multipart/form-data">
+            <form action="{{ route('dashboard.users.update', $user->id) }}" method="post" enctype="multipart/form-data" >
 
                 {{csrf_field()}}
                 {{method_field('put')}}
 
-                <div class="form-group">
+                <div class="form-group" >
                     <label for="fist_name">{{__('site.first_name')}}</label>
                     <input id="fist_name" class="form-control @error('first_name') is-invalid @enderror" type="text" name="first_name" value="{{ $user->first_name}}"  >
                     @error('first_name')
@@ -60,7 +60,24 @@
                     <small class="form-text text-danger">{{ $message }}</small>
                     @enderror
                 </div>
-                <?php
+                {{--    image      --}}
+                <div class="form-group">
+                    <label>{{__('site.image')}} </label>
+                    <input id="imgInp"  class="form-control image_class  @error('image') is-invalid @enderror" type="file" name="image" >
+                    @error('image')
+                    <small class="form-text text-danger">{{ $message }}</small>
+                    @enderror
+                </div>
+                {{--    ./image      --}}
+
+                {{--    image      --}}
+                <div class="form-group">
+                    <img id="img_preview" class="img-thumbnail  img_preview_class" src="{{ $user->image_path }}" style="width: 100px;" alt="not found">
+                </div>
+                {{--    ./image      --}}
+
+
+            <?php
                 $models = ['users','categories', 'products'];
                 $maps = ['create', 'read', 'update', 'delete'];
 
@@ -120,3 +137,39 @@
 
 @stop
 <!--/Main content -->
+@section('scripts')
+    <script>
+        // method 1
+        // function readURL(input) {
+        //     if (input.files && input.files[0]) {
+        //         var reader = new FileReader();
+        //
+        //         reader.onload = function(e) {
+        //             $('#img_preview').attr('src', e.target.result);
+        //         }
+        //
+        //         reader.readAsDataURL(input.files[0]); // convert to base64 string
+        //     }
+        // }
+        //
+        // $("#imgInp").change(function() {
+        //     readURL(this);
+        // });
+
+        // OR
+        // method 2
+        $('.image_class').change(function (){
+
+            if(this.files && this.files[0]){
+                var reader = new FileReader();
+
+                reader.onload = function (e){
+                    $('.img_preview_class').attr('src', e.target.result);
+                }
+
+                reader.readAsDataURL(this.files[0]); // convert to base64 string
+            }
+        });
+    </script>
+@endsection
+

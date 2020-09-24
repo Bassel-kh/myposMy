@@ -23,7 +23,7 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-                <img src="{{ asset( 'dashboard AdminLte 3_files/dist/img/user2-160x160.jpg' ) }}" class="img-circle elevation-2" alt="User Image">
+                <img src="{{ asset('uploads/userImages/'.Auth::user()->image ) }}" class="img-circle elevation-2" style="width: 25px; height: 25px;" alt="User Image">
             </div>
             <div class="info">
                 <a href="#" class="d-block">{{ Auth::user()->first_name }} {{ Auth::user()->last_name }}</a>
