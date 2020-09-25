@@ -90,6 +90,15 @@ return [
     'delete_user_successfully' => 'delete user successfully',
     'users_Dashboard'=> 'Users Dashboard',
 
+    // Categories
+    'Category'=>'Category',
+    'Categories'=>'Categories',
+    'create_new_category' => 'Create new category',
+    'update-category'=> 'update Category',
+    'added_category_successfully' => 'added category successfully',
+    'delete_category_successfully' => 'delete category successfully',
+    'categories_Dashboard'=> 'categories Dashboard',
+
 // DataTable
     'next'=> 'Next',
     'previous'=> 'Previous',

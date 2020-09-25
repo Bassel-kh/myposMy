@@ -20,9 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43f369e8-6175-40c6-a52e-089c90166f3a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/categories/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/categories/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/categories/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commands-Steps.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Commands-Steps.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/laratrust_seeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/laratrust_seeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/site.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/site.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/dashboard/wep.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/dashboard/wep.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +164,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/uploads/userImages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/dashboard/categories" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -165,23 +172,24 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.splitter.proportion" value="0.269188" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp64\www\myposMy\resources\views\dashboard\categories" />
+      <recent name="D:\wamp64\www\myposMy\public\uploads\userImages" />
+      <recent name="D:\wamp64\www\myposMy\database\migrations" />
+      <recent name="D:\wamp64\www\myposMy\public\uploads" />
+      <recent name="D:\wamp64\www\myposMy\public" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\wamp64\www\myposMy\public\storage\uploads" />
       <recent name="D:\wamp64\www\myposMy\public\uploads\userImages" />
       <recent name="D:\wamp64\www\myposMy\public\js" />
       <recent name="D:\wamp64\www\myposMy\resources\views\dashboard\laratrust" />
       <recent name="D:\wamp64\www\myposMy\app\Http\Requests" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\wamp64\www\myposMy\public\uploads\userImages" />
-      <recent name="D:\wamp64\www\myposMy\database\migrations" />
-      <recent name="D:\wamp64\www\myposMy\public\uploads" />
-      <recent name="D:\wamp64\www\myposMy\public" />
-      <recent name="D:\wamp64\www\myposMy\app\Http\Controllers\Dashboard\LaratrustControllers" />
     </key>
   </component>
   <component name="RunManager">
@@ -220,7 +228,8 @@
       <workItem from="1600515510030" duration="102815000" />
       <workItem from="1600770340841" duration="26830000" />
       <workItem from="1600874875534" duration="4020000" />
-      <workItem from="1600879997239" duration="18251000" />
+      <workItem from="1600879997239" duration="19470000" />
+      <workItem from="1601022518727" duration="9886000" />
     </task>
     <task id="LOCAL-00001" summary="#1 Add/Define dashboard Route file and controller-namespace ( Steps: 1 , 2 )">
       <created>1598597257857</created>
@@ -411,7 +420,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600975186896</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="#20- fix user search problem ds/UserController :">
+      <created>1600976898705</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1600976898705</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,7 +483,8 @@
     <MESSAGE value="#17Complement step: #16&#10; 17.1- Roles views and controllers make laratrust package:" />
     <MESSAGE value="#18       &#10;Image compression part 1 (add image to user);&#10; 1- add image input field to form             2- install image compression package&#10; 3 ,4- edit user controller to handle with $request-&gt;Image, 5- define where image will be saved" />
     <MESSAGE value="#19 image compression part 2 (steps : 1 -show image in create and edit user page , add permissions to lang/ar/validation , add rule validation to update user , add rule to validate email user in update and unique:users to create user )" />
-    <option name="LAST_COMMIT_MESSAGE" value="#19 image compression part 2 (steps : 1 -show image in create and edit user page , add permissions to lang/ar/validation , add rule validation to update user , add rule to validate email user in update and unique:users to create user )" />
+    <MESSAGE value="#20- fix user search problem ds/UserController" />
+    <option name="LAST_COMMIT_MESSAGE" value="#20- fix user search problem ds/UserController" />
   </component>
   <component name="WindowStateProjectService">
     <state x="561" y="276" key="#Custom_Plugin_Repositories" timestamp="1598701111207">
@@ -482,10 +499,14 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="449" y="170" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1599916674893" />
-    <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600755092013">
+    <state x="363" y="104" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1601022170668">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1600755092013" />
+    <state x="363" y="104" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.738@0.0.1366.738" timestamp="1601022170668" />
+    <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601037370695">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1601037370695" />
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1599419093796">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -494,18 +515,18 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="462" y="118" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1600324533249" />
-    <state x="481" y="253" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1600773113477">
+    <state x="481" y="253" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1600976967921">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="481" y="253" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1366.738@0.0.1366.738" timestamp="1600773113477" />
+    <state x="481" y="253" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1366.738@0.0.1366.738" timestamp="1600976967921" />
     <state x="502" y="71" key="RollbackChangesDialog" timestamp="1600207868532">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="502" y="71" key="RollbackChangesDialog/0.0.1366.738@0.0.1366.738" timestamp="1600207868532" />
-    <state x="450" y="30" width="916" height="708" key="SettingsEditor" timestamp="1599915252460">
+    <state x="174" y="30" width="1192" height="708" key="SettingsEditor" timestamp="1601038301052">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="450" y="30" width="916" height="708" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1599915252460" />
+    <state x="174" y="30" width="1192" height="708" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1601038301052" />
     <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1599728358890">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -530,10 +551,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1600799879941" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1600973832612">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1601034749660">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1600973832612" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1601034749660" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

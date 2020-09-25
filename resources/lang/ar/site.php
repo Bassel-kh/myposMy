@@ -92,6 +92,15 @@ return [
     'delete_user_successfully' => 'تم حذف المستخدم بنجاح',
     'users_Dashboard'=> 'لوحة تحكم المستخدمين',
 
+    // Categories
+    'Category'=>'القسم',
+    'Categories'=>'الأقسام',
+    'create_new_category' => 'إنشاء القسم جديد',
+    'update-category'=> 'تحديث الالقسم',
+    'added_category_successfully' => 'تم إضافة الالقسم بنجاح',
+    'delete_category_successfully' => 'تم حذف الالقسم بنجاح',
+    'categories_Dashboard'=> 'لوحة تحكم الأقسام',
+
 // DataTable
     'next'=> 'التالي',
     'previous'=> 'السابق',

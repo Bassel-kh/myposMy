@@ -1478,4 +1478,31 @@ image compression part 2
                             });
                         })->latest()->paginate(5);
 
-## ----------------------------------------
+#20 ----------------------------------------
+add category { model , views , controller } part 1,2 add sections:
+     - make Category model
+        $ php artisan make:model Models/Category -m
+
+     - make Category controller in Dashboard folder:
+        $ php artisan make:controller Dashboard/CategoryController --model=Models/Category
+
+     - add categories views
+     - edit categories migrate ( create_categories_table)
+        $table->string('name');
+
+     - add categories permissions in laratrust_seed config:
+        add:
+        'categories' => 'c,r,u,d',
+
+     - run command:
+        $ php artisan migrate:refresh --seed
+
+     - add categories route (dashboard/web.php):
+        // Category Routes
+        Route::resource('categories' , 'CategoryController')->except(['show']);
+     -  add categories to lang ar site
+     -  add category views create, edit , index and edit controller method to work with that views
+
+## --------------------------------------------
+
+

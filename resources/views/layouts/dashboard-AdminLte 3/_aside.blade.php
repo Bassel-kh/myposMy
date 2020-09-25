@@ -23,8 +23,9 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-                <img src="{{ asset('uploads/userImages/'.Auth::user()->image ) }}" class="img-circle elevation-2" style="width: 25px; height: 25px;" alt="User Image">
+                <img src="{{ asset('uploads/userImages/'.Auth::user()->image ) }}" class="img-circle elevation-2" style="width: 30px; height: 30px;" alt="User Image">
             </div>
+            <br>
             <div class="info">
                 <a href="#" class="d-block">{{ Auth::user()->first_name }} {{ Auth::user()->last_name }}</a>
             </div>
@@ -214,9 +215,9 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ route('dashboard.index') }}" class="nav-link active">
+                            <a href="{{ route('dashboard.categories.index') }}" class="nav-link active">
                                 <i class="far fa-circle nav-icon text-maroon"></i>
-                                <p>------------</p>
+                                <p>{{__('site.Categories')}}</p>
                             </a>
                         </li>
 
