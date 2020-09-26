@@ -221,12 +221,15 @@
                             </a>
                         </li>
 
-                        <li class="nav-item">
-                            <a href="" class="nav-link">
-                                <i class="far fa-circle nav-icon text-maroon"></i>
-                                <p>-----------</p>
-                            </a>
-                        </li>
+                        @if(@auth()->user()->hasPermission('products_read'))
+                            <li class="nav-item">
+                                <a href="{{route('dashboard.products.index')}}" class="nav-link">
+                                    <i class="far fa-circle nav-icon text-maroon"></i>
+                                    <p>{{__('site.products')}}</p>
+                                </a>
+                            </li>
+                        @endif
+
                         <li class="nav-item">
                             <a href="" class="nav-link">
                                 <i class="far fa-circle nav-icon text-maroon"></i>

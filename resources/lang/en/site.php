@@ -93,6 +93,7 @@ return [
     // Categories
     'Category'=>'Category',
     'Categories'=>'Categories',
+    'all_categories' => 'all Categories',
     'create_new_category' => 'Create new category',
     'update-category'=> 'update Category',
     'added_category_successfully' => 'added category successfully',
@@ -100,10 +101,43 @@ return [
     'categories_Dashboard'=> 'categories Dashboard',
     'ar'=>[
         'name' => 'The name in Arabic ',
+        'description'=>'The description in Arabic '
+
     ],
     'en'=>[
         'name' => 'The name in English',
+        'description'=>'The description in English '
+
     ],
+
+    // Products
+    'product'=>'product',
+    'products'=>'products',
+    'create_new_product' => 'Create new product',
+    'update-product'=> 'update product',
+    'added_product_successfully' => 'added product successfully',
+    'delete_product_successfully' => 'delete product successfully',
+    'products_Dashboard'=> 'products Dashboard',
+    'ar'=>[
+        'name' => 'The name in Arabic ',
+        'description'=>'The description in Arabic '
+
+    ],
+    'en'=>[
+        'name' => 'The name in English',
+        'description'=>'The description in English '
+
+    ],
+
+    // prices && quantity
+    'quantity' => 'quantity',
+    'total' => 'total',
+    'purchase_price' => 'purchase price',
+    'price' => 'price',
+    'sale_price' => 'sale price',
+    'stock' => 'stock',
+    'profit_percent' => 'profit percent',
+
 
 // DataTable
     'next'=> 'Next',

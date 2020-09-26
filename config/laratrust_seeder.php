@@ -17,6 +17,7 @@ return [
             'payments' => 'c,r,u,d',
             'profile' => 'r,u',
             'categories' => 'c,r,u,d',
+            'products' => 'c,r,u,d',
 
         ],
         'admin'=>[],

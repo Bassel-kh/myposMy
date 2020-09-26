@@ -95,6 +95,7 @@ return [
     // Categories
     'Category'=>'القسم',
     'Categories'=>'الأقسام',
+    'all_categories' => 'كل الاقسام',
     'create_new_category' => 'إنشاء القسم جديد',
     'update-category'=> 'تحديث الالقسم',
     'added_category_successfully' => 'تم إضافة الالقسم بنجاح',
@@ -106,6 +107,32 @@ return [
     'en'=>[
         'name' => 'الاسم باللغة الانكليزية',
     ],
+
+    // Products
+    'product'=>'المنتج',
+    'products'=>'المنتجات',
+    'create_new_product' => 'إنشاء المنتج جديد',
+    'update-product'=> 'تحديث الالمنتج',
+    'added_product_successfully' => 'تم إضافة المنتج بنجاح',
+    'delete_product_successfully' => 'تم حذف المنتج بنجاح',
+    'products_Dashboard'=> 'لوحة تحكم الأقسام',
+    'ar'=>[
+        'name' => 'الاسم باللغة العربية',
+        'description' => 'الوصف باللغة العربية'
+    ],
+    'en'=>[
+        'name' => 'الاسم باللغة الانكليزية',
+        'description'=>'الوصف باللغة الانكليزية'
+    ],
+
+    // prices && quantity
+    'quantity' => 'الكميه',
+    'total' => 'المجموع',
+    'purchase_price' => 'سعر الشراء',
+    'price' => 'السعر',
+    'sale_price' => 'سعر البيع',
+    'stock' => 'المخزن',
+    'profit_percent' => 'المكسب',
 
 // DataTable
     'next'=> 'التالي',

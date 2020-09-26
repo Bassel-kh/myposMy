@@ -18,4 +18,13 @@ class Category extends Model
     // 3. To define which attributes needs to be translated
     public $translatedAttributes = ['name'];
 
+    // the relation between Category and Product
+    public function products()
+    {
+
+        return $this->hasMany(Product::class);
+
+    }
+
+
 }

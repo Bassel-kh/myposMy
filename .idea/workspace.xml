@@ -20,22 +20,771 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43f369e8-6175-40c6-a52e-089c90166f3a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/mypos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mypos.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/CHANGES.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/adapters/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/build-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/ckeditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/contents.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/bn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/bs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/en-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/gu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/mn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/sr-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/about/dialogs/about.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/about/dialogs/logo_ckeditor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/clipboard/dialogs/paste.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/dialog/dialogDefinition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/icons_hidpi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/image/dialogs/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/image/images/noimage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/link/dialogs/anchor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/link/dialogs/link.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/link/images/anchor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/link/images/hidpi/anchor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/magicline/images/hidpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/magicline/images/icon-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/magicline/images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/pastefromword/filter/default.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/scayt/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/scayt/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/scayt/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/scayt/dialogs/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/scayt/dialogs/options.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/scayt/dialogs/toolbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/en-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/specialchar/dialogs/specialchar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/table/dialogs/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/tableselection/styles/tableselection.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/tabletools/dialogs/tableCell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/widget/images/handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/wsc/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/wsc/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/wsc/dialogs/ciframe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/wsc/dialogs/wsc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/wsc/dialogs/wsc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/wsc/dialogs/wsc_ie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/css/samples.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/img/github-top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/img/header-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/img/header-separator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/img/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/img/navigation-tip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/js/sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/js/sf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/ajax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/api.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/appendto.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/assets/inlineall/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/assets/posteddata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/assets/sample.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/assets/uilanguages/languages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/datafiltering.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/dialog/assets/my_dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/dialog/dialog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/divreplace.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/enterkey/enterkey.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.fla" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/htmlwriter/assets/outputforflash/swfobject.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/htmlwriter/outputforflash.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/htmlwriter/outputhtml.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/inlineall.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/inlinebycode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/inlinetextarea.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/jquery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/magicline/magicline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/readonly.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/replacebyclass.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/replacebycode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/sample.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/sample_posteddata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/tabindex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/toolbar/toolbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/uicolor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/uilanguages.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/wysiwygarea/fullpage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/old/xhtmlstyle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/toolbarconfigurator/css/fontello.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/toolbarconfigurator/font/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/toolbarconfigurator/font/fontello.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/toolbarconfigurator/font/fontello.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/toolbarconfigurator/font/fontello.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/toolbarconfigurator/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/skins/moono-lisa/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/skins/moono-lisa/dialog_ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/skins/moono-lisa/dialog_ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/skins/moono-lisa/dialog_iequirks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/skins/moono-lisa/editor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/skins/moono-lisa/editor_gecko.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/skins/moono-lisa/editor_ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/skins/moono-lisa/editor_ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/skins/moono-lisa/editor_iequirks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/skins/moono-lisa/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/skins/moono-lisa/icons_hidpi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/skins/moono-lisa/images/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/skins/moono-lisa/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/skins/moono-lisa/images/hidpi/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/skins/moono-lisa/images/hidpi/lock-open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/skins/moono-lisa/images/hidpi/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/skins/moono-lisa/images/hidpi/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/skins/moono-lisa/images/lock-open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/skins/moono-lisa/images/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/skins/moono-lisa/images/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/skins/moono-lisa/images/spinner.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/skins/moono-lisa/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/CHANGES.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/adapters/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/build-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/ckeditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/contents.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/bn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/bs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/en-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/gu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/mn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/sr-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/a11yhelp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/gu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/mn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/sr-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/a11yhelp/dialogs/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/about/dialogs/about.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/about/dialogs/hidpi/logo_ckeditor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/about/dialogs/logo_ckeditor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/balloonpanel/skins/kama/balloonpanel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/balloonpanel/skins/moono-lisa/balloonpanel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/balloonpanel/skins/moono-lisa/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/balloonpanel/skins/moono-lisa/images/hidpi/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/balloonpanel/skins/moono/balloonpanel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/balloonpanel/skins/moono/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/balloonpanel/skins/moono/images/hidpi/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/balloontoolbar/skins/default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/balloontoolbar/skins/kama/balloontoolbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/balloontoolbar/skins/moono-lisa/balloontoolbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/balloontoolbar/skins/moono/balloontoolbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/clipboard/dialogs/paste.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/dialog/dialogDefinition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/dialog/styles/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/easyimage/dialogs/easyimagealt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/easyimage/styles/easyimage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/icons_hidpi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/image/dialogs/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/image/images/noimage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/imagebase/styles/imagebase.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/link/dialogs/anchor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/link/dialogs/link.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/link/images/anchor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/link/images/hidpi/anchor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/magicline/images/hidpi/icon-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/magicline/images/hidpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/magicline/images/icon-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/magicline/images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/pastefromgdocs/filter/default.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/pastefromword/filter/default.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/pastetools/filter/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/pastetools/filter/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/scayt/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/scayt/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/scayt/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/scayt/dialogs/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/scayt/dialogs/options.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/scayt/dialogs/toolbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/scayt/skins/moono-lisa/scayt.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/en-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/sr-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/specialchar/dialogs/specialchar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/table/dialogs/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/tableselection/styles/tableselection.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/tabletools/dialogs/tableCell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/widget/images/handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/wsc/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/wsc/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/wsc/dialogs/ciframe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/wsc/dialogs/tmpFrameset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/wsc/dialogs/wsc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/wsc/dialogs/wsc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/wsc/dialogs/wsc_ie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/plugins/wsc/skins/moono-lisa/wsc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/css/samples.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/img/github-top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/img/header-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/img/header-separator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/img/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/img/navigation-tip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/js/sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/js/sf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/ajax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/api.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/appendto.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/assets/inlineall/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/assets/outputxhtml/outputxhtml.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/assets/posteddata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/assets/sample.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/assets/uilanguages/languages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/datafiltering.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/dialog/assets/my_dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/dialog/dialog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/divreplace.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/easyimage/easyimage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/enterkey/enterkey.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/htmlwriter/assets/outputforflash/outputforflash.fla" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/htmlwriter/assets/outputforflash/outputforflash.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/htmlwriter/assets/outputforflash/swfobject.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/htmlwriter/outputforflash.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/htmlwriter/outputhtml.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/inlineall.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/inlinebycode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/inlinetextarea.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/jquery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/magicline/magicline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/readonly.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/replacebyclass.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/replacebycode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/sample.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/sample_posteddata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/tabindex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/toolbar/toolbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/uicolor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/uilanguages.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/wysiwygarea/fullpage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/old/xhtmlstyle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/toolbarconfigurator/css/fontello.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/toolbarconfigurator/font/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/toolbarconfigurator/font/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/toolbarconfigurator/font/fontello.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/toolbarconfigurator/font/fontello.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/toolbarconfigurator/font/fontello.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/toolbarconfigurator/font/fontello.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/toolbarconfigurator/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/toolbarconfigurator/js/fulltoolbareditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/toolbarconfigurator/js/toolbarmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/toolbarconfigurator/js/toolbartextmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/toolbarconfigurator/lib/codemirror/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/toolbarconfigurator/lib/codemirror/codemirror.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/toolbarconfigurator/lib/codemirror/codemirror.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/toolbarconfigurator/lib/codemirror/javascript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/toolbarconfigurator/lib/codemirror/neo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/toolbarconfigurator/lib/codemirror/show-hint.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/samples/toolbarconfigurator/lib/codemirror/show-hint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/skins/moono-lisa/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/skins/moono-lisa/dialog_ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/skins/moono-lisa/dialog_ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/skins/moono-lisa/dialog_iequirks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/skins/moono-lisa/editor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/skins/moono-lisa/editor_gecko.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/skins/moono-lisa/editor_ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/skins/moono-lisa/editor_ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/skins/moono-lisa/editor_iequirks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/skins/moono-lisa/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/skins/moono-lisa/icons_hidpi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/skins/moono-lisa/images/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/skins/moono-lisa/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/skins/moono-lisa/images/hidpi/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/skins/moono-lisa/images/hidpi/lock-open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/skins/moono-lisa/images/hidpi/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/skins/moono-lisa/images/hidpi/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/skins/moono-lisa/images/lock-open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/skins/moono-lisa/images/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/skins/moono-lisa/images/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/skins/moono-lisa/images/spinner.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/skins/moono-lisa/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor4/vendor/promise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/ckeditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/ckeditor.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/sample/css/sample.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/sample/img/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/sample/img/github.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/sample/img/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/sample/img/umbrellas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/ast.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/gu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/kn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/ne.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/sr-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/tk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/plugins/ckeditor5/translations/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/products_images/default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/products/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/products/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/products/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commands-Steps.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Commands-Steps.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_25_083431_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_25_083431_create_categories_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/laratrust_seeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/laratrust_seeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/site.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/validation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/site.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/categories/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/categories/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/categories/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/categories/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/dashboard/wep.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/dashboard/wep.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +920,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/dashboard/categories" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/uploads" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -181,6 +930,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.269188" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2020.2.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -192,11 +942,11 @@
       <recent name="D:\wamp64\www\myposMy\app\Http\Requests" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp64\www\myposMy\public\uploads" />
+      <recent name="D:\wamp64\www\myposMy\public\dashboard AdminLte 3_files\plugins" />
+      <recent name="D:\wamp64\www\myposMy\resources\views\dashboard\products" />
       <recent name="D:\wamp64\www\myposMy\resources\views\dashboard\categories" />
       <recent name="D:\wamp64\www\myposMy\public\uploads\userImages" />
-      <recent name="D:\wamp64\www\myposMy\database\migrations" />
-      <recent name="D:\wamp64\www\myposMy\public\uploads" />
-      <recent name="D:\wamp64\www\myposMy\public" />
     </key>
   </component>
   <component name="RunManager">
@@ -237,7 +987,7 @@
       <workItem from="1600874875534" duration="4020000" />
       <workItem from="1600879997239" duration="19470000" />
       <workItem from="1601022518727" duration="17539000" />
-      <workItem from="1601104904329" duration="9505000" />
+      <workItem from="1601104904329" duration="23761000" />
     </task>
     <task id="LOCAL-00001" summary="#1 Add/Define dashboard Route file and controller-namespace ( Steps: 1 , 2 )">
       <created>1598597257857</created>
@@ -442,7 +1192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601039211721</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="#22 catgeory multi language ( 1- Astrotomic/laravel-translatable  package. ....etc)">
+      <created>1601114445581</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1601114445581</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,7 +1231,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="#1 Add/Define dashboard Route file and controller-namespace ( Steps: 1 , 2 )" />
     <MESSAGE value="#2 configure laravel and admin lte" />
     <MESSAGE value="#3 Add AdminLte 3.0.5 Files to project:&#10;    1- copy ( dist , build , plugin , docs) files to public folder&#10;    2- add layout admin (master page )" />
     <MESSAGE value="4# install Laravel Localization and Edit side and navbar" />
@@ -499,7 +1255,8 @@
     <MESSAGE value="#19 image compression part 2 (steps : 1 -show image in create and edit user page , add permissions to lang/ar/validation , add rule validation to update user , add rule to validate email user in update and unique:users to create user )" />
     <MESSAGE value="#20- fix user search problem ds/UserController" />
     <MESSAGE value="#20 add category { model , views , controller } part 1,2" />
-    <option name="LAST_COMMIT_MESSAGE" value="#20 add category { model , views , controller } part 1,2" />
+    <MESSAGE value="#22 catgeory multi language ( 1- Astrotomic/laravel-translatable  package. ....etc)" />
+    <option name="LAST_COMMIT_MESSAGE" value="#22 catgeory multi language ( 1- Astrotomic/laravel-translatable  package. ....etc)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="561" y="276" key="#Custom_Plugin_Repositories" timestamp="1598701111207">
@@ -518,10 +1275,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="363" y="104" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.738@0.0.1366.738" timestamp="1601022170668" />
-    <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601037370695">
+    <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601150190623">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1601037370695" />
+    <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1601150190623" />
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1599419093796">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -566,10 +1323,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1601048240812" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1601114066385">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1601149256072">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1601114066385" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1601149256072" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

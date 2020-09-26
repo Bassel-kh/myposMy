@@ -28,7 +28,9 @@
     <!-- Daterange picker -->
     <link rel="stylesheet" href="{{ asset( '/dashboard AdminLte 3_files/plugins/daterangepicker/daterangepicker.css' ) }}">
     <!-- summernote -->
-    <link rel="stylesheet" href="{{ asset( '/dashboard AdminLte 3_files/plugins/summernote/summernote-bs4.css' ) }}">
+    {{--    <link rel="stylesheet" href="{{ asset( '/dashboard AdminLte 3_files/plugins/summernote/summernote-bs4.css' ) }}">--}}
+
+
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     @yield('Header')
@@ -144,7 +146,38 @@
 @include('partials._alerts')
 <!-- /.Alert-header -->
 <!-- scripts -->
+
+{{--ckeditor standard--}}
+<script src="{{ asset('/dashboard AdminLte 3_files/plugins/ckeditor/ckeditor.js') }}"></script>
+<script>
+    CKEDITOR.config.language =  "{{ app()->getLocale() }}";
+</script>
+
+<!-- CKEditor 4 -->
+{{--<script src="{{ asset( '/dashboard AdminLte 3_files/plugins/ckeditor4/ckeditor.js') }}"></script>--}}
+{{--<script>--}}
+{{--    CKEDITOR.replace( 'summary-ckeditor' );--}}
+{{--</script>--}}
+
+<!-- CKEditor 5 -->
+{{--    <script src="{{ asset( '/dashboard AdminLte 3_files/plugins/ckeditor5/ckeditor.js') }}"></script>--}}
+
+<script>
+    $('.image_class').change(function (){
+
+        if(this.files && this.files[0]){
+            var reader = new FileReader();
+
+            reader.onload = function (e){
+                $('.img_preview_class').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(this.files[0]); // convert to base64 string
+        }
+    });
+</script>
 @yield('scripts')
+
 <!--/ scripts -->
 </body>
 </html>

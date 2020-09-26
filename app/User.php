@@ -28,12 +28,9 @@ class User extends Authenticatable
     public function getImagePathAttribute(){
 
         return  asset('uploads/userImages/'.$this->image);
-            } // end of get image path
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
+    } // end of get image path
+
+
     protected $hidden = [
         'password', 'remember_token',
     ];

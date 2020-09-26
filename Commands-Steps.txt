@@ -1700,6 +1700,123 @@ catgeory multi language part 1
                }
 
 
+#23 --------------------------------------------
+products part 1
+    1- make product model :
+        $ php artisan make:model Models/Product -m
+
+        path(database/migrations/2020_09_26_154358_create_products_table.php):
+
+         public function up()
+            {
+                Schema::create('products', function (Blueprint $table) {
+                    $table->increments('id');
+                    $table->integer('category_id')->unsigned();
+                    $table->string('image')->default('default.png');
+                    $table->double('purchase_price', 8, 2);
+                    $table->double('sale_price', 8, 2);
+                    $table->integer('stock');
+                    $table->timestamps();
+
+                    $table->foreign('category_id')->references('id')->constrained()->on('categories')->onDelete('cascade');
+                });
+            }
+    2- make ProductTranslation model :
+        $ php artisan make:model Models/ProductTranslation -m
+
+        path( database/migrations/2020_09_26_154556_create_product_translations_table.php )
+
+         public function up()
+            {
+                Schema::create('product_translations', function (Blueprint $table) {
+                    $table->increments('id');
+                    $table->integer('product_id')->unsigned();
+                    $table->string('locale')->index();
+
+
+                    // Foreign key to the main model
+                    $table->unique(['product_id', 'locale']);
+                    $table->foreign('product_id')->references('id')->on('products')->constrained()->onDelete('cascade');
+
+                    // Actual fields you want to translate
+                    $table->string('name');
+                    $table->text('description');
+                });
+            }
+
+    3- add to models :
+        1- Product model  :
+
+             use Translatable; // 2. To add translation methods
+             protected $guarded = [];
+
+             // 3. To define which attributes needs to be translated
+             public $translatedAttributes = ['name', 'description'];
+
+
+        2- ProductTranslation model:
+
+             public $timestamps = false;
+             protected $fillable = ['name', 'description'];
 
 
 
+    4- creat product views:
+        1-  make product folder in views/dashboard/products contains:
+            - index
+
+            - create
+
+            - edit
+        2- add 3 CKEditor 4,5 plugin to dashboard add it in layout app
+            path (  )
+            - change ckeditor language
+                <script>
+                    CKEDITOR.config.language =  "{{ app()->getLocale() }}";
+                </script>
+            -
+
+
+    6- define the relation between product and category as ( category has many)
+        - add to category model this:
+           public function products()
+              {
+
+                  return $this->hasMany(Product::class);
+
+              }
+
+        - add to product model this:
+            public function category()
+            {
+
+                return $this->belongsTo(Category::class);
+
+            }
+
+    5- make product controller :
+            $ php artisan make:controller Dashboard/ProductController --model=Models/Product
+
+            - Edit product methods
+
+    6- add products to aside website :
+      @if(@auth()->user()->hasPermission('products_read'))
+            <li class="nav-item">
+                <a href="{{route('dashboard.products.index')}}" class="nav-link">
+                    <i class="far fa-circle nav-icon text-maroon"></i>
+                    <p>{{__('site.products')}}</p>
+                </a>
+            </li>
+      @endif
+
+    7- add permissions to laratrust seed:
+        path( config/laratrust_seeder.php )
+            'products' => 'c,r,u,d',
+
+        - $ php artisan migrate:refresh --seed
+
+    8- add product route to web:
+        path( routes/dashboard/wep.php )
+
+        // Products Routes
+                    Route::resource('products' , 'ProductController')->except(['show
