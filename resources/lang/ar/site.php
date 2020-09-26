@@ -100,6 +100,12 @@ return [
     'added_category_successfully' => 'تم إضافة الالقسم بنجاح',
     'delete_category_successfully' => 'تم حذف الالقسم بنجاح',
     'categories_Dashboard'=> 'لوحة تحكم الأقسام',
+    'ar'=>[
+        'name' => 'الاسم باللغة العربية',
+    ],
+    'en'=>[
+        'name' => 'الاسم باللغة الانكليزية',
+    ],
 
 // DataTable
     'next'=> 'التالي',

@@ -5,7 +5,7 @@
 @stop
 @section('Content_header_list_item')
     <li class="breadcrumb-item "><a href="{{route('dashboard.index')}}"><i class=" fa fa-tachometer-alt " style="color: red;"></i> {{__('site.dashboard')}}</a></li>
-    <li class="breadcrumb-item"><a href="{{route('dashboard.categories.index')}}"><i class=" fa fa-categories " style="color: blue;"></i> {{__('site.categories')}}</a></li>
+    <li class="breadcrumb-item"><a href="{{route('dashboard.categories.index')}}"><i class=" fa fa-categories " style="color: blue;"></i> {{__('site.Categories')}}</a></li>
     <li class="breadcrumb-item active"><i class=" fa fa-plus " style="color: green;"></i> {{__('site.add')}}</li>
 
 @stop
@@ -28,6 +28,7 @@
         </div>
 
         <!-- /.card-header -->
+@include('partials._errors')
         <div class="card-body " >
 {{--            @include('partials._errors')--}}
             <form action="{{ route('dashboard.categories.store') }}" method="post" >
@@ -35,13 +36,16 @@
                 {{csrf_field()}}
                 {{method_field('post')}}
 
-                <div class="form-group">
-                    <label for="name">{{__('site.name')}}</label>
-                    <input id="name" class="form-control @error('name') is-invalid @enderror" type="text" name="name" value="{{old('name')}}"  >
-                    @error('name')
-                        <small class="form-text text-danger">{{ $message }}</small>
+
+                @foreach (config('translatable.locales') as $locale)
+                    <div class="form-group">
+                        <label>@lang('site.' . $locale . '.name')</label>
+                        <input type="text" name="{{ $locale }}[name]"  class="form-control {{ $errors->has($locale.'.name') ? 'is-invalid' : '' }}" value="{{ old($locale . '.name') }}">
+                    </div>
+                    @error($locale.'.name')
+                    <small class="form-text text-danger">{{ $message }}</small>
                     @enderror
-                </div>
+                @endforeach
 
                 <div class="form-group">
                     <button class="btn btn-primary" type="submit" ><i class="fa fa-plus"></i>{{__('site.add')}}</button>
@@ -54,6 +58,5 @@
 <!--/Main content -->
 @section('scripts')
     <script>
-
     </script>
 @endsection

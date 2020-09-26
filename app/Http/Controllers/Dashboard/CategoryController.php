@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
 use App\Models\Category;
+use App\Models\CategoryTranslation;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 
@@ -40,9 +41,21 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'name'=>'required|unique:categories,name'
-        ]);
+//        $request->validate([
+////            'name'=>'required|unique:categories,name'
+//                'ar.name'=>'required|unique:category_translations,name',
+//                'en.name'=>'required|unique:category_translations,name'
+//
+//        ]);
+        $rules = [];
+
+        foreach (config('translatable.locales') as $locale) {
+
+            $rules += [$locale . '.name' => ['required', Rule::unique('category_translations', 'name')]];
+
+        }//end of for each
+
+        $request->validate($rules);
 
         Category::Create($request->all());
         session()->flash('success', __('site.added_category_successfully'));
@@ -52,10 +65,7 @@ class CategoryController extends Controller
 
     /**
      * Display the specified resource.
-     *
-     * @param  \App\Models\Category  $category
-     * @return \Illuminate\Http\Response
-     */
+    */
     public function show(Category $category)
     {
         //
@@ -63,9 +73,6 @@ class CategoryController extends Controller
 
     /**
      * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Category  $category
-     * @return \Illuminate\Http\Response
      */
     public function edit(Category $category)
     {
@@ -83,9 +90,20 @@ class CategoryController extends Controller
      */
     public function update(Request $request,Category $category)
     {
-        $request->validate([
-            'name'=>'required|unique:categories,name,'.$category->id,
-        ]);
+//        $request->validate([
+//            'ar.name'=>'required|unique:category_translations,name,'.$category->id,
+//            'en.name'=>'required|unique:category_translations,name,'.$category->id,
+//        ]);
+
+        $rules = [];
+
+        foreach (config('translatable.locales') as $locale) {
+
+            $rules += [$locale . '.name' => ['required', Rule::unique('category_translations', 'name')->ignore($category->id, 'category_id')]];
+
+        }//end of for each
+
+        $request->validate($rules);
 
         $category->update($request->all());
         session()->flash('success', __('site.updated_successfully'));
@@ -101,6 +119,8 @@ class CategoryController extends Controller
      */
     public function destroy(Category $category)
     {
+//        dd($category);
+//        CategoryTranslation::where('category_id',$category->id)->delete();
         $category->delete();
         session()->flash('success', __('site.deleted_successfully'));
         return redirect()->route('dashboard.categories.index');

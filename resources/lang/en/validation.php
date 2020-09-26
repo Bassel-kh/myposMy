@@ -133,6 +133,7 @@ return [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
+
     ],
 
     /*
@@ -146,6 +147,13 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'ar'=>[
+            'name'=>'The name in Arabic'
+        ],
+        'en'=>[
+            'name'=>'The name in English'
+        ]
+    ],
 
 ];

@@ -98,6 +98,12 @@ return [
     'added_category_successfully' => 'added category successfully',
     'delete_category_successfully' => 'delete category successfully',
     'categories_Dashboard'=> 'categories Dashboard',
+    'ar'=>[
+        'name' => 'The name in Arabic ',
+    ],
+    'en'=>[
+        'name' => 'The name in English',
+    ],
 
 // DataTable
     'next'=> 'Next',

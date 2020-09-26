@@ -295,7 +295,7 @@ complement to #5 localization (#5#6 Adding languages in url)
                      */
                     'truncate_tables' => true,
 
-                    'roles_structure' => [
+                    'rolar_structure' => [
                         'superadmin' => [
                             'users' => 'c,r,u,d',
                             'payments' => 'c,r,u,d',
@@ -341,7 +341,7 @@ complement to #5 localization (#5#6 Adding languages in url)
                      */
                     'truncate_tables' => true,
 
-                    'roles_structure' => [
+                    'rolar_structure' => [
                         'super_admin' => [
                             'users' => 'c,r,u,d',
                             'payments' => 'c,r,u,d',
@@ -1487,7 +1487,7 @@ add category { model , views , controller } part 1,2 add sections:
         $ php artisan make:controller Dashboard/CategoryController --model=Models/Category
 
      - add categories views
-     - edit categories migrate ( create_categories_table)
+     - edit categories migrate ( create_categoriar_table)
         $table->string('name');
 
      - add categories permissions in laratrust_seed config:
@@ -1503,6 +1503,203 @@ add category { model , views , controller } part 1,2 add sections:
      -  add categories to lang ar site
      -  add category views create, edit , index and edit controller method to work with that views
 
-## --------------------------------------------
+#22 --------------------------------------------
+catgeory multi language part 1
+ Step 1. Install the package
+    1- to do multi language we will install Astrotomic/laravel-translatable  package.
+        https://github.com/Astrotomic/laravel-translatable
+
+        $ composer require astrotomic/laravel-translatable
+
+    2- How To Add Multilingual Support to Eloquent
+        * How use it {
+            https://docs.astrotomic.info/laravel-translatable/installation
+            https://laravel-news.com/how-to-add-multilingual-support-to-eloquent
+            https://quickadminpanel.com/blog/how-to-add-multi-language-models-to-laravel-quickadminpanel-2020/
+          }
+
+
+ Step 2. Migration for translations table
+        1- create category_translations  schema
+          to do that:
+           $ php artisan make:model Models/CategoryTranslation -m
+
+           - in create categoriar_translations ( database/migrations/*****_***_***_create_category_translations_table.php ) add  :
+                public function up()
+                    {
+                        Schema::create('category_translations', function (Blueprint $table) {
+                            // mandatory fields
+                            //$table->id();
+                            $table->bigIncrements('id'); // Laravel 5.8+ use bigIncrements() instead of increments()
+                            $table->string('locale')->index();
+                            $table->timestamps();
+
+                            // Foreign key to the main model
+                            $table->unsignedInteger('category_id');
+                            $table->unique(['category_id', 'locale']);
+                            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
+
+                            // Actual fields you want to translate
+                            $table->string('name');
+                        });
+                    }
+
+                - $ php artisan migrate
+ Step 3. Model setup
+    3- in Models/categories  add this :
+        1- comment fallible because we don't use them
+        2- let’s move to model setup – in our case it will be app/Models/categories.php
+           Now you will need to add so-called trait with use keyword after class signature.
+           We will use Translatable trait. And make sure you have use Astrotomic\Translatable\Translatable;
+           below namespace declaration.
+
+           One more thing to add is $translatedAttributes property which is assigned with array of attributes’ names to be translated.
+           In this case it should look like this
+            use Astrotomic\Translatable\Translatable;
+                ---------------------------------------
+                // 1. To specify package’s class you are using
+                use Astrotomic\Translatable\Translatable;
+
+                class Category extends Model
+                {
+                //    protected $fillable = ['name'];
+
+                    use Translatable; // 2. To add translation methods
+
+                    // 3. To define which attributes needs to be translated
+                    public $translatedAttributes = ['name'];
+
+                }
+                ---------------------------------------
+
+        3- Now we need to setup a translation model – app/Models/CategoriesTranslation.php.
+        Here you just need to assign to protected $fillable the same array as
+        we assigned to $translatedAttributes in previous model and specify that
+        we don’t need timestamps with
+            public $timestamps = false;
+                ---------------------------------------
+
+                class CategoryTranslation extends Model
+                {
+                    protected $fillable = ['name'];
+                    public $timestamps = false;
+                }
+
+                ---------------------------------------
+
+ Step 4. Configuring package
+    4- Let’s back to terminal to finish our configuration.
+
+       1- Run: $ php artisan vendor:publish --tag=translatable
+       2- Open config/translatable.php where we determine what languages we are going to use.
+           In this example we will only use English and Arabic. But you are free to use
+           whichever and how many you want.
+           Modify locales array by adding your wanted languages codes.
+           // ...
+           'locales' => [
+              'en',
+              'ar'
+           ],
+
+ Step 5. Create View – choosing languages for input
+    5-Now we will prepare our resources/views/dashboard/categories/create.blade.php file for creating our
+        freshly made multi-language article. Follow up design solution it’s just one of many available.
+        Try to implement it or just create your own.
+
+          For the beginning we will add Bootstrap tabs for navigating between languages and data:
+
+                    ---------------------------------------
+
+          @foreach(config('translatable.locales') as $local)
+                          <div class="form-group">
+                              <label for="name">{{__('site.'.$local.'.name')}}</label>
+                              <input id="name" class="form-control @error($local.'name') is-invalid @enderror" type="text" name="name" value="{{old($local.'name')}}"  >
+                              @error($local.'name')
+                                  <small class="form-text text-danger">{{ $message }}</small>
+                              @enderror
+                          </div>
+                          @endforeach
+                    ---------------------------------------
+
+                ********************************************************
+          OR:{
+
+                    ---------------------------------------
+
+                      <ul class="nav nav-tabs">
+                         <li class="nav-item">
+                             <a class="nav-link bg-aqua-active" href="#" id="Arabic-link">AR</a>
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link" href="#" id="english-link">EN</a>
+                         </li>
+                      </ul>
+                    ---------------------------------------
+
+                Now we add two identical style-like panels for input fields – English and Arabic:
+                    ---------------------------------------
+
+                      <div class="card-body" id="english-form">
+                          <div class="form-group">
+                              <label class="required" for="en_name">{{ trans('cruds.article.fields.name') }} (EN)</label>
+                              <input class="form-control {{ $errors->has('en_name') ? 'is-invalid' : '' }}" type="text" name="en_name" id="en_name" value="{{ old('en_name', '') }}" required>
+                              @if($errors->has('en_name'))
+                                  <div class="invalid-feedback">
+                                      {{ $errors->first('en_name') }}
+                                  </div>
+                              @endif
+                              <span class="help-block">{{ trans('cruds.article.fields.name_helper') }}</span>
+                          </div>
+                      </div>
+
+                      <div class="card-body d-none" id="arabic-form">
+                          <div class="form-group">
+                              <label class="required" for="name">{{ trans('cruds.article.fields.name') }} (ES)</label>
+                              <input class="form-control {{ $errors->has('ar_name') ? 'is-invalid' : '' }}" type="text" name="ar_name" id="ar_name" value="{{ old('ar_name', '') }}" required>
+                              @if($errors->has('ar_name'))
+                                  <div class="invalid-feedback">
+                                      {{ $errors->first('ar_name') }}
+                                  </div>
+                              @endif
+                              <span class="help-block">{{ trans('cruds.article.fields.name_helper') }}</span>
+                          </div>
+                      </div>
+                    ---------------------------------------
+
+            }
+                ********************************************************
+
+ Step 6. Saving the translations in Controller
+    6- $ php artisan migrate:refresh --seed
+        1- edit create and edit view and store and update method in CategoryController
+
+        [NOTE] {
+        https://stackoverflow.com/questions/24897300/laravel-foreign-key-ondeletecascade-not-working
+
+                if ()Laravel foreign key onDelete('cascade') not working
+                 add : Try setting when trying to create this table. This fix has worked for me.
+
+                       $table->engine = 'InnoDB';
+               }
+
+               * OR{
+               I know this is an old issue, but recently (on Laravel 8) I had the same problem even when using InnoDB.
+
+               I solved it by using the constrained() option on the relationship. Without the "constrained" parameter, the migration won't create the actual relationship on the database.
+
+               $table->foreignId('user_id')->constrained()->onDelete('cascade');
+               }
+
+               * OR {
+                   Add to destroy method in controller this:
+                    //        CategoryTranslation::where('category_id',$category->id)->delete();
+                    make it before :
+                              $category->delete();
+
+
+               }
+
+
+
 
 
