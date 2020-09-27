@@ -73,6 +73,7 @@
                         </li>
 
                     </ul>
+
                 </li><!-- ./ Main List -->
 
                 <!-- Management permission and Role List Users Roles Permissions Teams -->
@@ -238,6 +239,27 @@
                         </li>
                     </ul>
                 </li><!-- ./Management Site Content List -->
+
+                <li class="nav-item has-treeview ">
+                    <a href="#" class="nav-link bg-gradient-dark text-white">
+                        <i class="nav-icon fas fa-user-tie"></i>
+                        <p>
+                            إدارة العملاء
+                            <i class="{{$dir}} fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        @if(@auth()->user()->hasPermission('clients_read'))
+                            <li class="nav-item">
+                                <a href="{{route('dashboard.clients.index')}}" class="nav-link">
+                                    <i class="far fa-circle nav-icon text-maroon"></i>
+                                    <p>{{__('site.clients')}}</p>
+                                </a>
+                            </li>
+                        @endif
+
+                    </ul>
+                </li><!-- ./Management Clients List -->
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

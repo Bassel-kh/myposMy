@@ -21,17 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="43f369e8-6175-40c6-a52e-089c90166f3a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/products_images/j3ch1eUawvu95Hq0J5rH83NhNnmRxvzzaaYaLovq.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/site.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/site.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/categories/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/products/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/products/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/products/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commands-Steps.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Commands-Steps.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +157,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/uploads" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/dashboard" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -189,11 +179,11 @@
       <recent name="D:\wamp64\www\myposMy\app\Http\Requests" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp64\www\myposMy\resources\views\dashboard" />
       <recent name="D:\wamp64\www\myposMy\public\uploads" />
       <recent name="D:\wamp64\www\myposMy\public\dashboard AdminLte 3_files\plugins" />
       <recent name="D:\wamp64\www\myposMy\resources\views\dashboard\products" />
       <recent name="D:\wamp64\www\myposMy\resources\views\dashboard\categories" />
-      <recent name="D:\wamp64\www\myposMy\public\uploads\userImages" />
     </key>
   </component>
   <component name="RunManager">
@@ -234,7 +224,7 @@
       <workItem from="1600874875534" duration="4020000" />
       <workItem from="1600879997239" duration="19470000" />
       <workItem from="1601022518727" duration="17539000" />
-      <workItem from="1601104904329" duration="30960000" />
+      <workItem from="1601104904329" duration="41457000" />
     </task>
     <task id="LOCAL-00001" summary="#1 Add/Define dashboard Route file and controller-namespace ( Steps: 1 , 2 )">
       <created>1598597257857</created>
@@ -453,7 +443,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601150764028</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="#23 products">
+      <created>1601193049796</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1601193049796</updated>
+    </task>
+    <task id="LOCAL-00033" summary="#24 client ( model , controller , views )">
+      <created>1601223444498</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1601223444498</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,8 +489,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="#3 Add AdminLte 3.0.5 Files to project:&#10;    1- copy ( dist , build , plugin , docs) files to public folder&#10;    2- add layout admin (master page )" />
-    <MESSAGE value="4# install Laravel Localization and Edit side and navbar" />
     <MESSAGE value="#5 Make Dashboard Controller ( MultiLang page )  ( Steps : 1 , 2 , 3 , 4 ,5, 6)" />
     <MESSAGE value="#6 Complement to #5 localization (#5#6 Adding languages in url)" />
     <MESSAGE value="#7 (#7.1- Roles and permissions - #7.2- Commit before setup laratrust )" />
@@ -510,7 +512,9 @@
     <MESSAGE value="#20 add category { model , views , controller } part 1,2" />
     <MESSAGE value="#22 catgeory multi language ( 1- Astrotomic/laravel-translatable  package. ....etc)" />
     <MESSAGE value="#23 products part 1 use ckeditor" />
-    <option name="LAST_COMMIT_MESSAGE" value="#23 products part 1 use ckeditor" />
+    <MESSAGE value="#23 products" />
+    <MESSAGE value="#24 client ( model , controller , views )" />
+    <option name="LAST_COMMIT_MESSAGE" value="#24 client ( model , controller , views )" />
   </component>
   <component name="WindowStateProjectService">
     <state x="561" y="276" key="#Custom_Plugin_Repositories" timestamp="1598701111207">
@@ -529,10 +533,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="363" y="104" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.738@0.0.1366.738" timestamp="1601022170668" />
-    <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601191218530">
+    <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601222721729">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1601191218530" />
+    <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1601222721729" />
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1599419093796">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -569,6 +573,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="284" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.738@0.0.1366.738" timestamp="1600790305710" />
+    <state x="92" y="92" width="1182" height="554" key="dock-window-1" timestamp="1601220684756">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="92" y="92" width="1182" height="554" key="dock-window-1/0.0.1366.738@0.0.1366.738" timestamp="1601220684756" />
     <state x="466" y="7" width="585" height="592" key="find.popup" timestamp="1599732837982">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -577,10 +585,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1601048240812" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1601188727769">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1601201222135">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1601188727769" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1601201222135" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

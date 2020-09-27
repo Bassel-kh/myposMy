@@ -18,6 +18,7 @@ return [
             'profile' => 'r,u',
             'categories' => 'c,r,u,d',
             'products' => 'c,r,u,d',
+            'clients' => 'c,r,u,d',
 
         ],
         'admin'=>[],

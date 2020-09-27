@@ -136,6 +136,12 @@ return [
     'stock' => 'المخزن',
     'profit_percent' => 'المكسب',
 
+    // Clients
+    'clients'=> 'العملاء',
+    'address' => 'العنوان',
+    'phone' => 'الهاتف',
+    'order' => 'طلب',
+
 // DataTable
     'next'=> 'التالي',
     'previous'=> 'السابق',

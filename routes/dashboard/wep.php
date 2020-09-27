@@ -9,6 +9,9 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => [ 'l
 
             Route::get('/index', 'DashboardController@index')->name('index');
 
+            // Client Routes
+            Route::resource('clients' , 'ClientController')->except(['show']);
+
 
             // User Routes
             Route::resource('users' , 'UserController')->except(['show']);

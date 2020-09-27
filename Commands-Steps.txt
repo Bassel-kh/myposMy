@@ -1821,4 +1821,60 @@ products part 1
         // Products Routes
                     Route::resource('products' , 'ProductController')->except(['show
 
+#24 --------------------------------------------
+client
+1- make client model:
+    - $ php artisan make:model Models/Client -m
+    - migrate:
+           public function up()
+            {
+                Schema::create('clients', function (Blueprint $table) {
+                    $table->increments('id');
+                    $table->string('name');
+                    $table->string('phone');
+                    $table->text('address');
+                    $table->timestamps();
+                });
+            }
+
+
+
+2- make client controller
+    - $ php artisan make:controller Dashboard/ClientController --model=Models/Client
+    - $ php artisan make:controller Dashboard/ClientController -r
+
+3- add client routes to  dashboard/web
+
+    // Client Routes
+                Route::resource('clients' , 'ClientController')->except(['show']);
+
+4- add client views:
+    - index
+    - create
+    - edit
+
+5- add permissions to laratrust seed:
+    path ( config/laratrust_seeder.php )
+                'clients' => 'c,r,u,d',
+    - $ php artisan migrate:refresh --seed
+
+6- add client to aside:
+    path()
+         @if(@auth()->user()->hasPermission('clients_read'))
+                                <li class="nav-item">
+                                    <a href="{{route('dashboard.clients.index')}}" class="nav-link">
+                                        <i class="far fa-circle nav-icon text-maroon"></i>
+                                        <p>{{__('site.clients')}}</p>
+                                    </a>
+                                </li>
+                            @endif
+7- edit view index and create , edit
+
+8- add to client model this:
+      protected $casts = [
+            'phone' => 'array'
+        ];
+
+9- edit ClientController methods
+
 ## --------------------------------------------

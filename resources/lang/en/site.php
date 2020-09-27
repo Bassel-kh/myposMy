@@ -140,6 +140,11 @@ return [
     'stock' => 'stock',
     'profit_percent' => 'profit percent',
 
+    // Clients
+    'clients'=> 'clients',
+    'address' => 'address',
+    'phone' => 'phone',
+    'order' => 'order',
 
 // DataTable
     'next'=> 'Next',
