@@ -115,6 +115,8 @@ return [
     'products'=>'products',
     'create_new_product' => 'Create new product',
     'update-product'=> 'update product',
+    'products_count' => 'products count',
+    'related_products' => 'related products',
     'added_product_successfully' => 'added product successfully',
     'delete_product_successfully' => 'delete product successfully',
     'products_Dashboard'=> 'products Dashboard',

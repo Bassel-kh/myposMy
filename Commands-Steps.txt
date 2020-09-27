@@ -1820,3 +1820,5 @@ products part 1
 
         // Products Routes
                     Route::resource('products' , 'ProductController')->except(['show
+
+## --------------------------------------------

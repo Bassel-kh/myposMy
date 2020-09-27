@@ -18,7 +18,8 @@ class CategoryController extends Controller
     public function index(Request $request)
     {
         $categories = Category::when($request->search, function ($q) use ($request){
-            return $q->where('name','like','%'.$request->search.'%');
+            return $q->whereTranslationLike('name','like','%'.$request->search.'%');
+
         })->latest()->paginate(5);
         return  view('dashboard.categories.index', compact('categories'));
     }
@@ -120,7 +121,7 @@ class CategoryController extends Controller
     public function destroy(Category $category)
     {
 //        dd($category);
-//        CategoryTranslation::where('category_id',$category->id)->delete();
+        CategoryTranslation::where('category_id',$category->id)->delete();
         $category->delete();
         session()->flash('success', __('site.deleted_successfully'));
         return redirect()->route('dashboard.categories.index');

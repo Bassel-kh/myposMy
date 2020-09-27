@@ -113,6 +113,8 @@ return [
     'products'=>'المنتجات',
     'create_new_product' => 'إنشاء المنتج جديد',
     'update-product'=> 'تحديث الالمنتج',
+    'products_count' => 'عدد الامنتجات',
+    'related_products' => 'المنتجات المرتبطه',
     'added_product_successfully' => 'تم إضافة المنتج بنجاح',
     'delete_product_successfully' => 'تم حذف المنتج بنجاح',
     'products_Dashboard'=> 'لوحة تحكم الأقسام',

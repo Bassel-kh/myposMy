@@ -38,6 +38,15 @@
                 </div>
 
                 <div class="col-md-4">
+                    <select name="category_id" class="form-control">
+                        <option value="">@lang('site.all_categories')</option>
+                        @foreach ($categories as $category)
+                            <option value="{{ $category->id }}" {{ request()->category_id == $category->id ? 'selected' : '' }}>{{ $category->name }}</option>
+                        @endforeach
+                    </select>
+                </div>
+
+                <div class="col-md-4">
                     <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-search"></i>@lang('site.search')</button>
 
                     @if(auth()->user()->hasPermission('products_create'))
@@ -58,7 +67,7 @@
                         <th>#</th>
                         <th>@lang('site.name')</th>
                         <th>@lang('site.description')</th>
-                        <th>@lang('site.category')</th>
+                        <th>@lang('site.Category')</th>
                         <th>@lang('site.image')</th>
                         <th>@lang('site.purchase_price')</th>
                         <th>@lang('site.sale_price')</th>
@@ -73,6 +82,7 @@
                                 <td>{{ $index + 1 }}</td>
                                 <td>{{ $product->name }}</td>
                                 <td>{!! $product->description !!}</td>
+{{--                                <td>{{ $product->description }}</td>--}}
                                 <td>{{ $product->category->name }}</td>
                                 <td><img src="{{ $product->image_path }}" style="width: 100px"  class="img-thumbnail" alt=""></td>
                                 <td>{{ $product->purchase_price }}</td>

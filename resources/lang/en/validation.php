@@ -149,11 +149,22 @@ return [
 
     'attributes' => [
         'ar'=>[
-            'name'=>'The name in Arabic'
+            'name'=>'name in Arabic',
+            'title'=>'name in Arabic',
+            'description' => 'description in Arabic',
         ],
         'en'=>[
-            'name'=>'The name in English'
-        ]
+            'name'=>'name in English',
+            'title'=>'name in English',
+            'description' => 'description in English',
+
+        ],
+
+        'category_id' => 'category id',
+        'purchase_price' => 'purchase price',
+        'sale_price' => 'sale price',
+        'stock' => 'stock',
+        'phone.0' => 'phone',
     ],
 
 ];
