@@ -20,38 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43f369e8-6175-40c6-a52e-089c90166f3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/js/custom/image_preview.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/js/custom/order.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/js/custom/printThis.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/clients/orders/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/clients/orders/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/orders/_products.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/orders/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commands-Steps.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Commands-Steps.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/laratrust_seeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/laratrust_seeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_25_151021_create_category_translations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_25_151021_create_category_translations_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_26_154358_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_26_154358_create_products_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_26_154556_create_product_translations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_26_154556_create_product_translations_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_27_085352_create_clients_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_27_085352_create_clients_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/products_images/C68GMWoZ7U0bdRbQIJg0gZ3j4nycmv9iVnb3Np6o.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/products_images/ja8obfeGU3V9g6qUsVcyCBQ5Kef3dDHo80owW9Ct.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/products_images/n8FeLAoL6tFu1lggA6lKnmn7gesipYuvKjs7Eqlb.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/products_images/zB785xvLLOrOfu0TbD07JGNcuP1gohEnvH8SZPQ7.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/userImages/4NI11KVPIQLcRPCSof9Bdpbwu0EX4mVWWMfGzmjk.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/userImages/nepOjFgwjaZsj4gtxfhWtaqCUKv8VorKW57rL3Jl.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/site.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/site.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/clients/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/clients/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/dashboard/wep.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/dashboard/wep.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/Client/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/Client/OrderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/js/custom/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/js/custom/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/clients/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/clients/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/clients/orders/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/clients/orders/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/clients/orders/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/clients/orders/edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,7 +230,7 @@
       <workItem from="1600879997239" duration="19470000" />
       <workItem from="1601022518727" duration="17539000" />
       <workItem from="1601104904329" duration="51091000" />
-      <workItem from="1601272449680" duration="23509000" />
+      <workItem from="1601272449680" duration="30274000" />
     </task>
     <task id="LOCAL-00001" summary="#1 Add/Define dashboard Route file and controller-namespace ( Steps: 1 , 2 )">
       <created>1598597257857</created>
@@ -502,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601224326970</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="#25 orders (cliend/OrderController and views orders( index , _product ) client/order( create , edite ) and general OrderController )">
+      <created>1601304942020</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1601304942020</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,7 +516,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="#5 Make Dashboard Controller ( MultiLang page )  ( Steps : 1 , 2 , 3 , 4 ,5, 6)" />
     <MESSAGE value="#6 Complement to #5 localization (#5#6 Adding languages in url)" />
     <MESSAGE value="#7 (#7.1- Roles and permissions - #7.2- Commit before setup laratrust )" />
     <MESSAGE value="#7 (#7.3 1- laratrust:setup 2 3 4 seed )" />
@@ -559,7 +540,8 @@
     <MESSAGE value="#23 products part 1 use ckeditor" />
     <MESSAGE value="#23 products" />
     <MESSAGE value="#24 client ( model , controller , views )" />
-    <option name="LAST_COMMIT_MESSAGE" value="#24 client ( model , controller , views )" />
+    <MESSAGE value="#25 orders (cliend/OrderController and views orders( index , _product ) client/order( create , edite ) and general OrderController )" />
+    <option name="LAST_COMMIT_MESSAGE" value="#25 orders (cliend/OrderController and views orders( index , _product ) client/order( create , edite ) and general OrderController )" />
   </component>
   <component name="WindowStateProjectService">
     <state x="561" y="276" key="#Custom_Plugin_Repositories" timestamp="1598701111207">

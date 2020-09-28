@@ -1,5 +1,20 @@
 @extends('layouts.dashboard-AdminLte 3.app')
 <!-- Content Header (Page header) -->
+@section('Header')
+    <style>
+        h4 a:visited {
+            color: #643ab0 !important;
+        }
+
+        h4  a:hover , h4  a:active {
+            color: #ffffff !important;
+        }
+
+        h4  a {
+            color: #ffffff !important;
+        }
+    </style>
+@stop
 @section('HeaderTitle')
     {{__('site.clients')}}
 @stop
@@ -55,8 +70,8 @@
 
                                         <div class="panel panel-info">
 
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
+                                            <div class="panel-heading bg-dark rounded">
+                                                <h4 class="panel-title  m-2">
                                                     <a data-toggle="collapse" href="#{{ str_replace(' ', '-', $category->name) }}">{{ $category->name }}</a>
                                                 </h4>
                                             </div>
@@ -170,60 +185,6 @@
 
                         </div><!-- end of card -->
 
-{{--                        @if ($client->orders->count() > 0)--}}
-
-{{--                            <div class="card card-primary">--}}
-
-{{--                                <div class="card-header">--}}
-
-{{--                                    <h3 class="card-title" style="margin-bottom: 10px">@lang('site.previous_orders')--}}
-{{--                                        <small>{{ $orders->total() }}</small>--}}
-{{--                                    </h3>--}}
-
-{{--                                </div><!-- end of card header -->--}}
-
-{{--                                <div class="card-body">--}}
-
-{{--                                    @foreach ($orders as $order)--}}
-
-{{--                                        <div class="panel-group">--}}
-
-{{--                                            <div class="panel panel-success">--}}
-
-{{--                                                <div class="panel-heading">--}}
-{{--                                                    <h4 class="panel-title">--}}
-{{--                                                        <a data-toggle="collapse" href="#{{ $order->created_at->format('d-m-Y-s') }}">{{ $order->created_at->toFormattedDateString() }}</a>--}}
-{{--                                                    </h4>--}}
-{{--                                                </div>--}}
-
-{{--                                                <div id="{{ $order->created_at->format('d-m-Y-s') }}" class="panel-collapse collapse">--}}
-
-{{--                                                    <div class="panel-body">--}}
-
-{{--                                                        <ul class="list-group">--}}
-{{--                                                            @foreach ($order->products as $product)--}}
-{{--                                                                <li class="list-group-item">{{ $product->name }}</li>--}}
-{{--                                                            @endforeach--}}
-{{--                                                        </ul>--}}
-
-{{--                                                    </div><!-- end of panel body -->--}}
-
-{{--                                                </div><!-- end of panel collapse -->--}}
-
-{{--                                            </div><!-- end of panel primary -->--}}
-
-{{--                                        </div><!-- end of panel group -->--}}
-
-{{--                                    @endforeach--}}
-
-{{--                                    {{ $orders->links() }}--}}
-
-{{--                                </div><!-- end of card body -->--}}
-
-{{--                            </div><!-- end of card -->--}}
-
-{{--                        @endif--}}
-
                     </div><!-- end of col -->
 
                 </div><!-- end of row -->
@@ -232,7 +193,64 @@
         </div><!-- end of card body -->
     </div>
 
+    <div class="row">
+        <div class="col-md-6"></div>
+        <div class="card-body col-md-6 text-{{$dir}}">
+            @if ($orders->count() > 0)
+                <div class="card-group mb-2">
 
+                    <div class="card ">
+                        <div class="card-heading bg-gradient-success rounded">
+                            <h4 class="card-title m-2">
+                                @lang('site.previous_orders')
+                                <small>{{ $orders->total() }}</small>
+                            </h4>
+                        </div>
+
+                        <div class="card-body">
+
+                            @foreach ($orders as $order)
+
+                                <div class="card-group">
+
+                                    <div class="card card-success">
+
+                                        <div class="card-heading rounded bg-gradient-gray">
+                                            <h4 class="card-title m-2" >
+                                                <a data-toggle="collapse" href="#_{{ $order->id }}" >{{ $order->created_at->toFormattedDateString() }}</a>
+
+                                            </h4>
+                                        </div>
+
+                                        <div id="_{{ $order->id }}" class="card-collapse collapse">
+
+                                            <div class="card-body">
+                                                <ul class="list-group">
+                                                    @foreach ($order->products as $product)
+                                                        <li class="list-group-item text-center">{{ $product->name }}</li>
+                                                    @endforeach
+                                                </ul>
+
+                                            </div><!-- end of card body -->
+
+                                        </div><!-- end of card collapse -->
+
+                                    </div><!-- end of card primary -->
+
+                                </div><!-- end of card group -->
+
+                            @endforeach
+
+                            {{ $orders->links() }}
+
+                        </div><!-- end of card body -->
+
+                    </div><!-- end of card -->
+
+                </div>
+            @endif
+        </div>
+    </div>
 @stop
 <!--/Main content -->
 @section('scripts')

@@ -17,6 +17,7 @@ class OrderController extends Controller
     {
     $categories = Category::with('products')->get();
     $orders = $client->orders()->with('products')->paginate(5);
+//    dd($orders);
     return view('dashboard.clients.orders.create', compact( 'client', 'categories', 'orders'));
 
     }//end of create

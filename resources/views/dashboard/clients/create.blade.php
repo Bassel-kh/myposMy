@@ -60,6 +60,8 @@
         </div>
     </div>
 
+
+
 @stop
 <!--/Main content -->
 @section('scripts')

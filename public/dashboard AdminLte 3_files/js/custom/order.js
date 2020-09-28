@@ -6,6 +6,7 @@ $(document).ready(function () {
         e.preventDefault();
         var name = $(this).data('name');
         var id = $(this).data('id');
+        var stock = $(this).data('stock');
         // var price = $.number($(this).data('price'), 2);
         var price = Number($(this).data('price'),2);
         // var iNum = parseFloat(price); //Output will be 23.
@@ -15,7 +16,7 @@ $(document).ready(function () {
         var html =
             `<tr>
                 <td>${name}</td>
-                <td><input type="number" name="products[${id}][quantity]" data-price="${price}" class="form-control input-sm product-quantity" min="1" value="1"></td>
+                <td><input type="number" name="products[${id}][quantity]" data-stock="${stock}"  data-price="${price}" class="form-control input-sm product-quantity" min="1"  max="${stock}" value="1"></td>
                 <td class="product-price">${price}</td>
                 <td><button class="btn btn-danger btn-sm remove-product-btn" data-id="${id}"><span class="fa fa-trash"></span></button></td>
             </tr>`;
@@ -49,8 +50,13 @@ $(document).ready(function () {
 
     //change product quantity
     $('body').on('keyup change', '.product-quantity', function() {
-
+        var stock = parseInt($(this).data('stock')); //2
         var quantity = Number($(this).val()); //2
+        if(stock < quantity){
+            // $(this).attr('disabled', 'disabled');
+            $(this).val(stock);
+
+        }
         var unitPrice = parseFloat($(this).data('price')); //150
         console.log(unitPrice);
         $(this).closest('tr').find('.product-price').html(Number(quantity * unitPrice).toFixed(2));

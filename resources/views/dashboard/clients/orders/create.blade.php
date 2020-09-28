@@ -87,6 +87,7 @@
                                                                id="product-{{ $product->id }}"
                                                                data-name="{{ $product->name }}"
                                                                data-id="{{ $product->id }}"
+                                                               data-stock="{{ $product->stock }}"
                                                                data-price="{{ $product->sale_price }}"
                                                                class="btn btn-success btn-sm add-product-btn">
                                                                 <i class="fa fa-plus"></i>
@@ -160,7 +161,64 @@
             <!-- /.card -->
     </div>
         <!-- /.col (right) -->
+    <div class="row">
+        <div class="col-md-6"></div>
+            <div class="card-body col-md-6 text-{{$dir}}">
+                @if ($orders->count() > 0)
+                    <div class="card-group mb-2">
 
+                        <div class="card ">
+                            <div class="card-heading bg-gradient-success rounded">
+                                <h4 class="card-title m-2">
+                                    @lang('site.previous_orders')
+                                    <small>{{ $orders->total() }}</small>
+                                </h4>
+                            </div>
+
+                    <div class="card-body">
+
+                        @foreach ($orders as $order)
+
+                            <div class="card-group">
+
+                                <div class="card card-success">
+
+                                    <div class="card-heading rounded bg-gradient-gray" >
+                                        <h4 class="card-title m-2" >
+                                            <a data-toggle="collapse" href="#_{{ $order->id }}" >{{ $order->created_at->format('d-m-Y-s') }}</a>
+
+                                        </h4>
+                                    </div>
+
+                                    <div id="_{{ $order->id }}" class="card-collapse collapse">
+
+                                        <div class="card-body">
+                                            <ul class="list-group">
+                                                @foreach ($order->products as $product)
+                                                    <li class="list-group-item text-center">{{ $product->name }}</li>
+                                                @endforeach
+                                            </ul>
+
+                                        </div><!-- end of card body -->
+
+                                    </div><!-- end of card collapse -->
+
+                                </div><!-- end of card primary -->
+
+                            </div><!-- end of card group -->
+
+                        @endforeach
+
+                        {{ $orders->links() }}
+
+                    </div><!-- end of card body -->
+
+                </div><!-- end of card -->
+                        @endif
+
+            </div>
+        </div>
+    </div>
 @stop
 <!--/Main content -->
 @section('scripts')
