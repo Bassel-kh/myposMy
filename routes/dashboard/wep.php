@@ -9,9 +9,6 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => [ 'l
 
             Route::get('/index', 'DashboardController@index')->name('index');
 
-            // Client Routes
-            Route::resource('clients' , 'ClientController')->except(['show']);
-
 
             // User Routes
             Route::resource('users' , 'UserController')->except(['show']);
@@ -22,6 +19,13 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => [ 'l
             // Products Routes
             Route::resource('products' , 'ProductController')->except(['show']);
 
+            // Orders Routes
+            Route::resource('orders' , 'OrderController')->except(['show']);
+            Route::get('/orders/{order}/products', 'OrderController@products')->name('orders.products');
+
+            // Client Routes
+            Route::resource('clients' , 'ClientController')->except(['show']);
+            Route::resource('clients.orders', 'Client\OrderController')->except(['show']);
 
             // laratrust Routes
                 // Permissions

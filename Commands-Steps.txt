@@ -1825,6 +1825,10 @@ products part 1
 client
 1- make client model:
     - $ php artisan make:model Models/Client -m
+        in model :
+             protected $casts = [
+                    'phone' => 'array'
+                ];
     - migrate:
            public function up()
             {
@@ -1877,4 +1881,536 @@ client
 
 9- edit ClientController methods
 
+#25 --------------------------------------------
+orders (cliend/OrderController and views orders( index , _product ) client/order( create , edite ) and general OrderController )
+        1- create order model :
+          - $ php artisan make:model Models/Order -m
+             in Order model:
+
+
+        2- create order controller:
+            - $ php artisan make:controller Dashboard/Client/OrderController
+
+            - controller methods:
+
+
+        3- add route to dash/web:
+                 // Client Routes
+                            Route::resource('clients' , 'ClientController')->except(['show']);
+                            Route::resource('clients.orders', 'Client\OrderController')->except(['show']);
+
+        4- add order views:
+         path ( resources/views/dashboard/clients/orders )
+          - create
+          - edit
+
+        5- add order permissions to laratrust_seeder:
+            'orders' => 'c,r,u,d',
+            - $ php artisan migrate:refresh --seed
+
+        6- add clients , orders models to userCreate and edit view
+            path( resources/views/dashboard/users/create.blade.php )
+            path( resources/views/dashboard/users/edit.blade.php )
+                <?php
+
+                  $models = ['users','categories', 'products' , 'clients', 'orders'];
+                  $maps = ['create', 'read', 'update', 'delete'];
+
+                ?>
+        7- edit create order  add:
+             <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-info">
+                                <h5 class="box-title " style="margin-bottom: 10px">@lang('site.Categories')</h5>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body text-{{$dir}}">
+
+                                            @foreach ($categories as $category)
+
+                                                <div class="card-group mb-2">
+
+                                                    <div class="card ">
+
+                                                        <div class="card-heading bg-dark rounded">
+                                                            <h4 class="card-title m-2">
+                                                                <a data-toggle="collapse" href="#{{ str_replace(' ', '-', $category->name) }}">{{ $category->name }}</a>
+                                                            </h4>
+                                                        </div>
+
+                                                        <div id="{{ str_replace(' ', '-', $category->name) }}" class="card-collapse collapse">
+
+                                                            <div class="card-body">
+
+                                                                @if ($category->products->count() > 0)
+
+                                                                    <table class="table table-hover">
+                                                                        <tr>
+                                                                            <th>@lang('site.name')</th>
+                                                                            <th>@lang('site.stock')</th>
+                                                                            <th>@lang('site.price')</th>
+                                                                            <th>@lang('site.add')</th>
+                                                                        </tr>
+
+                                                                        @foreach ($category->products as $product)
+                                                                            <tr>
+                                                                                <td>{{ $product->name }}</td>
+                                                                                <td>{{ $product->stock }}</td>
+                                                                                <td>{{ number_format($product->sale_price, 2) }}</td>
+                                                                                <td>
+                                                                                    <a href=""
+                                                                                       id="product-{{ $product->id }}"
+                                                                                       data-name="{{ $product->name }}"
+                                                                                       data-id="{{ $product->id }}"
+                                                                                       data-price="{{ $product->sale_price }}"
+                                                                                       class="btn btn-success btn-sm add-product-btn">
+                                                                                        <i class="fa fa-plus"></i>
+                                                                                    </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        @endforeach
+
+                                                                    </table><!-- end of table -->
+
+                                                                @else
+                                                                    <h5>@lang('site.no_records')</h5>
+                                                                @endif
+
+                                                            </div><!-- end of card body -->
+
+                                                        </div><!-- end of card collapse -->
+
+                                                    </div><!-- end of card primary -->
+
+                                                </div><!-- end of card group -->
+
+                                            @endforeach
+
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.col (left) -->
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="box-title">@lang('site.orders')</h5>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body text-{{$dir}}">
+
+
+                                            <form action="{{ route('dashboard.clients.orders.store', $client->id) }}" method="post">
+
+                                                {{ csrf_field() }}
+                                                {{ method_field('post') }}
+
+                                                @include('partials._errors')
+
+                                                <table class="table table-hover">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>@lang('site.product')</th>
+                                                        <th>@lang('site.quantity')</th>
+                                                        <th>@lang('site.price')</th>
+                                                    </tr>
+                                                    </thead>
+
+                                                    <tbody class="order-list">
+
+
+                                                    </tbody>
+
+                                                </table><!-- end of table -->
+
+                                                <h4>@lang('site.total') : <span class="total-price">0</span></h4>
+
+                                                <button class="btn btn-primary btn-block disabled" id="add-order-form-btn"><i class="fa fa-plus"></i> @lang('site.add_order')</button>
+
+                                            </form>
+
+                                    @if ($client->orders->count() > 0)
+
+                                        <div class="box box-primary">
+
+                                            <div class="box-header">
+
+                                                <h5 class="box-title" style="margin-bottom: 10px">@lang('site.previous_orders')
+                                                    <small>{{ $orders->total() }}</small>
+                                                </h5>
+
+                                            </div><!-- end of box header -->
+
+                                            <div class="box-body">
+
+                                                @foreach ($orders as $order)
+
+                                                    <div class="card-group">
+
+                                                        <div class="card card-success">
+
+                                                            <div class="card-heading">
+                                                                <h4 class="card-title">
+                                                                    <a data-toggle="collapse" href="#{{ $order->created_at->format('d-m-Y-s') }}">{{ $order->created_at->toFormattedDateString() }}</a>
+                                                                </h4>
+                                                            </div>
+
+                                                            <div id="{{ $order->created_at->format('d-m-Y-s') }}" class="card-collapse collapse">
+
+                                                                <div class="card-body">
+
+                                                                    <ul class="list-group">
+                                                                        @foreach ($order->products as $product)
+                                                                            <li class="list-group-item">{{ $product->name }}</li>
+                                                                        @endforeach
+                                                                    </ul>
+
+                                                                </div><!-- end of card body -->
+
+                                                            </div><!-- end of card collapse -->
+
+                                                        </div><!-- end of card primary -->
+
+                                                    </div><!-- end of card group -->
+
+                                                @endforeach
+
+                                                {{ $orders->links() }}
+
+                                            </div><!-- end of box body -->
+
+                                        </div><!-- end of box -->
+
+                                    @endif
+
+                                </div><!-- end of col -->
+
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.col (right) -->
+
+        8- add order js file :
+        to use .number function wed add jquery number plugin:
+            {
+                https://github.com/customd/jquery-number
+            }
+            $(document).ready(function () {
+
+                //add product btn
+                $('.add-product-btn').on('click', function (e) {
+
+                    e.preventDefault();
+                    var name = $(this).data('name');
+                    var id = $(this).data('id');
+                    // var price = $.number($(this).data('price'), 2);
+                    var price = Number($(this).data('price'),2);
+                    // var iNum = parseFloat(price); //Output will be 23.
+                    // console.log(iNum);
+                    $(this).removeClass('btn-success').addClass('btn-default disabled');
+
+                    var html =
+                        `<tr>
+                            <td>${name}</td>
+                            <td><input type="number" name="products[${id}][quantity]" data-price="${price}" class="form-control input-sm product-quantity" min="1" value="1"></td>
+                            <td class="product-price">${price}</td>
+                            <td><button class="btn btn-danger btn-sm remove-product-btn" data-id="${id}"><span class="fa fa-trash"></span></button></td>
+                        </tr>`;
+
+                    $('.order-list').append(html);
+
+                    //to calculate total price
+                    calculateTotal();
+                });
+
+                //disabled btn
+                $('body').on('click', '.disabled', function(e) {
+
+                    e.preventDefault();
+
+                });//end of disabled
+
+                //remove product btn
+                $('body').on('click', '.remove-product-btn', function(e) {
+
+                    e.preventDefault();
+                    var id = $(this).data('id');
+
+                    $(this).closest('tr').remove();
+                    $('#product-' + id).removeClass('btn-default disabled').addClass('btn-success');
+
+                    //to calculate total price
+                    calculateTotal();
+
+                });//end of remove product btn
+
+                //change product quantity
+                $('body').on('keyup change', '.product-quantity', function() {
+
+                    var quantity = Number($(this).val()); //2
+                    var unitPrice = parseFloat($(this).data('price')); //150
+                    console.log(unitPrice);
+                    $(this).closest('tr').find('.product-price').html(Number(quantity * unitPrice).toFixed(2));
+                    calculateTotal();
+
+                });//end of product quantity change
+
+
+            });//end of document ready
+
+            //calculate the total
+            function calculateTotal() {
+
+                var price = 0;
+
+                $('.order-list .product-price').each(function(index) {
+
+                    price += parseFloat($(this).html().replace(/,/g, ''));
+
+                });//end of product price
+
+                $('.total-price').html(parseFloat(price, 1));
+
+                //check if price > 0
+                if (price > 0) {
+
+                    $('#add-order-form-btn').removeClass('disabled')
+
+                } else {
+
+                    $('#add-order-form-btn').addClass('disabled')
+
+                }//end of else
+
+            }//end of calculate total
+
+        9- define the relation between client and order
+            and product , order relation:
+
+           - client has many order ( one to many )
+              - add to Client model this:
+                path ( app/Models/Client.php )
+                   public function orders(){
+
+                        return $this->hasMany(Order::class);
+
+                   } // end of orders
+
+               - edit order migrate to :
+                 Schema::create('orders', function (Blueprint $table) {
+                            $table->increments('id');
+                            $table->integer('client_id')->unsigned();
+                            $table->double('total_price', 8, 2)->nullable();
+                            $table->timestamps();
+
+                            $table->foreign('client_id')->references('id')->on('clients')->onDelete('cascade');
+                        });
+
+               - edit Order model add this :
+
+                        public function client()
+                        {
+                            return $this->belongsTo(Client::class);
+
+                        }//end of user
+
+           - order can contain many product and product can be in many order (many to many )
+                - add to Order model this :
+                    path ( app/Models/Order.php )
+
+                 - edit product model:
+                           public function orders()
+                            {
+                                return $this->belongsToMany(Order::class, 'product_order');
+
+                            }//end of orders
+
+                 - edit order model and add this:
+                                public function products()
+                                {
+                                    return $this->belongsToMany(Product::class, 'product_order')->withPivot('quantity');
+
+                                }//end of products
+
+                 - $ php artisan make:migration create_product_order_table --create=product_order
+
+                         public function up()
+                            {
+                                Schema::create('product_order', function (Blueprint $table) {
+                                    $table->increments('id');
+                                    $table->integer('product_id')->unsigned();
+                                    $table->integer('order_id')->unsigned();
+                                    $table->integer('quantity')->default(1);
+
+                                    $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
+                                    $table->foreign('order_id')->references('id')->on('orders')->onDelete('cascade');
+                                });
+                            }
+
+                - make some seeder to add data to models :
+                    - $ php artisan make:seed CategoriesTableSeeder
+
+                         public function run()
+                            {
+
+                                $categories = ['cat one', 'cat two', 'cat three'];
+
+                                foreach ($categories as $category) {
+
+                                    \App\Models\Category::create([
+                                        'ar' => ['name' => $category],
+                                        'en' => ['name' => $category],
+                                    ]);
+
+                                }//end of foreach
+
+                            }//end of run
+                    - add previous seeder to database seeder:
+                     Path ( database/seeds/DatabaseSeeder.php )
+
+                    -$ php artisan make:seed ProductTableSeeder
+                         public function run()
+                            {
+                                $products = ['pro one', 'pro two'];
+
+                                foreach ($products as $product) {
+
+                                    \App\Models\Product::create([
+                                        'category_id' => 1,
+                                        'ar' => ['name' => $product, 'description' => $product . ' desc'],
+                                        'en' => ['name' => $product, 'description' => $product . ' desc'],
+                                        'purchase_price' => 100,
+                                        'sale_price' => 150,
+                                        'stock' => 100,
+                                    ]);
+
+                                }//end of foreach
+
+                            }//end of run
+
+                     - $ php artisan make:seed ClientTableSeeder
+
+                             public function run()
+                                {
+                                    $clients = ['ahmed', 'mohamed'];
+
+                                    foreach ($clients as $client) {
+
+                                        \App\Models\Client::create([
+                                           'name' => $client,
+                                           'phone' => '011111112',
+                                           'address' => 'haram',
+                                        ]);
+
+                                    }//end of foreach
+
+                                }//end of run
+
+
+                            - add previous seeders to database seeder:
+
+        10- make another order controller :
+
+                 $ php artisan make:controller Dashboard/OrderController
+                 - dash/OrderController
+                     public function index(Request $request)
+                        {
+                            $orders = Order::whereHas('client', function ($q) use ($request) {
+
+                                return $q->where('name', 'like', '%' . $request->search . '%');
+
+                            })->paginate(5);
+
+                            return view('dashboard.orders.index', compact('orders'));
+
+                        }//end of index
+
+
+                 - add it's route to dash/web
+                    // Orders Routes
+                                Route::resource('orders' , 'OrderController')->except(['show']);
+
+
+                 - make order view :
+                    -  make new folder in views/dashboard/orders
+                            - index.blade.php
+                            - _product ( use ajax to add it to order/index ) in order.js
+
+                 - add order link to aside:
+                    @if(@auth()->user()->hasPermission('orders_read'))
+                                                <li class="nav-item">
+                                                    <a href="{{route('dashboard.orders.index')}}" class="nav-link">
+                                                        <i class="far fa-circle nav-icon text-maroon"></i>
+                                                        <p>{{__('site.orders')}}</p>
+                                                    </a>
+                                                </li>
+                                            @endif
+
+                - enable edit order:
+                    - edit in client/OrderController
+                     public function edit(Client $client, Order $order)
+                        {
+                            $categories = Category::with('products')->get();
+                            $orders = $client->orders()->with('products')->paginate(5);
+                            return view('dashboard.clients.orders.edit', compact('client', 'order', 'categories', 'orders'));
+
+                        }//end of edit
+
+                        public function update(Request $request, Client $client, Order $order)
+                        {
+                            $request->validate([
+                                'products' => 'required|array',
+                            ]);
+
+                            $this->detach_order($order);
+
+                            $this->attach_order($request, $client);
+
+                            session()->flash('success', __('site.updated_successfully'));
+                            return redirect()->route('dashboard.orders.index');
+
+                        }//end of update
+
+                     - edit view client/orders/edit
+
+                - to print order we user Jquery print This plugin
+                    https://github.com/jasonday/printThis
+                    add PrintThis.js to js
+
+                        <script src="{{ asset('dashboard AdminLte 3_files/js/custom/printThis.js') }}"></script>
+
+                        -  //print order
+                              $(document).on('click', '.print-btn', function() {
+
+                                  $('#print-area').printThis({
+                                      debug: false,               // show the iframe for debugging
+                                      importCSS: true,            // import parent page css
+                                      importStyle: false,         // import style tags
+                                      printContainer: true,       // print outer container/$.selector
+                                      loadCSS: "",                // path to additional css file - use an array [] for multiple
+                                      pageTitle: "",              // add title to print page
+                                      removeInline: false,        // remove inline styles from print elements
+                                      removeInlineSelector: "*",  // custom selectors to filter inline styles. removeInline must be true
+                                      printDelay: 333,            // variable print delay
+                                      header: null,               // prefix to html
+                                      footer: null,               // postfix to html
+                                      base: false,                // preserve the BASE tag or accept a string for the URL
+                                      formValues: true,           // preserve input/form values
+                                      canvas: false,              // copy canvas content
+                                      doctypeString: '...',       // enter a different doctype for older markup
+                                      removeScripts: false,       // remove script tags from print content
+                                      copyTagClasses: false,      // copy classes from the html & body tag
+                                      beforePrintEvent: null,     // function for printEvent in iframe
+                                      beforePrint: null,          // function called before iframe is filled
+                                      afterPrint: null            // function called before iframe is removed
+                                  });
+
+                              });//end of click function
+
+
+            -
 ## --------------------------------------------

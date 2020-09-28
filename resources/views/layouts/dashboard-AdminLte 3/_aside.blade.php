@@ -59,6 +59,15 @@
                                 <p>{{ __('site.new_orders') }}</p>
                             </a>
                         </li>
+
+                        @if(@auth()->user()->hasPermission('orders_read'))
+                            <li class="nav-item">
+                                <a href="{{route('dashboard.orders.index')}}" class="nav-link">
+                                    <i class="far fa-circle nav-icon text-maroon"></i>
+                                    <p>{{__('site.orders')}}</p>
+                                </a>
+                            </li>
+                        @endif
                         <li class="nav-item">
                             <a href="{{ route('dashboard.index') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon text-blue"></i>

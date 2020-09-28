@@ -20,8 +20,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43f369e8-6175-40c6-a52e-089c90166f3a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/js/custom/image_preview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/js/custom/order.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dashboard AdminLte 3_files/js/custom/printThis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/clients/orders/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/clients/orders/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/orders/_products.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/orders/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commands-Steps.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Commands-Steps.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/laratrust_seeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/laratrust_seeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_25_151021_create_category_translations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_25_151021_create_category_translations_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_26_154358_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_26_154358_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_26_154556_create_product_translations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_26_154556_create_product_translations_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_27_085352_create_clients_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_27_085352_create_clients_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/products_images/C68GMWoZ7U0bdRbQIJg0gZ3j4nycmv9iVnb3Np6o.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/products_images/ja8obfeGU3V9g6qUsVcyCBQ5Kef3dDHo80owW9Ct.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/products_images/n8FeLAoL6tFu1lggA6lKnmn7gesipYuvKjs7Eqlb.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/products_images/zB785xvLLOrOfu0TbD07JGNcuP1gohEnvH8SZPQ7.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/userImages/4NI11KVPIQLcRPCSof9Bdpbwu0EX4mVWWMfGzmjk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/userImages/nepOjFgwjaZsj4gtxfhWtaqCUKv8VorKW57rL3Jl.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/site.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/site.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/clients/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/clients/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/users/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/_aside.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard-AdminLte 3/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/dashboard/wep.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/dashboard/wep.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +187,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/dashboard" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/dashboard AdminLte 3_files/js/custom" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -171,19 +201,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp64\www\myposMy\public\dashboard AdminLte 3_files\js\custom" />
+      <recent name="D:\wamp64\www\myposMy\resources\views\dashboard\orders" />
+      <recent name="D:\wamp64\www\myposMy\public\dashboard AdminLte 3_files\js" />
+      <recent name="D:\wamp64\www\myposMy\resources\views\dashboard\clients\orders" />
+      <recent name="D:\wamp64\www\myposMy\resources\views\dashboard" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\wamp64\www\myposMy\public\storage\uploads" />
       <recent name="D:\wamp64\www\myposMy\public\uploads\userImages" />
       <recent name="D:\wamp64\www\myposMy\public\js" />
       <recent name="D:\wamp64\www\myposMy\resources\views\dashboard\laratrust" />
       <recent name="D:\wamp64\www\myposMy\app\Http\Requests" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\wamp64\www\myposMy\resources\views\dashboard" />
-      <recent name="D:\wamp64\www\myposMy\public\uploads" />
-      <recent name="D:\wamp64\www\myposMy\public\dashboard AdminLte 3_files\plugins" />
-      <recent name="D:\wamp64\www\myposMy\resources\views\dashboard\products" />
-      <recent name="D:\wamp64\www\myposMy\resources\views\dashboard\categories" />
     </key>
   </component>
   <component name="RunManager">
@@ -224,7 +254,8 @@
       <workItem from="1600874875534" duration="4020000" />
       <workItem from="1600879997239" duration="19470000" />
       <workItem from="1601022518727" duration="17539000" />
-      <workItem from="1601104904329" duration="41457000" />
+      <workItem from="1601104904329" duration="51091000" />
+      <workItem from="1601272449680" duration="23509000" />
     </task>
     <task id="LOCAL-00001" summary="#1 Add/Define dashboard Route file and controller-namespace ( Steps: 1 , 2 )">
       <created>1598597257857</created>
@@ -457,7 +488,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601223444498</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="#24 client ( model , controller , views )">
+      <created>1601224293767</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1601224293767</updated>
+    </task>
+    <task id="LOCAL-00035" summary="#24 client ( model , controller , views )">
+      <created>1601224326970</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1601224326970</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,10 +578,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="363" y="104" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.738@0.0.1366.738" timestamp="1601022170668" />
-    <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601222721729">
+    <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601295111912">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1601222721729" />
+    <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1601295111912" />
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1599419093796">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -569,10 +614,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.738@0.0.1366.738" timestamp="1600239959576" />
-    <state x="284" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600790305710">
+    <state x="284" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1601225227769">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="284" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.738@0.0.1366.738" timestamp="1600790305710" />
+    <state x="284" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.738@0.0.1366.738" timestamp="1601225227769" />
     <state x="92" y="92" width="1182" height="554" key="dock-window-1" timestamp="1601220684756">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -585,10 +630,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1601048240812" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1601201222135">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1601298490599">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1601201222135" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1601298490599" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

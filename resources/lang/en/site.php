@@ -93,6 +93,7 @@ return [
     // Categories
     'Category'=>'Category',
     'Categories'=>'Categories',
+    'categories'=>'Categories',
     'all_categories' => 'all Categories',
     'create_new_category' => 'Create new category',
     'update-category'=> 'update Category',
@@ -130,6 +131,7 @@ return [
         'description'=>'The description in English '
 
     ],
+    'show_products' => 'show products',
 
     // prices && quantity
     'quantity' => 'quantity',
@@ -142,9 +144,24 @@ return [
 
     // Clients
     'clients'=> 'clients',
+    'client_name' => 'client name',
     'address' => 'address',
     'phone' => 'phone',
-    'order' => 'order',
+
+
+    // Order
+    'order' => 'طلب',
+    'previous_orders' => 'previous orders',
+    'orders' => 'orders',
+    'add_order' => 'add order',
+    'edit_order' => 'edit order',
+    'no_records' => 'no records',
+    'show'=>'show',
+    'print'=> 'print',
+    'loading' => 'loading',
+
+
+
 
 // DataTable
     'next'=> 'Next',

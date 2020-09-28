@@ -161,21 +161,11 @@
 
 <!-- CKEditor 5 -->
 {{--    <script src="{{ asset( '/dashboard AdminLte 3_files/plugins/ckeditor5/ckeditor.js') }}"></script>--}}
+{{--custom js--}}
+<script src="{{ asset('dashboard AdminLte 3_files/js/custom/image_preview.js') }}"></script>
+<script src="{{ asset('dashboard AdminLte 3_files/js/custom/order.js') }}"></script>
+<script src="{{ asset('dashboard AdminLte 3_files/js/custom/printThis.js') }}"></script>
 
-<script>
-    $('.image_class').change(function (){
-
-        if(this.files && this.files[0]){
-            var reader = new FileReader();
-
-            reader.onload = function (e){
-                $('.img_preview_class').attr('src', e.target.result);
-            }
-
-            reader.readAsDataURL(this.files[0]); // convert to base64 string
-        }
-    });
-</script>
 @yield('scripts')
 
 <!--/ scripts -->

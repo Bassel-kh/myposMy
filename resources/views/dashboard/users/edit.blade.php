@@ -77,11 +77,13 @@
                 {{--    ./image      --}}
 
 
-            <?php
-                $models = ['users','categories', 'products'];
-                $maps = ['create', 'read', 'update', 'delete'];
+                <?php
+
+                    $models = ['users','categories', 'products' , 'clients', 'orders'];
+                    $maps = ['create', 'read', 'update', 'delete'];
 
                 ?>
+
 
 
                 <div class="form-group">

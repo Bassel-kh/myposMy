@@ -16,7 +16,7 @@ class CreateCategoryTranslationsTable extends Migration
         Schema::create('category_translations', function (Blueprint $table) {
 
             // mandatory fields
-//            $table->engine = 'InnoDB';
+            $table->engine = 'InnoDB';
             $table->increments('id');
             $table->integer('category_id')->unsigned();
             $table->string('locale')->index();
