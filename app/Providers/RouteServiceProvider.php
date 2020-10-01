@@ -70,7 +70,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         Route::middleware('web')
             ->namespace($this->dashboard_namespace)
-            ->group(base_path('routes\dashboard\wep.php'));
+            ->group(base_path('routes/dashboard/wep.php'));
     }
     /**
      * Define the "api" routes for the application.

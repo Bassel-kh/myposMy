@@ -19,10 +19,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43f369e8-6175-40c6-a52e-089c90166f3a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commands-Steps.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Commands-Steps.txt" afterDir="false" />
-    </list>
+    <list default="true" id="43f369e8-6175-40c6-a52e-089c90166f3a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -227,7 +224,7 @@
       <workItem from="1601104904329" duration="51091000" />
       <workItem from="1601272449680" duration="32075000" />
       <workItem from="1601381323655" duration="2737000" />
-      <workItem from="1601389146748" duration="5866000" />
+      <workItem from="1601389146748" duration="6200000" />
     </task>
     <task id="LOCAL-00001" summary="#1 Add/Define dashboard Route file and controller-namespace ( Steps: 1 , 2 )">
       <created>1598597257857</created>
@@ -488,7 +485,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601314348794</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="#28 test Deploying to Heroku">
+      <created>1601575641741</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1601575641741</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -520,7 +524,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="#7 (#7.1- Roles and permissions - #7.2- Commit before setup laratrust )" />
     <MESSAGE value="#7 (#7.3 1- laratrust:setup 2 3 4 seed )" />
     <MESSAGE value="#8 Roles and permissions Controller and views (Steps: 1.1,1.2,1.3 , 1.4 , 1.5 , 1.6 , 1.7 )" />
     <MESSAGE value="#8 Roles and permissions Controller and views (Steps:1.8- in public edit view and add user create card to (resources/views/dashboard/users/create.blade.php)&#10;                                                                 Edit fontawesome-free (Add version 5) )" />
@@ -545,7 +548,8 @@
     <MESSAGE value="#24 client ( model , controller , views )" />
     <MESSAGE value="#25 orders (cliend/OrderController and views orders( index , _product ) client/order( create , edite ) and general OrderController )" />
     <MESSAGE value="#26 1- add order history to clients" />
-    <option name="LAST_COMMIT_MESSAGE" value="#26 1- add order history to clients" />
+    <MESSAGE value="#28 test Deploying to Heroku" />
+    <option name="LAST_COMMIT_MESSAGE" value="#28 test Deploying to Heroku" />
   </component>
   <component name="WindowStateProjectService">
     <state x="561" y="276" key="#Custom_Plugin_Repositories" timestamp="1598701111207">
@@ -588,10 +592,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="174" y="30" width="1192" height="708" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1601038301052" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1601575408390">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1601575644818">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1601575408390" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1601575644818" />
     <state x="92" y="92" width="1182" height="554" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1599910074522">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
