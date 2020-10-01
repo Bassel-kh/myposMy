@@ -2419,3 +2419,6 @@ orders (cliend/OrderController and views orders( index , _product ) client/order
 add summary :
  - edit dashboard controller:
 
+#28 --------------------------
+test Deploying to Heroku
+    echo "web: vendor/bin/heroku-php-apache2 public/" > Procfile
